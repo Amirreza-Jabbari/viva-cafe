@@ -30,9 +30,6 @@ pids
 *.seed
 *.pid.lock
 
-# Local development data (optional)
-data/menu.json
-
 # Editor folders
 .vscode/
 .idea/

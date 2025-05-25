@@ -1,0 +1,458 @@
+[
+  {
+    "id": 1,
+    "title": "سیب سوخاری",
+    "category": "پاستا و سیب سوخاری",
+    "price": 148000,
+    "img": "/images/sib_sokhari.jpeg",
+    "description": "Fluffy and tender buttermilk pancakes served with a generous pat of butter and syrup of your choice."
+  },
+  {
+    "id": 2,
+    "title": "لازانیا",
+    "category": "پاستا و سیب سوخاری",
+    "price": 238000,
+    "img": "/images/lazanya.jpg",
+    "description": "Burger Deluxe: A classic American burger topped with all the essentials, including lettuce, tomato, pickles, onions, melted cheddar cheese, and special sauce. Served on a toasted bun and a side of fries"
+  },
+  {
+    "id": 3,
+    "title": "پاستا الفردو مرغ",
+    "category": "پاستا و سیب سوخاری",
+    "price": 248000,
+    "img": "/images/pasta_alfredo.jpg",
+    "description": "A hearty and wholesome meal, inspired by the flavors of the countryside. Made with a combination of fresh ingredients, this dish features savory meats, crisp vegetables, and fluffy potatoes, all cooked to perfection."
+  },
+  {
+    "id": 4,
+    "title": "سیب سوخاری دو نفره",
+    "category": "پاستا و سیب سوخاری",
+    "price": 189000,
+    "img": "/images/sib_sokhari_2.jpg",
+    "description": "A classic American burger topped with a sunny-side up egg, adding a touch of richness and flavor to the traditional dish. Served on a toasted bun with lettuce, tomato, pickles, onions, melted cheddar cheese, and special sauce."
+  },
+  {
+    "id": 5,
+    "title": "سیب ویژه دو نفره",
+    "category": "پاستا و سیب سوخاری",
+    "price": 245000,
+    "img": "/images/sib_vizhe_2.jpg",
+    "description": "A dish that combines savory bacon with fluffy eggs and crispy potatoes. Packed with protein and flavor."
+  },
+  {
+    "id": 6,
+    "title": "لازانیا مرغ و اسفناج",
+    "category": "پاستا و سیب سوخاری",
+    "price": 235000,
+    "img": "/images/lazanya_morgh_sfenage.jpg",
+    "description": "A traditional American meal, featuring juicy burgers, crispy fries, and a cold drink."
+  },
+  {
+    "id": 7,
+    "title": "مک اند چیز",
+    "category": "پاستا و سیب سوخاری",
+    "price": 215000,
+    "img": "/images/mack_and_cheese.jpg",
+    "description": "A juicy and flavorful cut of beef, cooked to perfection and served with your choice of sides."
+  },
+  {
+    "id": 8,
+    "title": "لیموناد",
+    "category": "بار سرد",
+    "price": 118000,
+    "img": "/images/lemonade.jpg",
+    "description": "A sweet mango shake blended with milk, ice cream, and optional syrups."
+  },
+  {
+    "id": 9,
+    "title": "موهیتو",
+    "category": "بار سرد",
+    "price": 127000,
+    "img": "/images/mohito.jpg",
+    "description": "A low-carb chocolate milkshake made with keto-friendly ingredients."
+  },
+  {
+    "id": 10,
+    "title": "گرین مارش",
+    "category": "بار سرد",
+    "price": 157000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 11,
+    "title": "لیر",
+    "category": "بار سرد",
+    "price": 169000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 12,
+    "title": "کوکتل انبه",
+    "category": "بار سرد",
+    "price": 238000,
+    "img": "/images/anbe_coctail.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 13,
+    "title": "چری بری",
+    "category": "بار سرد",
+    "price": 228000,
+    "img": "/images/chery.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 14,
+    "title": "کوکتل اسپریو",
+    "category": "بار سرد",
+    "price": 218000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 15,
+    "title": "مکزیکانو",
+    "category": "بار سرد",
+    "price": 187000,
+    "img": "/images/mexicano.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 16,
+    "title": "اسپرسو",
+    "category": "بر پایه قهوه و شیر",
+    "price": 65000,
+    "img": "/images/espreso.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 17,
+    "title": "رومانو",
+    "category": "بر پایه قهوه و شیر",
+    "price": 78000,
+    "img": "/images/romano.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 18,
+    "title": "آمریکانو",
+    "category": "بر پایه قهوه و شیر",
+    "price": 78000,
+    "img": "/images/americano.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 19,
+    "title": "کارامل ماکیاتو",
+    "category": "بر پایه قهوه و شیر",
+    "price": 123000,
+    "img": "/images/makiato.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 20,
+    "title": "موکا",
+    "category": "بر پایه قهوه و شیر",
+    "price": 129000,
+    "img": "/images/mocka.jpeg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 21,
+    "title": "لته",
+    "category": "بر پایه قهوه و شیر",
+    "price": 90000,
+    "img": "/images/late.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 22,
+    "title": "کاپوچینو",
+    "category": "بر پایه قهوه و شیر",
+    "price": 97000,
+    "img": "/images/capuccino.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 23,
+    "title": "یونانی",
+    "category": "بر پایه قهوه و شیر",
+    "price": 76000,
+    "img": "/images/younani.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 24,
+    "title": "کورتادو",
+    "category": "بر پایه قهوه و شیر",
+    "price": 78000,
+    "img": "/images/kortado.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 25,
+    "title": "کن پانا",
+    "category": "بر پایه قهوه و شیر",
+    "price": 98000,
+    "img": "/images/pana.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 26,
+    "title": "کن لچه",
+    "category": "بر پایه قهوه و شیر",
+    "price": 107000,
+    "img": "/images/lece.jpeg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 27,
+    "title": "آفوگاتو",
+    "category": "بر پایه قهوه و شیر",
+    "price": 105000,
+    "img": "/images/afogato.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 28,
+    "title": "اسپرسو ددآی",
+    "category": "بر پایه قهوه و شیر",
+    "price": 121000,
+    "img": "/images/dedai.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 29,
+    "title": "قهوه ترک",
+    "category": "بر پایه قهوه و شیر",
+    "price": 75000,
+    "img": "/images/dedai.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 30,
+    "title": "آفوگاتو بلک",
+    "category": "بر پایه قهوه و شیر",
+    "price": 117000,
+    "img": "/images/dedai.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 31,
+    "title": "چای دمی تک نفره",
+    "category": "چای و دمنوش",
+    "price": 45000,
+    "img": "/images/chay1.jpeg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 32,
+    "title": "چای دمی دو نفره",
+    "category": "چای و دمنوش",
+    "price": 76000,
+    "img": "/images/chay2.jpeg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 33,
+    "title": "چای مراکشی",
+    "category": "چای و دمنوش",
+    "price": 45000,
+    "img": "/images/chay1.jpeg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 34,
+    "title": "چای ماسالا",
+    "category": "چای و دمنوش",
+    "price": 45000,
+    "img": "/images/chay1.jpeg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 35,
+    "title": "دمنوش جینسینگ و چای سفید",
+    "category": "چای و دمنوش",
+    "price": 87000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 36,
+    "title": "دمنوش رازیانه و اوکیناسه",
+    "category": "چای و دمنوش",
+    "price": 85000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 37,
+    "title": "دمنوش مخلوط معطر",
+    "category": "چای و دمنوش",
+    "price": 85000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 38,
+    "title": "دمنوش زیره و چای سبز",
+    "category": "چای و دمنوش",
+    "price": 80000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 39,
+    "title": "دمنوش لیمو نعنا",
+    "category": "چای و دمنوش",
+    "price": 86000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 40,
+    "title": "دمنوش بهار نارنج",
+    "category": "چای و دمنوش",
+    "price": 89000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 41,
+    "title": "دمنوش گل گاو زبان",
+    "category": "چای و دمنوش",
+    "price": 92000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 42,
+    "title": "دمنوش ختمی",
+    "category": "چای و دمنوش",
+    "price": 81000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 43,
+    "title": "دمنوش ساناز",
+    "category": "چای و دمنوش",
+    "price": 83000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 44,
+    "title": "دمنوش پونه آویشن",
+    "category": "چای و دمنوش",
+    "price": 88000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 45,
+    "title": "دمنوش میخک و عسل",
+    "category": "چای و دمنوش",
+    "price": 76000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 46,
+    "title": "دمنوش میخک و عسل فرنچ",
+    "category": "چای و دمنوش",
+    "price": 91000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 47,
+    "title": "آیس آمریکانو",
+    "category": "آیس کافی",
+    "price": 86000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 48,
+    "title": "آیس کارامل ماکیاتو",
+    "category": "آیس کافی",
+    "price": 117000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 49,
+    "title": "آیس لته",
+    "category": "آیس کافی",
+    "price": 91000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 50,
+    "title": "آیس موکا",
+    "category": "آیس کافی",
+    "price": 91000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 51,
+    "title": "آیس چاکلت",
+    "category": "آیس کافی",
+    "price": 91000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 52,
+    "title": "آیس پینک چاکلت",
+    "category": "آیس کافی",
+    "price": 91000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 53,
+    "title": "آیس بلوبری چاکلت",
+    "category": "آیس کافی",
+    "price": 91000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 54,
+    "title": "آیس ماسالا",
+    "category": "آیس کافی",
+    "price": 91000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 55,
+    "title": "آیس کاپو",
+    "category": "آیس کافی",
+    "price": 91000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 56,
+    "title": "آیس وایت",
+    "category": "آیس کافی",
+    "price": 91000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  },
+  {
+    "id": 57,
+    "title": "آیس وایت اسپرسو",
+    "category": "آیس کافی",
+    "price": 91000,
+    "img": "/images/item-10.jpg",
+    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+  }
+]
