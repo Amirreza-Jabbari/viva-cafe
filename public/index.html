@@ -11,8 +11,6 @@
     @font-face {
       font-family: 'BNazanin';
       src: url('https://raw.githubusercontent.com/intuxicated/css-persian/master/fonts/BNazanin.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
       font-display: swap;
     }
     body {
@@ -36,15 +34,6 @@
     @supports not selector(::-webkit-scrollbar) {
       body { scrollbar-color: var(--sb-thumb-color) var(--sb-track-color); }
     }
-    .menu-item {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    .menu-item.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
   </style>
 
   <!-- Tailwind CSS -->
@@ -55,11 +44,8 @@
     <!-- Header with clickable logo -->
     <header class="text-center mb-8">
       <a href="/admin.html" class="inline-block">
-        <img
-          src="/images/logo.png"
-          alt="لوگو کافه ویوا"
-          class="mx-auto w-32 h-auto mb-4 hover:opacity-80 transition"
-        />
+        <img src="/images/logo.png" alt="لوگو کافه ویوا"
+             class="mx-auto w-32 h-auto mb-4 hover:opacity-80 transition"/>
       </a>
       <div class="mt-2 w-20 h-1 bg-yellow-500 mx-auto"></div>
     </header>
@@ -68,34 +54,22 @@
     <nav class="flex flex-wrap justify-center gap-3 mb-8">
       <button data-category="all" class="category-btn px-4 py-2 border rounded-lg transition
                border-yellow-500 bg-gray-200 text-yellow-500
-               hover:bg-yellow-500 hover:text-white">
-        همه
-      </button>
+               hover:bg-yellow-500 hover:text-white">همه</button>
       <button data-category="پاستا و سیب سوخاری" class="category-btn px-4 py-2 border rounded-lg transition
                border-yellow-500 bg-gray-200 text-yellow-500
-               hover:bg-yellow-500 hover:text-white">
-        پاستا و سیب سوخاری
-      </button>
+               hover:bg-yellow-500 hover:text-white">پاستا و سیب سوخاری</button>
       <button data-category="بار سرد" class="category-btn px-4 py-2 border rounded-lg transition
                border-yellow-500 bg-gray-200 text-yellow-500
-               hover:bg-yellow-500 hover:text-white">
-        بار سرد
-      </button>
+               hover:bg-yellow-500 hover:text-white">بار سرد</button>
       <button data-category="بر پایه قهوه و شیر" class="category-btn px-4 py-2 border rounded-lg transition
                border-yellow-500 bg-gray-200 text-yellow-500
-               hover:bg-yellow-500 hover:text-white">
-        بر پایه قهوه و شیر
-      </button>
+               hover:bg-yellow-500 hover:text-white">بر پایه قهوه و شیر</button>
       <button data-category="چای و دمنوش" class="category-btn px-4 py-2 border rounded-lg transition
                border-yellow-500 bg-gray-200 text-yellow-500
-               hover:bg-yellow-500 hover:text-white">
-        چای و دمنوش
-      </button>
+               hover:bg-yellow-500 hover:text-white">چای و دمنوش</button>
       <button data-category="آیس کافی" class="category-btn px-4 py-2 border rounded-lg transition
                border-yellow-500 bg-gray-200 text-yellow-500
-               hover:bg-yellow-500 hover:text-white">
-        آیس کافی
-      </button>
+               hover:bg-yellow-500 hover:text-white">آیس کافی</button>
     </nav>
 
     <!-- Menu Items Grid -->
