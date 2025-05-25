@@ -1,4 +1,3 @@
-// /api/get-menu.js
 export default async function handler(req, res) {
   // Disable all caching
   res.setHeader('Cache-Control', 'no-store, max-age=0');

@@ -1,4 +1,3 @@
-// public/admin.js
 let token = null;
 const loginContainer = document.getElementById('login-container');
 const dashboard      = document.getElementById('dashboard');
@@ -7,6 +6,16 @@ const modal          = document.getElementById('modal');
 const form           = document.getElementById('item-form');
 const titleEl        = document.getElementById('modal-title');
 const tbody          = document.getElementById('menu-rows');
+const notification   = document.getElementById('notification');
+
+// Helper to show green toast for 5s
+function showNotification(msg) {
+  notification.textContent = msg;
+  notification.classList.add('show');
+  setTimeout(() => {
+    notification.classList.remove('show');
+  }, 5000);
+}
 
 // Show login errors
 function showError(msg) {
@@ -60,7 +69,7 @@ async function loadMenu() {
   }
 }
 
-// ATTACH EVENTS
+// ATTACH EDIT & DELETE EVENTS
 function attachRowEvents() {
   tbody.querySelectorAll('.edit').forEach(btn =>
     btn.onclick = e => openModal('Edit', +e.target.closest('tr').dataset.id)
@@ -73,7 +82,8 @@ function attachRowEvents() {
           method: 'DELETE',
           headers: { Authorization: `Bearer ${token}` }
         });
-        if (!res.ok) throw new Error('Delete failed');
+        if (!res.ok) throw new Error();
+        showNotification(`آیتم #${id} با موفقیت حذف شد`);
         loadMenu();
       } catch (err) {
         console.error('Delete error:', err);
@@ -99,7 +109,7 @@ function openModal(mode, id = null) {
   modal.classList.remove('hidden');
 }
 
-// CANCEL
+// CANCEL BUTTON
 document.getElementById('cancel').onclick = () => {
   modal.classList.add('hidden');
 };
@@ -108,8 +118,7 @@ document.getElementById('cancel').onclick = () => {
 form.onsubmit = async e => {
   e.preventDefault();
   const data = Object.fromEntries(new FormData(form));
-  data.price = +data.price;
-  // img & description optional
+  data.price = +data.price; // coerce
   try {
     const res = await fetch('/api/update-menu', {
       method: 'POST',
@@ -122,6 +131,11 @@ form.onsubmit = async e => {
     const result = await res.json();
     if (!res.ok) throw new Error(result.error || 'Save failed');
     modal.classList.add('hidden');
+    if (data.id) {
+      showNotification(`آیتم #${data.id} با موفقیت ویرایش شد`);
+    } else {
+      showNotification('آیتم جدید با موفقیت اضافه شد');
+    }
     loadMenu();
   } catch (err) {
     console.error('Save error:', err);
@@ -129,7 +143,7 @@ form.onsubmit = async e => {
   }
 };
 
-// ADD ITEM
+// ADD ITEM BUTTON
 document.getElementById('add-item').onclick = () => {
   openModal('Add');
 };

@@ -36,6 +36,15 @@
     @supports not selector(::-webkit-scrollbar) {
       body { scrollbar-color: var(--sb-thumb-color) var(--sb-track-color); }
     }
+    .menu-item {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .menu-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
   </style>
 
   <!-- Tailwind CSS -->
