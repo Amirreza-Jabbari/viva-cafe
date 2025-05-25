@@ -1,3 +1,4 @@
+// public/admin.js
 let token = null;
 const loginContainer = document.getElementById('login-container');
 const dashboard      = document.getElementById('dashboard');
@@ -7,7 +8,7 @@ const form           = document.getElementById('item-form');
 const titleEl        = document.getElementById('modal-title');
 const tbody          = document.getElementById('menu-rows');
 
-// Display login errors
+// Show login errors
 function showError(msg) {
   errorMsg.textContent = msg;
   errorMsg.classList.remove('hidden');
@@ -24,7 +25,7 @@ document.getElementById('login-btn').addEventListener('click', async () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ password: pw })
     });
-    if (!res.ok) throw new Error('Login failed');
+    if (!res.ok) throw new Error();
     token = (await res.json()).token;
     loginContainer.classList.add('hidden');
     dashboard.classList.remove('hidden');
@@ -42,9 +43,7 @@ async function loadMenu() {
     });
     const menu = await res.json();
     tbody.innerHTML = menu.map(item => `
-      <tr data-id="${item.id}"
-          data-img="${item.img || ''}"
-          data-description="${item.description || ''}">
+      <tr data-id="${item.id}" data-img="${item.img || ''}" data-description="${item.description || ''}">
         <td>${item.id}</td>
         <td>${item.title}</td>
         <td>${item.category}</td>
@@ -53,7 +52,8 @@ async function loadMenu() {
           <button class="edit text-blue-600 hover:underline">ویرایش</button>
           <button class="delete text-red-600 hover:underline">حذف</button>
         </td>
-      </tr>`).join('');
+      </tr>
+    `).join('');
     attachRowEvents();
   } catch (e) {
     console.error('Error loading menu:', e);
@@ -68,11 +68,17 @@ function attachRowEvents() {
   tbody.querySelectorAll('.delete').forEach(btn =>
     btn.onclick = async e => {
       const id = +e.target.closest('tr').dataset.id;
-      await fetch(`/api/delete-menu/${id}`, {
-        method: 'DELETE',
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      loadMenu();
+      try {
+        const res = await fetch(`/api/delete-menu?id=${id}`, {
+          method: 'DELETE',
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        if (!res.ok) throw new Error('Delete failed');
+        loadMenu();
+      } catch (err) {
+        console.error('Delete error:', err);
+        alert('خطا در حذف آیتم');
+      }
     }
   );
 }
@@ -82,7 +88,6 @@ function openModal(mode, id = null) {
   titleEl.textContent = mode === 'Add' ? 'افزودن آیتم' : 'ویرایش آیتم';
   form.reset();
   form.id.value = id || '';
-
   if (id) {
     const row = tbody.querySelector(`tr[data-id="${id}"]`);
     form.title.value       = row.children[1].textContent;
@@ -91,7 +96,6 @@ function openModal(mode, id = null) {
     form.img.value         = row.dataset.img;
     form.description.value = row.dataset.description;
   }
-
   modal.classList.remove('hidden');
 }
 
@@ -104,9 +108,8 @@ document.getElementById('cancel').onclick = () => {
 form.onsubmit = async e => {
   e.preventDefault();
   const data = Object.fromEntries(new FormData(form));
-  data.price = +data.price;             // required
-  // allow img/description optional
-
+  data.price = +data.price;
+  // img & description optional
   try {
     const res = await fetch('/api/update-menu', {
       method: 'POST',
@@ -117,16 +120,16 @@ form.onsubmit = async e => {
       body: JSON.stringify(data)
     });
     const result = await res.json();
-    if (!res.ok) throw new Error(result.error || 'Failed to save');
+    if (!res.ok) throw new Error(result.error || 'Save failed');
     modal.classList.add('hidden');
     loadMenu();
   } catch (err) {
     console.error('Save error:', err);
-    alert('خطا در ذخیره‌سازی: ' + err.message);
+    alert('خطا در ذخیره‌سازی');
   }
 };
 
-// ADD ITEM BUTTON
+// ADD ITEM
 document.getElementById('add-item').onclick = () => {
   openModal('Add');
 };
