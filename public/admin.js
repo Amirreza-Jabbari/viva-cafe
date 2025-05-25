@@ -1,4 +1,3 @@
-// public/admin.js
 let token = null;
 const loginContainer = document.getElementById('login-container');
 const dashboard      = document.getElementById('dashboard');
@@ -25,7 +24,7 @@ document.getElementById('login-btn').addEventListener('click', async () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ password: pw })
     });
-    if (!res.ok) throw '';
+    if (!res.ok) throw new Error('Login failed');
     token = (await res.json()).token;
     loginContainer.classList.add('hidden');
     dashboard.classList.remove('hidden');
@@ -44,8 +43,8 @@ async function loadMenu() {
     const menu = await res.json();
     tbody.innerHTML = menu.map(item => `
       <tr data-id="${item.id}"
-          data-img="${item.img}"
-          data-description="${item.description}">
+          data-img="${item.img || ''}"
+          data-description="${item.description || ''}">
         <td>${item.id}</td>
         <td>${item.title}</td>
         <td>${item.category}</td>
@@ -54,23 +53,19 @@ async function loadMenu() {
           <button class="edit text-blue-600 hover:underline">ویرایش</button>
           <button class="delete text-red-600 hover:underline">حذف</button>
         </td>
-      </tr>
-    `).join('');
+      </tr>`).join('');
     attachRowEvents();
   } catch (e) {
     console.error('Error loading menu:', e);
   }
 }
 
-// ATTACH EDIT & DELETE EVENTS
+// ATTACH EVENTS
 function attachRowEvents() {
-  tbody.querySelectorAll('.edit').forEach(btn => {
-    btn.onclick = e => {
-      const id = +e.target.closest('tr').dataset.id;
-      openModal('Edit', id);
-    };
-  });
-  tbody.querySelectorAll('.delete').forEach(btn => {
+  tbody.querySelectorAll('.edit').forEach(btn =>
+    btn.onclick = e => openModal('Edit', +e.target.closest('tr').dataset.id)
+  );
+  tbody.querySelectorAll('.delete').forEach(btn =>
     btn.onclick = async e => {
       const id = +e.target.closest('tr').dataset.id;
       await fetch(`/api/delete-menu/${id}`, {
@@ -78,11 +73,11 @@ function attachRowEvents() {
         headers: { Authorization: `Bearer ${token}` }
       });
       loadMenu();
-    };
-  });
+    }
+  );
 }
 
-// OPEN MODAL FOR ADD/EDIT
+// OPEN MODAL
 function openModal(mode, id = null) {
   titleEl.textContent = mode === 'Add' ? 'افزودن آیتم' : 'ویرایش آیتم';
   form.reset();
@@ -100,28 +95,35 @@ function openModal(mode, id = null) {
   modal.classList.remove('hidden');
 }
 
-// CANCEL BUTTON
+// CANCEL
 document.getElementById('cancel').onclick = () => {
   modal.classList.add('hidden');
 };
 
-// SUBMIT FORM (CREATE / UPDATE)
+// SUBMIT (CREATE/UPDATE)
 form.onsubmit = async e => {
   e.preventDefault();
   const data = Object.fromEntries(new FormData(form));
-  data.price = +data.price;
+  data.price = +data.price;             // required
+  // allow img/description optional
 
-  await fetch('/api/update-menu', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${token}`
-    },
-    body: JSON.stringify(data)
-  });
-
-  modal.classList.add('hidden');
-  loadMenu();
+  try {
+    const res = await fetch('/api/update-menu', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`
+      },
+      body: JSON.stringify(data)
+    });
+    const result = await res.json();
+    if (!res.ok) throw new Error(result.error || 'Failed to save');
+    modal.classList.add('hidden');
+    loadMenu();
+  } catch (err) {
+    console.error('Save error:', err);
+    alert('خطا در ذخیره‌سازی: ' + err.message);
+  }
 };
 
 // ADD ITEM BUTTON

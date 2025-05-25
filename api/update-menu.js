@@ -3,11 +3,12 @@ import jwt from 'jsonwebtoken';
 
 const GITHUB_API = 'https://api.github.com';
 
-export default async (req, res) => {
-  if (req.method !== 'POST') return res.status(405).end();
+export default async function handler(req, res) {
+  if (req.method !== 'POST') return res.status(405).json({ error: 'Method Not Allowed' });
 
   // 1. Authenticate
-  const token = req.headers.authorization?.split(' ')[1];
+  const authHeader = req.headers.authorization || '';
+  const token = authHeader.split(' ')[1];
   try {
     jwt.verify(token, process.env.ADMIN_PASSWORD);
   } catch (err) {
@@ -15,59 +16,51 @@ export default async (req, res) => {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 
-  // 2. Validate input
-  const { id, title, category, price, img, description } = req.body;
-  if (!title || !category || price == null || !img) {
-    return res.status(400).json({ error: 'Missing required fields' });
+  // 2. Validate input (img & description optional)
+  let { id, title, category, price, img = '', description = '' } = req.body;
+  price = Number(price); // coerce
+  if (!title || !category || isNaN(price)) {
+    return res.status(400).json({ error: 'Missing required fields: title, category, price' });
   }
 
   try {
-    // 3. Fetch current menu.json from raw GitHub
+    // 3. Fetch current menu.json
     const raw = await fetch(
       `https://raw.githubusercontent.com/${process.env.GITHUB_OWNER}/${process.env.GITHUB_REPO}/main/data/menu.json`
     );
-
     if (!raw.ok) {
       console.error('Failed to fetch raw menu.json:', await raw.text());
       return res.status(500).json({ error: 'Failed to fetch existing menu' });
     }
-
     const menu = await raw.json();
 
-    // 4. Modify the array
+    // 4. Modify array
     let updated;
     if (id) {
+      id = Number(id);
       updated = menu.map(item =>
-        item.id === +id
-          ? { id: +id, title, category, price: +price, img, description }
+        item.id === id
+          ? { id, title, category, price, img, description }
           : item
       );
     } else {
       const newId = Math.max(0, ...menu.map(i => i.id)) + 1;
-      updated = [...menu, { id: newId, title, category, price: +price, img, description }];
+      updated = [...menu, { id: newId, title, category, price, img, description }];
     }
 
-    // 5. Get SHA of current file from GitHub
-    const shaResponse = await fetch(
+    // 5. Get file SHA
+    const shaRes = await fetch(
       `${GITHUB_API}/repos/${process.env.GITHUB_OWNER}/${process.env.GITHUB_REPO}/contents/data/menu.json`,
-      {
-        headers: {
-          Authorization: `token ${process.env.GITHUB_TOKEN}`,
-          Accept: 'application/vnd.github.v3+json'
-        }
-      }
+      { headers: { Authorization: `token ${process.env.GITHUB_TOKEN}`, Accept: 'application/vnd.github.v3+json' } }
     );
-
-    if (!shaResponse.ok) {
-      console.error('Failed to fetch file SHA from GitHub:', await shaResponse.text());
+    if (!shaRes.ok) {
+      console.error('Failed to fetch file metadata:', await shaRes.text());
       return res.status(500).json({ error: 'Could not fetch file metadata' });
     }
+    const { sha } = await shaRes.json();
 
-    const shaData = await shaResponse.json();
-    const sha = shaData.sha;
-
-    // 6. Commit updated JSON file to GitHub
-    const commitResponse = await fetch(
+    // 6. Commit updated JSON
+    const commitRes = await fetch(
       `${GITHUB_API}/repos/${process.env.GITHUB_OWNER}/${process.env.GITHUB_REPO}/contents/data/menu.json`,
       {
         method: 'PUT',
@@ -82,21 +75,22 @@ export default async (req, res) => {
         })
       }
     );
-
-    if (!commitResponse.ok) {
-      const errorText = await commitResponse.text();
-      console.error('GitHub commit failed:', errorText);
-      return res.status(500).json({ error: 'Failed to update GitHub file' });
+    if (!commitRes.ok) {
+      const errText = await commitRes.text();
+      console.error('GitHub commit failed:', errText);
+      return res.status(500).json({ error: 'Failed to update menu.json' });
     }
 
-    // 7. Return success response
+    // 7. Respond success
     return res.status(200).json({
       success: true,
-      message: id ? `Item #${id} updated successfully` : 'New menu item added successfully'
+      message: id
+        ? `Item #${id} updated successfully`
+        : 'New menu item added successfully'
     });
 
   } catch (err) {
-    console.error('Unexpected error:', err);
+    console.error('Unexpected error in update-menu:', err);
     return res.status(500).json({ error: 'Internal Server Error' });
   }
-};
+}
