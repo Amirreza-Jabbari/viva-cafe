@@ -1,5 +1,7 @@
 // /api/get-menu.js
 export default async function handler(req, res) {
+  // Disable all caching
+  res.setHeader('Cache-Control', 'no-store, max-age=0');
   try {
     const raw = await fetch(
       `https://raw.githubusercontent.com/${process.env.GITHUB_OWNER}/${process.env.GITHUB_REPO}/main/data/menu.json`
