@@ -38,13 +38,24 @@ export default async (req, res) => {
   }
 
   // 3. Get SHA of existing file
-  const { content: { sha } } = await fetch(
+  const shaResponse = await fetch(
     `${GITHUB_API}/repos/${process.env.GITHUB_OWNER}/${process.env.GITHUB_REPO}/contents/data/menu.json`,
-    { headers: { Authorization: `token ${process.env.GITHUB_TOKEN}` } }
-  ).then(r => r.json());
+    {
+      headers: { Authorization: `token ${process.env.GITHUB_TOKEN}` }
+    }
+  );
+
+  if (!shaResponse.ok) {
+    console.error('Failed to fetch file SHA from GitHub:', await shaResponse.text());
+    return res.status(500).json({ error: 'Could not fetch file metadata' });
+  }
+
+  const shaData = await shaResponse.json();
+  const sha = shaData.sha;
+
 
   // 4. Commit updated JSON
-  await fetch(
+  const commitResponse = await fetch(
     `${GITHUB_API}/repos/${process.env.GITHUB_OWNER}/${process.env.GITHUB_REPO}/contents/data/menu.json`,
     {
       method: 'PUT',
@@ -60,5 +71,10 @@ export default async (req, res) => {
     }
   );
 
-  res.status(200).end();
+  if (!commitResponse.ok) {
+    const errorText = await commitResponse.text();
+    console.error('GitHub commit failed:', errorText);
+    return res.status(500).json({ error: 'Failed to update GitHub file' });
+  }
+
 };
