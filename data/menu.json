@@ -454,13 +454,5 @@
     "price": 91000,
     "img": "/images/item-10.jpg",
     "description": "A thick and creamy strawberry milkshake made with fresh fruit."
-  },
-  {
-    "id": 59,
-    "title": "سمپل 3",
-    "category": "پاستا و سیب سوخاری",
-    "price": 159000,
-    "img": "",
-    "description": "توضیحات سمپل 3"
   }
 ]
