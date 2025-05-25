@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>داشبورد ادمین - کافه ویوا</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @font-face {
+      font-family: 'BNazanin';
+      src: url('https://raw.githubusercontent.com/intuxicated/css-persian/master/fonts/BNazanin.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    body {
+      font-family: 'BNazanin', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                   'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    }
+    /* Modal backdrop hidden by default */
+    .modal-backdrop { display: none; }
+    .modal-backdrop.active { display: flex; }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- Login Screen -->
+  <div id="login-container" class="fixed inset-0 flex items-center justify-center bg-gray-50 z-50">
+    <div class="max-w-sm w-full bg-white p-6 rounded shadow">
+      <h2 class="text-2xl mb-4 text-center">ورود ادمین</h2>
+      <input id="pw" type="password" placeholder="رمز عبور"
+             class="w-full mb-4 p-2 border rounded text-right" />
+      <button id="login-btn"
+              class="w-full bg-yellow-500 text-white py-2 rounded hover:opacity-90 transition">
+        ورود
+      </button>
+      <p id="login-error" class="mt-2 text-red-500 text-sm text-center hidden">
+        رمز عبور اشتباه است
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Layout (hidden until login) -->
+  <div id="dashboard" class="hidden flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-white flex flex-col">
+      <div class="h-16 flex items-center justify-center border-b border-gray-700">
+        <img src="/images/logo.png" alt="لوگو" class="h-8 w-8 mr-2 rounded-full">
+        <h1 class="text-xl font-semibold">کافه ویوا</h1>
+      </div>
+      <nav class="flex-grow p-4 space-y-2">
+        <a href="#" class="flex items-center px-3 py-2 text-sm font-medium rounded-md bg-gray-700 hover:bg-gray-600">
+          داشبورد
+        </a>
+        <a href="#" class="flex items-center px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700">
+          آیتم‌های منو
+        </a>
+        <!-- other links… -->
+      </nav>
+      <div class="p-4 border-t border-gray-700">
+        <button id="logout-btn" class="flex items-center px-3 py-2 text-sm w-full hover:bg-gray-700">
+          خروج
+        </button>
+      </div>
+    </aside>
+
+    <!-- Content Area -->
+    <main class="flex-1 flex flex-col overflow-hidden">
+      <!-- Top Header -->
+      <header class="bg-white shadow p-4 flex items-center justify-between">
+        <button id="sidebar-toggle" class="md:hidden text-gray-500 hover:text-gray-700">
+          ☰
+        </button>
+        <div class="relative hidden md:block">
+          <input type="text" placeholder="جستجو..."
+                 class="px-4 py-2 pr-10 border rounded-md focus:ring-blue-500 focus:border-blue-500"/>
+          <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">🔍</span>
+        </div>
+        <div class="flex items-center space-x-4 space-x-reverse">
+          <button class="relative text-gray-500 hover:text-gray-700">
+            🔔<span class="absolute top-0 left-0 block h-2 w-2 rounded-full bg-red-500 ring-2 ring-white"></span>
+          </button>
+          <img src="https://placehold.co/32x32/e0e0e0/757575?text=A"
+               alt="پروفایل" class="w-8 h-8 rounded-full">
+        </div>
+      </header>
+
+      <!-- Stats Cards -->
+      <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-y-auto">
+        <div class="bg-white p-5 rounded-lg shadow">
+          <p class="text-sm text-gray-500">کل آیتم‌ها</p>
+          <p id="total-items" class="text-2xl font-semibold text-gray-800">–</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow">
+          <p class="text-sm text-gray-500">آیتم‌های فعال</p>
+          <p id="active-items" class="text-2xl font-semibold text-gray-800">–</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow">
+          <p class="text-sm text-gray-500">در انتظار تایید</p>
+          <p id="pending-items" class="text-2xl font-semibold text-gray-800">–</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow">
+          <p class="text-sm text-gray-500">آیتم‌های ناموجود</p>
+          <p id="inactive-items" class="text-2xl font-semibold text-gray-800">–</p>
+        </div>
+      </div>
+
+      <!-- Menu Table -->
+      <div class="p-6 bg-white shadow rounded-lg mx-6 mb-6 overflow-x-auto">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-lg font-semibold">لیست آیتم‌های منو</h2>
+          <button id="openModalBtn"
+                  class="flex items-center bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">
+            افزوردن آیتم جدید
+          </button>
+        </div>
+        <table class="min-w-full divide-y divide-gray-200 text-right">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="px-4 py-2">تصویر</th>
+              <th class="px-4 py-2">عنوان</th>
+              <th class="px-4 py-2">دسته‌بندی</th>
+              <th class="px-4 py-2">قیمت</th>
+              <th class="px-4 py-2">عملیات</th>
+            </tr>
+          </thead>
+          <tbody id="menu-rows" class="bg-white divide-y divide-gray-200">
+            <!-- JS will inject rows here -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <!-- Add/Edit Modal -->
+  <div id="itemModal" class="modal-backdrop fixed inset-0 bg-gray-600 bg-opacity-50 items-center justify-center z-50">
+    <div class="bg-white p-6 rounded shadow-lg w-full max-w-lg">
+      <div class="flex justify-between items-center border-b pb-3">
+        <p id="modal-title" class="text-xl font-semibold">افزودن آیتم</p>
+        <button id="closeModalBtn" class="text-gray-600 hover:text-gray-900">✕</button>
+      </div>
+      <form id="item-form" class="mt-4 space-y-4">
+        <input name="id" type="hidden"/>
+        <div>
+          <label class="block text-sm mb-1">عنوان</label>
+          <input name="title" class="w-full p-2 border rounded"/>
+        </div>
+        <div>
+          <label class="block text-sm mb-1">دسته‌بندی</label>
+          <select name="category" class="w-full p-2 border rounded">
+            <option value="">انتخاب …</option>
+            <option>پاستا و سیب سوخاری</option>
+            <option>بار سرد</option>
+            <option>بر پایه قهوه و شیر</option>
+            <option>چای و دمنوش</option>
+            <option>آیس کافی</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm mb-1">قیمت (تومان)</label>
+          <input name="price" type="number" class="w-full p-2 border rounded"/>
+        </div>
+        <div>
+          <label class="block text-sm mb-1">مسیر تصویر</label>
+          <input name="img" class="w-full p-2 border rounded" placeholder="/images/…"/>
+        </div>
+        <div>
+          <label class="block text-sm mb-1">توضیحات</label>
+          <textarea name="description" rows="3" class="w-full p-2 border rounded"></textarea>
+        </div>
+        <div class="flex justify-end space-x-2 space-x-reverse">
+          <button type="button" id="cancelModalBtn"
+                  class="px-4 py-2 border rounded hover:bg-gray-100">انصراف</button>
+          <button type="submit"
+                  class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">ذخیره</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin logic -->
+  <script src="/admin.js"></script>
+</body>
+</html>

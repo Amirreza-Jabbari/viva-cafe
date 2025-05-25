@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>منوی کافه ویوا</title>
+
+  <!-- Custom Font + Scrollbar Styles -->
+  <style>
+    @font-face {
+      font-family: 'BNazanin';
+      src: url('https://raw.githubusercontent.com/intuxicated/css-persian/master/fonts/BNazanin.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    body {
+      font-family: 'BNazanin', ui-sans-serif, system-ui, -apple-system,
+                   BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+                   Arial, 'Noto Sans', sans-serif;
+      --sb-track-color: #e2d6b8;
+      --sb-thumb-color: #ffab4d;
+      --sb-size: 11px;
+    }
+    body::-webkit-scrollbar { width: var(--sb-size); }
+    body::-webkit-scrollbar-track {
+      background: var(--sb-track-color);
+      border-radius: 19px;
+    }
+    body::-webkit-scrollbar-thumb {
+      background: var(--sb-thumb-color);
+      border-radius: 19px;
+      border: 2px solid #b39549;
+    }
+    @supports not selector(::-webkit-scrollbar) {
+      body { scrollbar-color: var(--sb-thumb-color) var(--sb-track-color); }
+    }
+  </style>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#EAE4D5] text-gray-800">
+  <main class="max-w-5xl mx-auto p-4">
+    <!-- Header with clickable logo -->
+    <header class="text-center mb-8">
+      <a href="/admin.html" class="inline-block">
+        <img
+          src="/images/logo.png"
+          alt="لوگو کافه ویوا"
+          class="mx-auto w-32 h-auto mb-4 hover:opacity-80 transition"
+        />
+      </a>
+      <div class="mt-2 w-20 h-1 bg-yellow-500 mx-auto"></div>
+    </header>
+
+    <!-- Category Filter Buttons -->
+    <nav class="flex flex-wrap justify-center gap-3 mb-8">
+      <button data-category="all" class="category-btn px-4 py-2 border rounded-lg transition
+               border-yellow-500 bg-gray-200 text-yellow-500
+               hover:bg-yellow-500 hover:text-white">
+        همه
+      </button>
+      <button data-category="پاستا و سیب سوخاری" class="category-btn px-4 py-2 border rounded-lg transition
+               border-yellow-500 bg-gray-200 text-yellow-500
+               hover:bg-yellow-500 hover:text-white">
+        پاستا و سیب سوخاری
+      </button>
+      <button data-category="بار سرد" class="category-btn px-4 py-2 border rounded-lg transition
+               border-yellow-500 bg-gray-200 text-yellow-500
+               hover:bg-yellow-500 hover:text-white">
+        بار سرد
+      </button>
+      <button data-category="بر پایه قهوه و شیر" class="category-btn px-4 py-2 border rounded-lg transition
+               border-yellow-500 bg-gray-200 text-yellow-500
+               hover:bg-yellow-500 hover:text-white">
+        بر پایه قهوه و شیر
+      </button>
+      <button data-category="چای و دمنوش" class="category-btn px-4 py-2 border rounded-lg transition
+               border-yellow-500 bg-gray-200 text-yellow-500
+               hover:bg-yellow-500 hover:text-white">
+        چای و دمنوش
+      </button>
+      <button data-category="آیس کافی" class="category-btn px-4 py-2 border rounded-lg transition
+               border-yellow-500 bg-gray-200 text-yellow-500
+               hover:bg-yellow-500 hover:text-white">
+        آیس کافی
+      </button>
+    </nav>
+
+    <!-- Menu Items Grid -->
+    <section id="menu-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></section>
+  </main>
+
+  <!-- Frontend Logic -->
+  <script src="/app.js"></script>
+</body>
+</html>

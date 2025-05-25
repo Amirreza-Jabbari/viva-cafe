@@ -1,0 +1,28 @@
+{
+  "name": "cafe-viva-menu",
+  "version": "1.0.0",
+  "description": "Pure JS Cafe Viva menu with admin dashboard and GitHub persistence",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx vercel dev",
+    "start": "npx vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "keywords": [
+    "vercel",
+    "serverless",
+    "github-api",
+    "vanilla-js",
+    "tailwindcss"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.0",
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "vercel": "^28.0.0"
+  }
+}
