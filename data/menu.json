@@ -44,7 +44,7 @@
     "title": "لته",
     "category": "بار گرم",
     "price": 107000,
-    "img": "/images/dedai.jpg",
+    "img": "/images/late.jpg",
     "description": "اسپرسو با مقدار بیشتر شیر بخار داده‌شده برای طعمی ملایم و خامه‌ای."
   },
   {
@@ -236,7 +236,7 @@
     "title": "دمنوش (مراکشی، رازیانه، بهارنارنج،...)",
     "category": "چای و دمنوش",
     "price": 86000,
-    "img": "/images/damnoosh.jpeg",
+    "img": "/images/damnoosh.jpg",
     "description": "A thick and creamy strawberry milkshake made with fresh fruit."
   },
   {
@@ -300,7 +300,7 @@
     "title": "آیس چاکلت",
     "category": "بار سرد بر پایه قهوه",
     "price": 119000,
-    "img": "/images/ice-chock.jpg",
+    "img": "/images/ice-chock.jpeg",
     "description": "نوشیدنی شکلاتی سرد با شیر و یخ برای تجربه‌ای خنک و شیرین."
   },
   {
@@ -404,7 +404,7 @@
     "title": "فراپاچینو",
     "category": "شیک ها",
     "price": 237000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/frapacino.jpg",
     "description": "شیکی سرد و خامه‌ای با طعم ملایم قهوه و تکه‌های شکلات."
   },
   {
@@ -412,7 +412,7 @@
     "title": "فراپا",
     "category": "شیک ها",
     "price": 229000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/frappe.webp",
     "description": "شیکی سرد با بافتی سبک و طعمی خنک برای روزهای گرم."
   },
   {
@@ -420,7 +420,7 @@
     "title": "نوتلا",
     "category": "شیک ها",
     "price": 261000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/notella.webp",
     "description": "شیکی غنی و خامه‌ای با طعم دلنشین نوتلا و خامه."
   },
   {
@@ -428,7 +428,7 @@
     "title": "کیت کت",
     "category": "شیک ها",
     "price": 222000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/kitkat.jpg",
     "description": "شیکی سرد با تکه‌های بیسکوییت کیت‌کت برای بافتی ترد و خوشمزه."
   },
   {
@@ -436,7 +436,7 @@
     "title": "کیت کت نوتلا",
     "category": "شیک ها",
     "price": 232000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/kitkatnotella.jpg",
     "description": "شیکی ترکیبی از نوتلا و تکه‌های کیت‌کت برای طعمی دوگانه و لذیذ."
   },
   {
@@ -444,7 +444,7 @@
     "title": "اورئو",
     "category": "شیک ها",
     "price": 197000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/oreo.jpg",
     "description": "شیکی خامه‌ای با بیسکوییت اورئو برای طعمی شیرین و کاربردی."
   },
   {
@@ -452,7 +452,7 @@
     "title": "وانیل",
     "category": "شیک ها",
     "price": 178000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/vanil.jpg",
     "description": "شیکی ساده وانیلی با بافتی نرم و طعم خالص وانیل."
   },
   {
@@ -460,7 +460,7 @@
     "title": "شکلات",
     "category": "شیک ها",
     "price": 189000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/shokolat.jpg",
     "description": "شیکی غلیظ و شکلاتی با خامه فراوان برای دوستداران شکلات."
   },
   {
@@ -468,7 +468,7 @@
     "title": "توت فرنگی",
     "category": "شیک ها",
     "price": 217000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/tootfarangi.png",
     "description": "شیکی تازه با پوره توت‌فرنگی برای طعمی میوه‌ای و لطیف."
   },
   {
@@ -476,7 +476,7 @@
     "title": "بادام زمینی",
     "category": "شیک ها",
     "price": 207000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/badam.jpg",
     "description": "شیکی خامه‌ای با طعم کره بادام‌زمینی و بافتی مخملی."
   },
   {
@@ -484,7 +484,7 @@
     "title": "لوتوس",
     "category": "شیک ها",
     "price": 189000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/lotus.jpg",
     "description": "شیکی با بیسکوییت لوتوس خردشده برای طعمی شیرین و کاراملی."
   },
   {
@@ -492,7 +492,7 @@
     "title": "کارامل",
     "category": "شیک ها",
     "price": 248000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/karamel.jpg",
     "description": "شیکی غنی با سس کارامل و خامه برای تجربه‌ای شیرین و دلپذیر."
   },
   {
@@ -500,7 +500,7 @@
     "title": "ترامیسو",
     "category": "شیک ها",
     "price": 251000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/tiramiso.jpg",
     "description": "شیکی الهام‌گرفته از دسر تیرامیسو با بیسکوییت لیدی‌فینگر و خامه."
   },
   {
@@ -508,7 +508,7 @@
     "title": "اسنیکرز",
     "category": "شیک ها",
     "price": 218000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/snickers.jpg",
     "description": "شیکی با طعم اسنیکرز شامل شکلات، کره بادام‌زمینی و کارامل."
   },
   {
@@ -516,7 +516,7 @@
     "title": "موز و شکلات",
     "category": "شیک ها",
     "price": 206000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/moz-chock.jpg",
     "description": "شیکی با ترکیب موز تازه و شکلات غلیظ برای طعمی دلچسب."
   },
   {
@@ -524,7 +524,7 @@
     "title": "موز",
     "category": "شیک ها",
     "price": 209000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/moz.jpg",
     "description": "شیکی ساده وانیلی با پوره موز تازه برای بافتی نرم و میوه‌ای."
   },
   {
@@ -532,7 +532,7 @@
     "title": "قهوه",
     "category": "شیک ها",
     "price": 198000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/ghahve.jpg",
     "description": "شیکی سرد با طعم غلیظ قهوه و بافتی خامه‌ای برای انرژی‌بخشی."
   },
   {
@@ -612,7 +612,7 @@
     "title": "نیمرو تک نفره",
     "category": "صبحانه",
     "price": 60000,
-    "img": "/images/mack_and_cheese.jpg",
+    "img": "/images/nimro1.jpg",
     "description": "تخم‌مرغ نیمرو ساده با کناره‌ی نرم و زرده‌ی روان."
   },
   {
@@ -620,7 +620,7 @@
     "title": "نیمرو دو نفره",
     "category": "صبحانه",
     "price": 85000,
-    "img": "/images/mack_and_cheese.jpg",
+    "img": "/images/nimro1.jpg",
     "description": "دو عدد نیمرو تازه با کناره‌های طلایی و زرده لطیف."
   },
   {
@@ -628,7 +628,7 @@
     "title": "املت مارینا تک نفره",
     "category": "صبحانه",
     "price": 70000,
-    "img": "/images/mack_and_cheese.jpg",
+    "img": "/images/marina.jpg",
     "description": "املت مارینا با سبزیجات تازه و طعم ملایم، مناسب تک نفر."
   },
   {
@@ -636,7 +636,7 @@
     "title": "املت مارینا دو نفره",
     "category": "صبحانه",
     "price": 118000,
-    "img": "/images/mack_and_cheese.jpg",
+    "img": "/images/marina.jpg",
     "description": "املت مارینا بزرگ با سبزیجات متنوع برای دو نفر."
   },
   {
@@ -644,31 +644,31 @@
     "title": "سوسیس املت تک نفره",
     "category": "صبحانه",
     "price": 90000,
-    "img": "/images/mack_and_cheese.jpg",
+    "img": "/images/sosisomlet.jpg",
     "description": "املت خوش‌طعم با تکه‌های سوسیس تازه برای صبحانه تک نفر."
   },
   {
     "id": 82,
-    "title": "نیمرو قیصاوا تک نفره",
+    "title": "نیمرو قیساوا تک نفره",
     "category": "صبحانه",
     "price": 80000,
-    "img": "/images/mack_and_cheese.jpg",
-    "description": "نیمروی قیصاوا با طعم اصیل و بافت نرم، مناسب تک نفر."
+    "img": "/images/ghisava.jpg",
+    "description": "نیمروی قیساوا با طعم اصیل و بافت نرم، مناسب تک نفر."
   },
   {
     "id": 83,
-    "title": "نیمرو قیصاوا دو نفره",
+    "title": "نیمرو قیساوا دو نفره",
     "category": "صبحانه",
     "price": 140000,
-    "img": "/images/mack_and_cheese.jpg",
-    "description": "دو عدد نیمرو قیصاوا با طعم غنی و بافت نرم برای دو نفر."
+    "img": "/images/ghisava.jpg",
+    "description": "دو عدد نیمرو قیساوا با طعم غنی و بافت نرم برای دو نفر."
   },
   {
     "id": 84,
     "title": "شاپوری تک نفره",
     "category": "صبحانه",
     "price": 110000,
-    "img": "/images/mack_and_cheese.jpg",
+    "img": "/images/shapoori.jpg",
     "description": "شاپوری خوش‌طعم با نان محلی و پنیر مخصوص برای تک نفر."
   },
   {
@@ -676,7 +676,7 @@
     "title": "املت گوجه تک نفره",
     "category": "صبحانه",
     "price": 7000,
-    "img": "/images/mack_and_cheese.jpg",
+    "img": "/images/omlet-gojefarangi.jpg",
     "description": "املت ساده با گوجه تازه و ادویه، مناسب تک نفر."
   },
   {
@@ -684,7 +684,7 @@
     "title": "املت گوجه دو نفره",
     "category": "صبحانه",
     "price": 90000,
-    "img": "/images/mack_and_cheese.jpg",
+    "img": "/images/omlet-gojefarangi.jpg",
     "description": "املت گوجه بزرگ با گوجه‌های خوش‌طعم برای دو نفر."
   },
   {
@@ -692,7 +692,7 @@
     "title": "املت آلفردو",
     "category": "صبحانه",
     "price": 98000,
-    "img": "/images/mack_and_cheese.jpg",
+    "img": "/images/alfredo.jpg",
     "description": "املت آلفردو با سس کرمی و پنیر پارمزان برای طعمی لوکس."
   },
   {
