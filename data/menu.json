@@ -612,7 +612,7 @@
     "title": "نیمرو تک نفره",
     "category": "صبحانه",
     "price": 60000,
-    "img": "/images/nimro1.jpg",
+    "img": "/images/viva.jpg",
     "description": "تخم‌مرغ نیمرو ساده با کناره‌ی نرم و زرده‌ی روان."
   },
   {
@@ -620,7 +620,7 @@
     "title": "نیمرو دو نفره",
     "category": "صبحانه",
     "price": 85000,
-    "img": "/images/nimro1.jpg",
+    "img": "/images/viva.jpg",
     "description": "دو عدد نیمرو تازه با کناره‌های طلایی و زرده لطیف."
   },
   {
@@ -628,7 +628,7 @@
     "title": "املت مارینا تک نفره",
     "category": "صبحانه",
     "price": 70000,
-    "img": "/images/marina.jpg",
+    "img": "/images/viva.jpg",
     "description": "املت مارینا با سبزیجات تازه و طعم ملایم، مناسب تک نفر."
   },
   {
@@ -636,7 +636,7 @@
     "title": "املت مارینا دو نفره",
     "category": "صبحانه",
     "price": 118000,
-    "img": "/images/marina.jpg",
+    "img": "/images/viva.jpg",
     "description": "املت مارینا بزرگ با سبزیجات متنوع برای دو نفر."
   },
   {
@@ -644,7 +644,7 @@
     "title": "سوسیس املت تک نفره",
     "category": "صبحانه",
     "price": 90000,
-    "img": "/images/sosisomlet.jpg",
+    "img": "/images/viva.jpg",
     "description": "املت خوش‌طعم با تکه‌های سوسیس تازه برای صبحانه تک نفر."
   },
   {
@@ -652,7 +652,7 @@
     "title": "نیمرو قیساوا تک نفره",
     "category": "صبحانه",
     "price": 80000,
-    "img": "/images/ghisava.jpg",
+    "img": "/images/viva.jpg",
     "description": "نیمروی قیساوا با طعم اصیل و بافت نرم، مناسب تک نفر."
   },
   {
@@ -660,7 +660,7 @@
     "title": "نیمرو قیساوا دو نفره",
     "category": "صبحانه",
     "price": 140000,
-    "img": "/images/ghisava.jpg",
+    "img": "/images/viva.jpg",
     "description": "دو عدد نیمرو قیساوا با طعم غنی و بافت نرم برای دو نفر."
   },
   {
@@ -668,7 +668,7 @@
     "title": "شاپوری تک نفره",
     "category": "صبحانه",
     "price": 110000,
-    "img": "/images/shapoori.jpg",
+    "img": "/images/viva.jpg",
     "description": "شاپوری خوش‌طعم با نان محلی و پنیر مخصوص برای تک نفر."
   },
   {
@@ -676,7 +676,7 @@
     "title": "املت گوجه تک نفره",
     "category": "صبحانه",
     "price": 7000,
-    "img": "/images/omlet-gojefarangi.jpg",
+    "img": "/images/viva.jpg",
     "description": "املت ساده با گوجه تازه و ادویه، مناسب تک نفر."
   },
   {
@@ -684,7 +684,7 @@
     "title": "املت گوجه دو نفره",
     "category": "صبحانه",
     "price": 90000,
-    "img": "/images/omlet-gojefarangi.jpg",
+    "img": "/images/viva.jpg",
     "description": "املت گوجه بزرگ با گوجه‌های خوش‌طعم برای دو نفر."
   },
   {
@@ -692,7 +692,7 @@
     "title": "املت آلفردو",
     "category": "صبحانه",
     "price": 98000,
-    "img": "/images/alfredo.jpg",
+    "img": "/images/viva.jpg",
     "description": "املت آلفردو با سس کرمی و پنیر پارمزان برای طعمی لوکس."
   },
   {
@@ -700,7 +700,7 @@
     "title": "آبمیوه اسکلتی",
     "category": "نوشیدنی های آماده",
     "price": 110000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "نوشیدنی خنک تهیه‌شده از میوه‌های تازه فشرده برای طعمی طبیعی و پرانرژی."
   },
   {
@@ -708,7 +708,7 @@
     "title": "آب گازدار فریز",
     "category": "نوشیدنی های آماده",
     "price": 120000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "آب گازدار با طعمی خنک و ملایم برای رفع عطش در روزهای گرم."
   },
   {
@@ -716,7 +716,7 @@
     "title": "بابل تی چین چین",
     "category": "نوشیدنی های آماده",
     "price": 218000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "چای سرد با توپک‌های آرایشی (تاپیوکا) برای بافتی جویدنی و طعمی شیرین."
   },
   {
@@ -724,7 +724,7 @@
     "title": "نوشابه کوکا اورئو",
     "category": "نوشیدنی های آماده",
     "price": 158000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "نوشابه گازدار با طعم بیسکوییت اورئو برای تجربه‌ای منحصربه‌فرد."
   },
   {
@@ -732,7 +732,7 @@
     "title": "آیس کافی پیو پیو",
     "category": "نوشیدنی های آماده",
     "price": 147000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "قهوه سرد بطری‌شده از برند پیو پیو با طعمی ملایم و خنک."
   },
   {
@@ -740,7 +740,7 @@
     "title": "آیس کافی پیو پیو قوطی",
     "category": "نوشیدنی های آماده",
     "price": 125000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "قهوه سرد در قوطی پیو پیو برای حمل آسان و طعمی فوری."
   },
   {
@@ -748,7 +748,7 @@
     "title": "انرژی زا مانستر",
     "category": "نوشیدنی های آماده",
     "price": 120000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "نوشیدنی انرژی‌زا مانستر برای افزایش هوشیاری و رفع خستگی."
   },
   {
@@ -756,7 +756,7 @@
     "title": "کوکتل جین",
     "category": "نوشیدنی های آماده",
     "price": 116000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "نوشیدنی ترکیبی مبتنی بر جین با طعم مرکبات و نت‌های گیاهی."
   },
   {
@@ -764,7 +764,7 @@
     "title": "رایمون فرش",
     "category": "نوشیدنی های آماده",
     "price": 85000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "آبمیوه خنک برند رایمون با طعمی طبیعی از میوه‌های تازه."
   },
   {
@@ -772,7 +772,7 @@
     "title": "آب پریر انرژی زا",
     "category": "نوشیدنی های آماده",
     "price": 98000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "آب گازدار انرژی‌زا پریر برای تجدید قوا و رفع خستگی."
   },
   {
@@ -780,7 +780,7 @@
     "title": "آبمیوه وینات",
     "category": "نوشیدنی های آماده",
     "price": 95000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "آبمیوه طبیعی وینات با رایحه‌ای غنی از میوه‌های تابستانی."
   },
   {
@@ -788,7 +788,7 @@
     "title": "شیر سویا",
     "category": "نوشیدنی های آماده",
     "price": 145000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "شیر گیاهی سویا با طعمی ملایم و مناسب برای گیاه‌خواران."
   },
   {
@@ -796,7 +796,7 @@
     "title": "جنسینگ",
     "category": "نوشیدنی های آماده",
     "price": 238000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "نوشیدنی گیاهی حاوی عصاره جنسینگ برای افزایش انرژی طبیعی."
   },
   {
@@ -804,7 +804,7 @@
     "title": "سودا استار",
     "category": "نوشیدنی های آماده",
     "price": 65000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "نوشابه گازدار برند استار با طعمی ملایم و حباب‌های فراوان."
   },
   {
@@ -812,7 +812,7 @@
     "title": "هاینیکن",
     "category": "نوشیدنی های آماده",
     "price": 127000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "آبجوی هاینیکن با طعمی معتدل و خنک برای لحظات استراحت."
   },
   {
@@ -820,7 +820,7 @@
     "title": "آبجو بدون الکل زایرینگر",
     "category": "نوشیدنی های آماده",
     "price": 105000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "آبجوی غیرالکلی زایرینگر با عطر ملایم و بدون الکل."
   },
   {
@@ -828,7 +828,7 @@
     "title": "آبجو بدون الکل توبورگ",
     "category": "نوشیدنی های آماده",
     "price": 105000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "آبجوی غیرالکلی برند توبورگ."
   },
   {
@@ -836,7 +836,7 @@
     "title": "آبجو بدون الکل بالتیکا",
     "category": "نوشیدنی های آماده",
     "price": 110000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "آبجوی غیرالکلی بالتیکا با بویی ملایم و بدون الکل."
   },
   {
@@ -844,7 +844,7 @@
     "title": "ردبول",
     "category": "نوشیدنی های آماده",
     "price": 70000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "نوشیدنی انرژی‌زا ردبول با ترکیبی از کافئین و ویتامین‌ها."
   },
   {
@@ -852,7 +852,7 @@
     "title": "هایپ شات",
     "category": "نوشیدنی های آماده",
     "price": 60000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "شات انرژی‌زا هایپ شات برای افزایش فوری تمرکز و انرژی."
   },
   {
@@ -860,7 +860,7 @@
     "title": "آبجو باجیکا",
     "category": "نوشیدنی های آماده",
     "price": 75000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "آبجوی باجیکا با طعمی سبُک و مناسب برای سرو سرد."
   },
   {
@@ -868,7 +868,7 @@
     "title": "لیموناد شیشه ای",
     "category": "نوشیدنی های آماده",
     "price": 35000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "لیموناد تازه در بطری شیشه‌ای با طعمی ترش و شیرین."
   },
   {
@@ -876,7 +876,7 @@
     "title": "دوغ",
     "category": "نوشیدنی های آماده",
     "price": 40000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "دوغ سنتی با طعمی ملایم از ماست و کشک، مناسب با غذا."
   },
   {
@@ -884,7 +884,7 @@
     "title": "آب معدنی",
     "category": "نوشیدنی های آماده",
     "price": 10000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "آب معدنی خالص و بدون گاز برای رفع تشنگی."
   },
   {
@@ -892,7 +892,7 @@
     "title": "ایستک استوایی",
     "category": "نوشیدنی های آماده",
     "price": 45000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "چای سرد طعم‌دار با رایحه میوه‌های استوایی برای حس خنکی."
   },
   {
@@ -900,7 +900,7 @@
     "title": "چیز کیک اورئو",
     "category": "دسر و کیک ها",
     "price": 98000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "چیزکیک خامه‌ای با بیسکوییت اورئو برای طعمی کلاسیک و دلپذیر."
   },
   {
@@ -908,7 +908,7 @@
     "title": "چیز کیک لوتوس",
     "category": "دسر و کیک ها",
     "price": 98000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "چیزکیک با بیسکوییت لوتوس خردشده برای طعمی شیرین و کاراملی."
   },
   {
@@ -916,7 +916,7 @@
     "title": "کیک دبل چاکلت",
     "category": "دسر و کیک ها",
     "price": 98000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "کیک شکلاتی غنی با دو لایه شکلات برای دوستداران شکلات."
   },
   {
@@ -924,7 +924,7 @@
     "title": "جار کیک شکلاتی",
     "category": "دسر و کیک ها",
     "price": 98000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "کیک شکلاتی سروشده در شیشهٔ کوچک برای قابل حمل بودن."
   },
   {
@@ -932,7 +932,7 @@
     "title": "کرم بروله",
     "category": "دسر و کیک ها",
     "price": 108000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "دسر فرانسوی با لایه کاراملی شده روی کرم خامه‌ای لطیف."
   },
   {
@@ -940,7 +940,7 @@
     "title": "چیز کیک سن سباستین",
     "category": "دسر و کیک ها",
     "price": 107000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "چیزکیک ضخیم با رویه کاراملی شده‌ای تیره برای طعمی منحصر."
   },
   {
@@ -948,7 +948,7 @@
     "title": "کیک سه شیر",
     "category": "دسر و کیک ها",
     "price": 98000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "کیک مرطوب آغشته به سه نوع شیر (شیر گاو، شیر تغلیظ‌شده، خامه)."
   },
   {
@@ -956,7 +956,7 @@
     "title": "شکلات خیس",
     "category": "دسر و کیک ها",
     "price": 98000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "کیک شکلاتی مرطوب که با سس شکلات گرم سرو می‌شود."
   },
   {
@@ -964,7 +964,7 @@
     "title": "کیک برزیلی",
     "category": "دسر و کیک ها",
     "price": 118000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "کیک سبک و مرطوب برزیلی با طعم ملایم نارگیل و شیر."
   },
   {
@@ -972,7 +972,7 @@
     "title": "رول نیویورکی",
     "category": "دسر و کیک ها",
     "price": 120000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "رول کیکی نرم به سبک نیویورک با پرکردن شکلاتی یا پنیر."
   },
   {
@@ -980,7 +980,7 @@
     "title": "ترامیسو",
     "category": "دسر و کیک ها",
     "price": 107000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "دسر ایتالیایی با لایه‌های بیسکوییت آغشته به قهوه و ماسکارپونه."
   },
   {
@@ -988,7 +988,7 @@
     "title": "کروسان",
     "category": "دسر و کیک ها",
     "price": 130000,
-    "img": "/images/mexicano.jpg",
+    "img": "/images/viva.jpg",
     "description": "شیرینی فرانسوی پفی با لایه‌های کره‌ای نرم و طعمی ملایم."
   }
 ]
