@@ -30,14 +30,14 @@ function displayItems(items) {
       </div>
       <!-- Content -->
       <div class="p-5 flex flex-col flex-grow">
-        <h2 class="text-2xl font-bold mb-1 text-[#5a5549] group-hover:text-yellow-600 transition-colors duration-300">
+        <h2 class="text-[34px] font-bold mb-1 text-[#5a5549] group-hover:text-yellow-600 transition-colors duration-300">
           ${item.title}
         </h2>
-        <p class="text-text-xl text-gray-500 flex-grow mb-4 line-clamp-3">
+        <p class="text-xl text-gray-500 flex-grow mb-4 line-clamp-3">
           ${item.description}
         </p>
         <div class="flex items-center justify-between mt-auto">
-          <span class="text-xl font-extrabold text-yellow-500">
+          <span class="text-[30px] font-extrabold text-yellow-500">
             ${item.price.toLocaleString()} تومان
           </span>
         </div>
