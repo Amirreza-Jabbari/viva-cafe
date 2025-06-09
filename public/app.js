@@ -24,16 +24,16 @@ function displayItems(items) {
                     group-hover:scale-105 transition-transform duration-500"/>
         <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-40 pointer-events-none"></div>
         <span class="absolute top-3 left-3 bg-gradient-to-r from-yellow-400 to-yellow-600
-                      text-white text-xs font-semibold uppercase px-3 py-1 rounded-full drop-shadow-lg">
+                      text-white text-base font-semibold uppercase px-3 py-1 rounded-full drop-shadow-lg">
           ${item.category}
         </span>
       </div>
       <!-- Content -->
       <div class="p-5 flex flex-col flex-grow">
-        <h2 class="text-xl font-bold mb-1 text-[#5a5549] group-hover:text-yellow-600 transition-colors duration-300">
+        <h2 class="text-3xl font-bold mb-1 text-[#5a5549] group-hover:text-yellow-600 transition-colors duration-300">
           ${item.title}
         </h2>
-        <p class="text-sm text-gray-500 flex-grow mb-4 line-clamp-3">
+        <p class="text-2xl text-gray-500 flex-grow mb-4 line-clamp-3">
           ${item.description}
         </p>
         <div class="flex items-center justify-between mt-auto">
