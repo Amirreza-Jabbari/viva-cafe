@@ -101,7 +101,7 @@
     "category": "نوشیدنی های گرم",
     "price": 92000,
     "img": "/images/nescafe.png",
-    "description": "قهوه فوری با طعم ملایم و دلنشین برای روزهای پرمشغله."
+    "description": "نسکافه با طعم ملایم و دلنشین برای روزهای پرمشغله."
   },
   {
     "id": 14,
@@ -165,7 +165,7 @@
     "category": "نوشیدنی های گرم",
     "price": 117000,
     "img": "/images/crac.jpg",
-    "description": "چای سیاه دمی با طعمی قوی و عطری لطیف که انرژی می‌بخشد."
+    "description": "چای هندی با طعم اسپایسی و بافت کرمی برای لحظات اصیل"
   },
   {
     "id": 21,
@@ -180,16 +180,16 @@
     "title": "شیر گرم",
     "category": "نوشیدنی های گرم",
     "price": 60000,
-    "img": "/images/shircacao.webp",
-    "description": "شیر داغ غلیظ با کاکائوی اصیل برای طعمی ساده و دلنشین."
+    "img": "/images/warm-milk.jpg",
+    "description": "شیر تازه‌ی داغ که با حرارت ملایم تا نقطه جوش رسانده شده، با طعمی ملایم و آرام‌بخش برای لحظاتی که به گرمای دلنشین نیاز دارید."
   },
   {
     "id": 21,
-    "title": "شیر عسل",
+    "title": "شیر عسلی",
     "category": "نوشیدنی های گرم",
     "price": 79000,
-    "img": "/images/shircacao.webp",
-    "description": "شیر داغ غلیظ با کاکائوی اصیل برای طعمی ساده و دلنشین."
+    "img": "/images/milk-honey.jpg",
+    "description": "شیر گرم مخلوط با عسل طبیعی و خوش‌عطر که طعمی شیرین و دلپذیر به آن می‌بخشد. ترکیبی مناسب برای تسکین گلو و افزایش انرژی در طول روز."
   },
   {
     "id": 22,
@@ -229,7 +229,7 @@
     "category": "چای و دمنوش",
     "price": 45000,
     "img": "/images/chay1.jpeg",
-    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+    "description": "یک فنجان چای سیاه پررنگ و معطر مناسب برای یک نفر، با طعمی دلنشین و کلاسیک."
   },
   {
     "id": 27,
@@ -237,7 +237,7 @@
     "category": "چای و دمنوش",
     "price": 84000,
     "img": "/images/chay2.jpeg",
-    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+    "description": "قوری چای سیاه با رنگ غنی و عطری مطبوع برای دو نفر، ایده‌آل برای عصرانه‌های دونفره."
   },
   {
     "id": 28,
@@ -245,7 +245,7 @@
     "category": "چای و دمنوش",
     "price": 172000,
     "img": "/images/chay2.jpeg",
-    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+    "description": "چای سیاه خوش‌بو و پرطراوت در حجم مناسب برای چهار نفر، مناسب دورهمی‌های دوستانه."
   },
   {
     "id": 29,
@@ -253,15 +253,15 @@
     "category": "چای و دمنوش",
     "price": 60000,
     "img": "/images/chay2.jpeg",
-    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+    "description": "چای سیاه غنی آمیخته با زعفرانی ناب که رنگ و عطری طلایی به هر جرعه می‌بخشد."
   },
   {
     "id": 30,
-    "title": "دمنوش (مراکشی، رازیانه، بهارنارنج،...)",
+    "title": "دمنوش (مراکشی، رازیانه، بهارنارنج,...)",
     "category": "چای و دمنوش",
     "price": 86000,
     "img": "/images/damnoosh.jpg",
-    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+    "description": "مخلوط گیاهان آرام‌بخش؛ از رازیانه و بهارنارنج تا ترکیبات مراکشی برای رفع استرس و آرامش ذهن."
   },
   {
     "id": 31,
@@ -269,7 +269,7 @@
     "category": "چای و دمنوش",
     "price": 85000,
     "img": "/images/damnoosh.jpg",
-    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+    "description": "فرمول ویژه‌ای از گل‌های معطر برای تقویت روحیه و افزایش حس تازگی."
   },
   {
     "id": 32,
@@ -277,7 +277,7 @@
     "category": "چای و دمنوش",
     "price": 88000,
     "img": "/images/damnoosh.jpg",
-    "description": "A thick and creamy strawberry milkshake made with fresh fruit."
+    "description": "مخلوطی از گیاهان درمانی با خواص آرام‌بخش و گوارایی طبیعی."
   },
   {
     "id": 33,
@@ -285,7 +285,7 @@
     "category": "چای و دمنوش",
     "price": 87000,
     "img": "/images/damnoosh.jpg",
-    "description": "دونفره."
+    "description": "دمنوش گیاهی با رایحه‌ای دلنشین و خاص."
   },
   {
     "id": 33,
@@ -293,7 +293,7 @@
     "category": "چای و دمنوش",
     "price": 87000,
     "img": "/images/damnoosh.jpg",
-    "description": "دونفره."
+    "description": "ترکیبی متنوع از گل گاوزبان، بادرنجبویه و بابونه برای طعمی متفاوت و آرامش‌بخش."
   },
   {
     "id": 34,
@@ -649,11 +649,35 @@
   },
   {
     "id": 81,
-    "title": "سوسیس املت تک نفره",
+    "title": "سوسیس تخم مرغ تک نفره",
     "category": "صبحانه",
     "price": 117000,
     "img": "/images/viva.jpg",
-    "description": "املت خوش‌طعم با تکه‌های سوسیس تازه برای صبحانه تک نفر."
+    "description": "سوسیس و تخم مرغ خوش‌طعم و تازه برای صبحانه تک نفر."
+  },
+  {
+    "id": 81,
+    "title": "سوسیس تخم مرغ دو نفره",
+    "category": "صبحانه",
+    "price": 157000,
+    "img": "/images/viva.jpg",
+    "description": "سوسیس و تخم مرغ خوش‌طعم و تازه برای صبحانه دو نفر."
+  },
+  {
+    "id": 81,
+    "title": "املت تک نفره",
+    "category": "صبحانه",
+    "price": 123000,
+    "img": "/images/viva.jpg",
+    "description": "املت خوش‌طعم و تازه برای صبحانه تک نفر."
+  },
+  {
+    "id": 81,
+    "title": "املت دو نفره",
+    "category": "صبحانه",
+    "price": 147000,
+    "img": "/images/viva.jpg",
+    "description": "املت خوش‌طعم و تازه برای صبحانه دو نفر."
   },
   {
     "id": 84,
@@ -669,7 +693,7 @@
     "category": "دسر و کیک ها",
     "price": 98000,
     "img": "/images/viva.jpg",
-    "description": "."
+    "description": "کیک روز با مغز میوه‌های تازه و خامه‌ی سبک تهیه شده و با بافت نرم و طعمی ملایم هر روز حس تازگی را به شما می‌بخشد."
   },
   {
     "id": 113,
