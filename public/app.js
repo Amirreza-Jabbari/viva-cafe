@@ -33,20 +33,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 2. Render items based on the new image-based layout
+    // 2. Render items based on the new single-column list layout
     function displayItems(items) {
         menuListContainer.innerHTML = items.map((item, idx) => `
             <article data-index="${idx}"
                      class="flex items-center justify-between bg-white rounded-2xl shadow-lg overflow-hidden p-4
                             opacity-0 translate-y-8 transition-all duration-700 ease-out"
             >
-                <div class="text-right pr-4">
+                <div class="flex-grow text-right pr-4">
                     <h2 class="text-3xl font-bold mb-1 text-slate-800">
                         ${item.title}
                     </h2>
-                    <p class="text-xl text-gray-500 flex-grow mb-2 line-clamp-3">
+                    
+                    <p class="text-base text-gray-500 mb-2 line-clamp-2">
                         ${item.description || ''}
                     </p>
+
                     <span class="text-xl font-bold text-yellow-600">
                         ${item.price.toLocaleString()} تومان
                     </span>
