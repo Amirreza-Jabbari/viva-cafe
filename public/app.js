@@ -25,10 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
             });
             
-            // Don't re-render main buttons, just set up the sticky ones
             setupStickyNav();
             setupFiltering();
-            displayItems(menu); // Initial display of all items
+            displayItems(menu);
             setupScrollAnimations();
 
         } catch (error) {
@@ -37,35 +36,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 2. Render items based on a filter
+    // 2. Render items based on a filter - UPDATED FOR NEW LAYOUT
     function displayItems(items) {
         menuListContainer.innerHTML = items.map((item, idx) => `
             <article data-index="${idx}"
-                     class="group relative bg-white rounded-2xl overflow-hidden shadow-lg
-                            opacity-0 translate-y-8 transition-all duration-700 ease-out flex flex-col"
+                     class="group bg-white rounded-2xl shadow-lg flex flex-row items-center p-4
+                            opacity-0 translate-y-8 transition-all duration-700 ease-out"
             >
-                <div class="relative w-full h-48 overflow-hidden">
-                    <img src="${item.img}" alt="${item.title}"
-                         class="w-full h-full object-cover transform 
-                                group-hover:scale-105 transition-transform duration-500"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-40 pointer-events-none"></div>
-                    <span class="absolute top-3 left-3 bg-gradient-to-r from-yellow-400 to-yellow-600
-                                  text-white text-sm font-semibold uppercase px-3 py-1 rounded-full drop-shadow-lg">
-                        ${item.category}
-                    </span>
-                </div>
-                <div class="p-5 flex flex-col flex-grow text-gray-800">
-                    <h2 class="text-2xl font-bold mb-1 text-slate-700 group-hover:text-yellow-600 transition-colors duration-300">
+                <div class="flex flex-col items-center flex-grow text-gray-800">
+                    <h2 class="text-3xl font-bold text-slate-700 mb-2">
                         ${item.title}
                     </h2>
-                    <p class="text-xl text-gray-500 flex-grow mb-4 line-clamp-3">
-                        ${item.description}
-                    </p>
-                    <div class="flex items-center justify-between mt-auto">
-                        <span class="text-xl font-extrabold text-yellow-500">
-                            ${item.price.toLocaleString()} تومان
-                        </span>
-                    </div>
+                    <span class="text-2xl font-semibold text-slate-500">
+                        ${item.price.toLocaleString()} تومان
+                    </span>
+                </div>
+
+                <div class="relative w-32 h-32 flex-shrink-0">
+                    <img src="${item.img}" alt="${item.title}"
+                         class="w-full h-full object-contain"/>
                 </div>
             </article>
         `).join('');
@@ -79,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (entry.isIntersecting) {
                     const el = entry.target;
                     const idx = Number(el.dataset.index);
-                    // Stagger animation
                     el.style.transitionDelay = `${idx * 100}ms`;
                     el.classList.remove('opacity-0', 'translate-y-8');
                     el.classList.add('opacity-100', 'translate-y-0');
@@ -96,7 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Create and manage the sticky navigation bar
     function setupStickyNav() {
-        // Create compact buttons for the sticky nav
         stickyNavContainer.innerHTML = allCategories.map(cat => `
             <button data-category="${cat.id}" aria-label="${cat.label}"
                     class="sticky-category-btn flex flex-row-reverse items-center gap-2 px-3 py-1.5
@@ -107,7 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </button>
         `).join('');
         
-        // Observer to show/hide the sticky nav
         const observer = new IntersectionObserver(([entry]) => {
             if (!entry.isIntersecting) {
                 stickyNav.classList.remove('hidden');
@@ -121,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(mainNav);
     }
     
-    // 5. Setup filtering logic for ALL category buttons (main and sticky)
+    // 5. Setup filtering logic for ALL category buttons
     function setupFiltering() {
         const allButtons = document.querySelectorAll('.category-btn, .sticky-category-btn');
 
@@ -133,7 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     : menu.filter(item => item.category === category);
                 
                 displayItems(filteredItems);
-                // Re-apply animations to the new set of items
                 setupScrollAnimations();
             });
         });
