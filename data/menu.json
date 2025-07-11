@@ -4,751 +4,657 @@
     "title": "اسپرسو",
     "category": "بار گرم",
     "price": 70000,
-    "img": "/images/espreso.jpg",
-    "description": "یک شات قهوه غلیظ و پرکافئین با طعم کلاسیک و بدنه‌ی قوی."
+    "img": "/images/espreso.jpg"
   },
   {
     "id": 2,
     "title": "اسپرسو اسپشیال",
     "category": "بار گرم",
     "price": 95000,
-    "img": "/images/espreso-special.jpg",
-    "description": "نسخه‌ای ویژه از اسپرسو با کرم غنی و عطر متمایز برای تجربه‌ای لوکس."
+    "img": "/images/espreso-special.jpg"
   },
   {
     "id": 3,
     "title": "آمریکانو",
     "category": "بار گرم",
     "price": 78000,
-    "img": "/images/americano.jpg",
-    "description": "اسپرسو رقیق‌شده با آب داغ برای طعم ملایم‌تر و حجم بیشتر."
+    "img": "/images/americano.jpg"
   },
   {
     "id": 4,
     "title": "کارامل ماکیاتو",
     "category": "بار گرم",
     "price": 129000,
-    "img": "/images/makiato.jpg",
-    "description": "اسپرسو با شیر کف‌کرده و شربت کارامل که تعادلی از طعم تلخ و شیرین را خلق می‌کند."
+    "img": "/images/makiato.jpg"
   },
   {
     "id": 5,
     "title": "موکا",
     "category": "بار گرم",
     "price": 129000,
-    "img": "/images/mocka.jpeg",
-    "description": "ترکیبی از اسپرسو، شکلات و شیر داغ برای طعمی شیرین و مخملی."
+    "img": "/images/mocka.jpeg"
   },
   {
     "id": 6,
     "title": "لته",
     "category": "بار گرم",
     "price": 107000,
-    "img": "/images/late.jpg",
-    "description": "اسپرسو با مقدار بیشتر شیر بخار داده‌شده برای طعمی ملایم و خامه‌ای."
+    "img": "/images/late.jpg"
   },
   {
     "id": 7,
     "title": "لته ماکیاتو (طعم دهنده)",
     "category": "بار گرم",
     "price": 129000,
-    "img": "/images/late-makiato.jpg",
-    "description": "لته با شربت طعم‌دهنده و لایه‌ای از فوم شیر برای تجربه‌ای شیرین و خوش‌عطر."
+    "img": "/images/late-makiato.jpg"
   },
   {
     "id": 8,
     "title": "لته شیر فندق",
     "category": "بار گرم",
     "price": 129000,
-    "img": "/images/late-fandogh.jpg",
-    "description": "لته تهیه‌شده با شیر فندق که طعم ملایم و عطری دلپذیر از فندق دارد."
+    "img": "/images/late-fandogh.jpg"
   },
   {
     "id": 9,
     "title": "لته شیر بادام",
     "category": "بار گرم",
     "price": 129000,
-    "img": "/images/late-badam.jpg",
-    "description": "لته‌ای سبک با شیر بادام که با طعم ملایم و خامه‌ای بادام همراه است."
+    "img": "/images/late-badam.jpg"
   },
   {
     "id": 10,
     "title": "کاپوچینو",
     "category": "بار گرم",
     "price": 107000,
-    "img": "/images/capuccino.jpg",
-    "description": "اسپرسو با شیر بخار داده‌شده و لایه‌ای از فوم ضخیم روی آن برای بافتی لطیف."
+    "img": "/images/capuccino.jpg"
   },
   {
     "id": 11,
     "title": "کورتادو",
     "category": "بار گرم",
     "price": 78000,
-    "img": "/images/kortado.jpg",
-    "description": "نسبت برابر اسپرسو و شیر بخار داده‌شده برای طعمی متعادل و قوی."
+    "img": "/images/kortado.jpg"
   },
   {
     "id": 12,
     "title": "فلت وایت",
     "category": "بار گرم",
     "price": 93000,
-    "img": "/images/flat-white.jpeg",
-    "description": "اسپرسو با شیری نرم و کم‌کف که طعمی غلیظ و مخملی ایجاد می‌کند."
+    "img": "/images/flat-white.jpeg"
   },
   {
     "id": 13,
     "title": "نسکافه",
     "category": "نوشیدنی های گرم",
     "price": 92000,
-    "img": "/images/nescafe.png",
-    "description": "نسکافه با طعم ملایم و دلنشین برای روزهای پرمشغله."
+    "img": "/images/nescafe.png"
   },
   {
     "id": 14,
     "title": "ماسالا",
     "category": "نوشیدنی های گرم",
     "price": 99000,
-    "img": "/images/masala.jpg",
-    "description": "چای ماسالا هندی با ترکیبی از ادویه‌جات معطر و شیر گرم."
+    "img": "/images/masala.jpg"
   },
   {
     "id": 15,
     "title": "هات چاکلت",
     "category": "نوشیدنی های گرم",
     "price": 109000,
-    "img": "/images/hot-chock.jpg",
-    "description": "نوشیدنی شکلاتی داغ با طعم غنی و خاطره‌انگیز."
+    "img": "/images/hot-chock.jpg"
   },
   {
     "id": 16,
     "title": "هات چاکلت فندق",
     "category": "نوشیدنی های گرم",
     "price": 147000,
-    "img": "/images/hot-chock-fandogh.jpg",
-    "description": "هات چاکلت با طعم فندق برشته که به نوشیدنی عمق و عطر بیشتری می‌بخشد."
+    "img": "/images/hot-chock-fandogh.jpg"
   },
   {
     "id": 16,
     "title": "هات چاکلت پسته",
     "category": "نوشیدنی های گرم",
     "price": 159000,
-    "img": "/images/hot-chock-fandogh.jpg",
-    "description": "هات چاکلت با طعم فندق برشته که به نوشیدنی عمق و عطر بیشتری می‌بخشد."
+    "img": "/images/hot-chock-fandogh.jpg"
   },
   {
     "id": 17,
     "title": "وایت چاکلت",
     "category": "نوشیدنی های گرم",
     "price": 106000,
-    "img": "/images/white-chock.jpg",
-    "description": "نوشیدنی شکلات سفید داغ با طعمی کرمی و ملایم برای لحظات شیرین."
+    "img": "/images/white-chock.jpg"
   },
   {
     "id": 18,
     "title": "بلوبری چاکلت",
     "category": "نوشیدنی های گرم",
     "price": 107000,
-    "img": "/images/blueberry-chock.jpg",
-    "description": "هات چاکلت با افزودن بلوبری تازه که ترکیبی میوه‌ای و شکلاتی خلق می‌کند."
+    "img": "/images/blueberry-chock.jpg"
   },
   {
     "id": 19,
     "title": "استرابری چاکلت",
     "category": "نوشیدنی های گرم",
     "price": 108000,
-    "img": "/images/strawberry-chock.jpg",
-    "description": "هات چاکلت با طعم توت‌فرنگی شیرین و خامه‌ای برای لذت مضاعف."
+    "img": "/images/strawberry-chock.jpg"
   },
   {
     "id": 20,
     "title": "کرک",
     "category": "نوشیدنی های گرم",
     "price": 117000,
-    "img": "/images/crac.jpg",
-    "description": "چای هندی با طعم اسپایسی و بافت کرمی برای لحظات اصیل"
+    "img": "/images/crac.jpg"
   },
   {
     "id": 21,
     "title": "شیر کاکائو",
     "category": "نوشیدنی های گرم",
     "price": 118000,
-    "img": "/images/shircacao.webp",
-    "description": "شیر داغ غلیظ با کاکائوی اصیل برای طعمی ساده و دلنشین."
+    "img": "/images/shircacao.webp"
   },
   {
     "id": 21,
     "title": "شیر گرم",
     "category": "نوشیدنی های گرم",
     "price": 60000,
-    "img": "/images/warm-milk.jpg",
-    "description": "شیر تازه‌ی داغ که با حرارت ملایم تا نقطه جوش رسانده شده، با طعمی ملایم و آرام‌بخش برای لحظاتی که به گرمای دلنشین نیاز دارید."
+    "img": "/images/warm-milk.jpg"
   },
   {
     "id": 21,
     "title": "شیر عسلی",
     "category": "نوشیدنی های گرم",
     "price": 79000,
-    "img": "/images/milk-honey.jpg",
-    "description": "شیر گرم مخلوط با عسل طبیعی و خوش‌عطر که طعمی شیرین و دلپذیر به آن می‌بخشد. ترکیبی مناسب برای تسکین گلو و افزایش انرژی در طول روز."
+    "img": "/images/milk-honey.jpg"
   },
   {
     "id": 22,
     "title": "V60",
     "category": "قهوه های دمی",
     "price": 97000,
-    "img": "/images/v60.jpg",
-    "description": "قهوه دمی فیلتر شده با روش V60 برای طعمی شفاف و عطر مشخص."
+    "img": "/images/v60.jpg"
   },
   {
     "id": 23,
     "title": "ترک",
     "category": "قهوه های دمی",
     "price": 75000,
-    "img": "/images/tork.jpg",
-    "description": "قهوه ترک سنتی با عطر قوی و کلاسیک در فنجان برای تجربه‌ای اصیل."
+    "img": "/images/tork.jpg"
   },
   {
     "id": 24,
     "title": "کمکس",
     "category": "قهوه های دمی",
     "price": 97000,
-    "img": "/images/kemex.jpg",
-    "description": "قهوه دمی کمکس با طعمی متعادل برای لحظات آرام."
+    "img": "/images/kemex.jpg"
   },
   {
     "id": 25,
     "title": "کلدبرو",
     "category": "قهوه های دمی",
     "price": 157000,
-    "img": "/images/coldbro.jpeg",
-    "description": "قهوه سرد دم کرده با طعم ملایم و خنک برای روزهای گرم."
+    "img": "/images/coldbro.jpeg"
   },
   {
     "id": 26,
     "title": "چای سیاه تک نفره",
     "category": "چای و دمنوش",
     "price": 45000,
-    "img": "/images/chay1.jpeg",
-    "description": "یک فنجان چای سیاه پررنگ و معطر مناسب برای یک نفر، با طعمی دلنشین و کلاسیک."
+    "img": "/images/chay1.jpeg"
   },
   {
     "id": 27,
     "title": "چای سیاه دو نفره",
     "category": "چای و دمنوش",
     "price": 84000,
-    "img": "/images/chay2.jpeg",
-    "description": "قوری چای سیاه با رنگ غنی و عطری مطبوع برای دو نفر، ایده‌آل برای عصرانه‌های دونفره."
+    "img": "/images/chay2.jpeg"
   },
   {
     "id": 28,
     "title": "چای سیاه چهار نفره",
     "category": "چای و دمنوش",
     "price": 172000,
-    "img": "/images/chay2.jpeg",
-    "description": "چای سیاه خوش‌بو و پرطراوت در حجم مناسب برای چهار نفر، مناسب دورهمی‌های دوستانه."
+    "img": "/images/chay2.jpeg"
   },
   {
     "id": 29,
     "title": "چای زعفران",
     "category": "چای و دمنوش",
     "price": 60000,
-    "img": "/images/chay2.jpeg",
-    "description": "چای سیاه غنی آمیخته با زعفرانی ناب که رنگ و عطری طلایی به هر جرعه می‌بخشد."
+    "img": "/images/chay2.jpeg"
   },
   {
     "id": 30,
     "title": "دمنوش (مراکشی، رازیانه، بهارنارنج,...)",
     "category": "چای و دمنوش",
     "price": 86000,
-    "img": "/images/damnoosh.jpg",
-    "description": "مخلوط گیاهان آرام‌بخش؛ از رازیانه و بهارنارنج تا ترکیبات مراکشی برای رفع استرس و آرامش ذهن."
+    "img": "/images/damnoosh.jpg"
   },
   {
     "id": 31,
     "title": "دمنوش 1",
     "category": "چای و دمنوش",
     "price": 85000,
-    "img": "/images/damnoosh.jpg",
-    "description": "فرمول ویژه‌ای از گل‌های معطر برای تقویت روحیه و افزایش حس تازگی."
+    "img": "/images/damnoosh.jpg"
   },
   {
     "id": 32,
     "title": "دمنوش 2",
     "category": "چای و دمنوش",
     "price": 88000,
-    "img": "/images/damnoosh.jpg",
-    "description": "مخلوطی از گیاهان درمانی با خواص آرام‌بخش و گوارایی طبیعی."
+    "img": "/images/damnoosh.jpg"
   },
   {
     "id": 33,
     "title": "دمنوش 3",
     "category": "چای و دمنوش",
     "price": 87000,
-    "img": "/images/damnoosh.jpg",
-    "description": "دمنوش گیاهی با رایحه‌ای دلنشین و خاص."
+    "img": "/images/damnoosh.jpg"
   },
   {
     "id": 33,
     "title": "دمنوش مخلوط",
     "category": "چای و دمنوش",
     "price": 87000,
-    "img": "/images/damnoosh.jpg",
-    "description": "ترکیبی متنوع از گل گاوزبان، بادرنجبویه و بابونه برای طعمی متفاوت و آرامش‌بخش."
+    "img": "/images/damnoosh.jpg"
   },
   {
     "id": 34,
     "title": "آیس آمریکانو",
     "category": "بار سرد بر پایه قهوه",
     "price": 87000,
-    "img": "/images/ice-americano.jpg",
-    "description": "اسپرسو سرد با آب و یخ برای طعمی تازه و خنک."
+    "img": "/images/ice-americano.jpg"
   },
   {
     "id": 35,
     "title": "آیس کارامل ماکیاتو",
     "category": "بار سرد بر پایه قهوه",
     "price": 139000,
-    "img": "/images/ice-caramel.jpg",
-    "description": "اسپرسوی سرد با شیر کف‌کرده و شربت کارامل برای ترکیبی شیرین و خوش‌عطر."
+    "img": "/images/ice-caramel.jpg"
   },
   {
     "id": 49,
     "title": "آیریش کارامل",
-    "category": "بار سرد",
+    "category": "بار سرد بر پایه قهوه",
     "price": 168000,
-    "img": "/images/irish-caramel.webp",
-    "description": "نوشیدنی سرد با طعم غنی کارامل و کرمی ملایم."
+    "img": "/images/irish-caramel.webp"
   },
   {
     "id": 36,
     "title": "آیس لته",
     "category": "بار سرد بر پایه قهوه",
     "price": 117000,
-    "img": "/images/ice-late.jpg",
-    "description": "اسپرسوی سرد با شیر و یخ برای طعمی ملایم و خامه‌ای."
+    "img": "/images/ice-late.jpg"
   },
   {
     "id": 37,
     "title": "آیس موکا",
     "category": "بار سرد بر پایه قهوه",
     "price": 139000,
-    "img": "/images/ice-mocka.jpg",
-    "description": "مخلوطی از اسپرسو سرد، شکلات و شیر یخ‌زده برای طعمی شیرین و غنی."
+    "img": "/images/ice-mocka.jpg"
   },
   {
     "id": 38,
     "title": "آیس چاکلت",
     "category": "بار سرد بر پایه قهوه",
     "price": 119000,
-    "img": "/images/ice-chock.jpeg",
-    "description": "نوشیدنی شکلاتی سرد با شیر و یخ برای تجربه‌ای خنک و شیرین."
+    "img": "/images/ice-chock.jpeg"
   },
   {
     "id": 39,
     "title": "آیس کاپو",
     "category": "بار سرد بر پایه قهوه",
     "price": 106000,
-    "img": "/images/ice-capo.jpg",
-    "description": "اسپرسوی سرد با لایه‌ای از فوم شیر و یخ برای بافتی لطیف و خنک."
+    "img": "/images/ice-capo.jpg"
   },
   {
     "id": 40,
     "title": "آفوگاتو شکلاتی",
     "category": "بار سرد بر پایه قهوه",
     "price": 117000,
-    "img": "/images/afogato-chock.jpg",
-    "description": "بستنی وانیل با اسپرسوی داغ و سس شکلات برای ترکیبی سرد و گرم."
+    "img": "/images/afogato-chock.jpg"
   },
   {
     "id": 41,
     "title": "آفوگاتو وانیل",
     "category": "بار سرد بر پایه قهوه",
     "price": 106000,
-    "img": "/images/afogato.jpg",
-    "description": "بستنی وانیل با یک شات اسپرسوی داغ برای طعمی کلاسیک و دلپذیر."
+    "img": "/images/afogato.jpg"
   },
   {
     "id": 42,
     "title": "لیموناد",
     "category": "بار سرد",
     "price": 108000,
-    "img": "/images/viva.jpg",
-    "description": "نوشیدنی خنک با طعم ترش و شیرین لیمو، مناسب روزهای گرم."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 43,
     "title": "موهیتو",
     "category": "بار سرد",
     "price": 118000,
-    "img": "/images/viva.jpg",
-    "description": "نوشیدنی سرد با نعناع تازه، لیموترش و سودا برای طعمی تازه و مطبوع."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 44,
     "title": "گرین مارش",
     "category": "بار سرد",
     "price": 163000,
-    "img": "/images/viva.jpg",
-    "description": "نوشیدنی سبز رنگ با ترکیب میوه‌های سبز و حس تازگی."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 45,
     "title": "لیر",
     "category": "بار سرد",
     "price": 169000,
-    "img": "/images/viva.jpg",
-    "description": "نوشیدنی خنک با طعمی ملایم و کمی شیرین برای لحظات آرامش‌بخش."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 46,
     "title": "چری بری",
     "category": "بار سرد",
     "price": 189000,
-    "img": "/images/viva.jpg",
-    "description": "نوشیدنی سرد با طعم ترکیبی آلبالوی شیرین و توت‌فرنگی."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 47,
     "title": "مکزیکانو",
     "category": "بار سرد",
     "price": 187000,
-    "img": "/images/viva.jpg",
-    "description": "نوشیدنی سرد با رایحه تند فلفل و مرکبات، الهام‌گرفته از مزه‌های مکزیکی."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 48,
     "title": "کاپریس",
     "category": "بار سرد",
     "price": 157000,
-    "img": "/images/viva.jpg",
-    "description": "نوشیدنی خنک با ترکیب میوه‌های تابستانی و عطری دل‌انگیز."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 50,
     "title": "رد موهیتو",
     "category": "بار سرد",
     "price": 134000,
-    "img": "/images/viva.jpg",
-    "description": "نسخهٔ قرمز موهیتو با توت‌فرنگی و نعناع برای طعمی میوه‌ای و تازه."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 51,
     "title": "فراپاچینو",
     "category": "شیک ها",
     "price": 237000,
-    "img": "/images/frapacino.jpg",
-    "description": "شیکی سرد و خامه‌ای با طعم ملایم قهوه و تکه‌های شکلات."
+    "img": "/images/frapacino.jpg"
   },
   {
     "id": 52,
     "title": "فراپه",
     "category": "شیک ها",
     "price": 229000,
-    "img": "/images/frappe.webp",
-    "description": "شیکی سرد با بافتی سبک و طعمی خنک برای روزهای گرم."
+    "img": "/images/frappe.webp"
   },
   {
     "id": 53,
     "title": "نوتلا",
     "category": "شیک ها",
     "price": 261000,
-    "img": "/images/notella.webp",
-    "description": "شیکی غنی و خامه‌ای با طعم دلنشین نوتلا و خامه."
+    "img": "/images/notella.webp"
   },
   {
     "id": 54,
     "title": "کیت کت",
     "category": "شیک ها",
     "price": 222000,
-    "img": "/images/kitkat.jpg",
-    "description": "شیکی سرد با تکه‌های بیسکوییت کیت‌کت برای بافتی ترد و خوشمزه."
+    "img": "/images/kitkat.jpg"
   },
   {
     "id": 55,
     "title": "کیت کت نوتلا",
     "category": "شیک ها",
     "price": 232000,
-    "img": "/images/kitkatnotella.jpg",
-    "description": "شیکی ترکیبی از نوتلا و تکه‌های کیت‌کت برای طعمی دوگانه و لذیذ."
+    "img": "/images/kitkatnotella.jpg"
   },
   {
     "id": 56,
     "title": "اورئو",
     "category": "شیک ها",
     "price": 237000,
-    "img": "/images/oreo.jpg",
-    "description": "شیکی خامه‌ای با بیسکوییت اورئو برای طعمی شیرین و کاربردی."
+    "img": "/images/oreo.jpg"
   },
   {
     "id": 57,
     "title": "وانیل",
     "category": "شیک ها",
     "price": 178000,
-    "img": "/images/vanil.jpg",
-    "description": "شیکی ساده وانیلی با بافتی نرم و طعم خالص وانیل."
+    "img": "/images/vanil.jpg"
   },
   {
     "id": 58,
     "title": "شکلات",
     "category": "شیک ها",
     "price": 189000,
-    "img": "/images/shokolat.jpg",
-    "description": "شیکی غلیظ و شکلاتی با خامه فراوان برای دوستداران شکلات."
+    "img": "/images/shokolat.jpg"
   },
   {
     "id": 59,
     "title": "توت فرنگی",
     "category": "شیک ها",
     "price": 217000,
-    "img": "/images/tootfarangi.png",
-    "description": "شیکی تازه با پوره توت‌فرنگی برای طعمی میوه‌ای و لطیف."
+    "img": "/images/tootfarangi.png"
   },
   {
     "id": 60,
     "title": "بادام زمینی",
     "category": "شیک ها",
     "price": 217000,
-    "img": "/images/badam.jpg",
-    "description": "شیکی خامه‌ای با طعم کره بادام‌زمینی و بافتی مخملی."
+    "img": "/images/badam.jpg"
   },
   {
     "id": 61,
     "title": "لوتوس",
     "category": "شیک ها",
     "price": 238000,
-    "img": "/images/lotus.jpg",
-    "description": "شیکی با بیسکوییت لوتوس خردشده برای طعمی شیرین و کاراملی."
+    "img": "/images/lotus.jpg"
   },
   {
     "id": 62,
     "title": "کارامل",
     "category": "شیک ها",
     "price": 197000,
-    "img": "/images/karamel.jpg",
-    "description": "شیکی غنی با سس کارامل و خامه برای تجربه‌ای شیرین و دلپذیر."
+    "img": "/images/karamel.jpg"
   },
   {
     "id": 63,
     "title": "ترامیسو",
     "category": "شیک ها",
     "price": 251000,
-    "img": "/images/tiramiso.jpg",
-    "description": "شیکی الهام‌گرفته از دسر تیرامیسو با بیسکوییت لیدی‌فینگر و خامه."
+    "img": "/images/tiramiso.jpg"
   },
   {
     "id": 64,
     "title": "اسنیکرز",
     "category": "شیک ها",
     "price": 218000,
-    "img": "/images/snickers.jpg",
-    "description": "شیکی با طعم اسنیکرز شامل شکلات، کره بادام‌زمینی و کارامل."
+    "img": "/images/snickers.jpg"
   },
   {
     "id": 65,
     "title": "موز و شکلات",
     "category": "شیک ها",
     "price": 206000,
-    "img": "/images/moz-chock.jpg",
-    "description": "شیکی با ترکیب موز تازه و شکلات غلیظ برای طعمی دلچسب."
+    "img": "/images/moz-chock.jpg"
   },
   {
     "id": 66,
     "title": "موز",
     "category": "شیک ها",
     "price": 209000,
-    "img": "/images/moz.jpg",
-    "description": "شیکی ساده وانیلی با پوره موز تازه برای بافتی نرم و میوه‌ای."
+    "img": "/images/moz.jpg"
   },
   {
     "id": 67,
     "title": "قهوه",
     "category": "شیک ها",
     "price": 198000,
-    "img": "/images/ghahve.jpg",
-    "description": "شیکی سرد با طعم غلیظ قهوه و بافتی خامه‌ای برای انرژی‌بخشی."
+    "img": "/images/ghahve.jpg"
   },
   {
     "id": 68,
     "title": "سیب سوخاری تک نفره",
     "category": "لازانیا و سیب سوخاری",
     "price": 148000,
-    "img": "/images/sib_sokhari.jpeg",
-    "description": "سیب‌زمینی سرخ‌شده خوش‌طعم با پاپریکا و ادویه‌های مخصوص."
+    "img": "/images/sib_sokhari.jpeg"
   },
   {
     "id": 68,
     "title": "سیب سوخاری دونفره",
     "category": "لازانیا و سیب سوخاری",
     "price": 197000,
-    "img": "/images/sib_sokhari.jpeg",
-    "description": "سیب‌زمینی سرخ‌شده خوش‌طعم با پاپریکا و ادویه‌های مخصوص."
+    "img": "/images/sib_sokhari.jpeg"
   },
   {
     "id": 71,
     "title": "سیب سوخاری دو نفره",
     "category": "لازانیا و سیب سوخاری",
     "price": 189000,
-    "img": "/images/sib_sokhari_2.jpg",
-    "description": "سیب‌زمینی سرخ‌شده مخصوص برای دو نفر با دیپ خانگی."
+    "img": "/images/sib_sokhari_2.jpg"
   },
   {
     "id": 72,
     "title": "سیب ویژه دو نفره",
     "category": "لازانیا و سیب سوخاری",
     "price": 251000,
-    "img": "/images/sib_vizhe_2.jpg",
-    "description": "سیب‌زمینی سرخ‌شده ویژه با پنیر و بیکن برای دو نفر."
+    "img": "/images/sib_vizhe_2.jpg"
   },
   {
     "id": 73,
     "title": "لازانیا مرغ و اسفناج",
     "category": "لازانیا و سیب سوخاری",
     "price": 233000,
-    "img": "/images/lazanya_morgh_sfenage.jpg",
-    "description": "لازانیا لایه‌لایه با مرغ و اسفناج تازه در سس خامه‌ای."
+    "img": "/images/lazanya_morgh_sfenage.jpg"
   },
   {
     "id": 74,
     "title": "مک اند چیز",
     "category": "لازانیا و سیب سوخاری",
     "price": 217000,
-    "img": "/images/mack_and_cheese.jpg",
-    "description": "لازانیا مک‌اند‌چیز با سس پنیر چدار غنی و پنیر ذوب‌شده."
+    "img": "/images/mack_and_cheese.jpg"
   },
   {
     "id": 75,
     "title": "سیب ساده تک نفره",
     "category": "لازانیا و سیب سوخاری",
     "price": 127000,
-    "img": "/images/mack_and_cheese.jpg",
-    "description": "سیب‌زمینی سرخ‌شده ساده با نمک در اندازه تک نفر."
+    "img": "/images/mack_and_cheese.jpg"
   },
   {
     "id": 76,
     "title": "سیب ساده دو نفره",
     "category": "لازانیا و سیب سوخاری",
     "price": 217000,
-    "img": "/images/mack_and_cheese.jpg",
-    "description": "سیب‌زمینی سرخ‌شده ساده برای دو نفر با دیپ مخصوص."
+    "img": "/images/mack_and_cheese.jpg"
   },
   {
     "id": 77,
     "title": "نیمرو تک نفره",
     "category": "صبحانه",
     "price": 60000,
-    "img": "/images/viva.jpg",
-    "description": "تخم‌مرغ نیمرو ساده با کناره‌ی نرم و زرده‌ی روان."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 78,
     "title": "نیمرو دو نفره",
     "category": "صبحانه",
     "price": 87000,
-    "img": "/images/viva.jpg",
-    "description": "دو عدد نیمرو تازه با کناره‌های طلایی و زرده لطیف."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 81,
     "title": "سوسیس تخم مرغ تک نفره",
     "category": "صبحانه",
     "price": 117000,
-    "img": "/images/viva.jpg",
-    "description": "سوسیس و تخم مرغ خوش‌طعم و تازه برای صبحانه تک نفر."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 81,
     "title": "سوسیس تخم مرغ دو نفره",
     "category": "صبحانه",
     "price": 157000,
-    "img": "/images/viva.jpg",
-    "description": "سوسیس و تخم مرغ خوش‌طعم و تازه برای صبحانه دو نفر."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 81,
     "title": "املت تک نفره",
     "category": "صبحانه",
     "price": 123000,
-    "img": "/images/viva.jpg",
-    "description": "املت خوش‌طعم و تازه برای صبحانه تک نفر."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 81,
     "title": "املت دو نفره",
     "category": "صبحانه",
     "price": 147000,
-    "img": "/images/viva.jpg",
-    "description": "املت خوش‌طعم و تازه برای صبحانه دو نفر."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 84,
     "title": "شاپوری تک نفره",
     "category": "صبحانه",
     "price": 169000,
-    "img": "/images/viva.jpg",
-    "description": "شاپوری خوش‌طعم با نان محلی و پنیر مخصوص برای تک نفر."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 113,
     "title": "کیک روز",
     "category": "دسر و کیک ها",
     "price": 98000,
-    "img": "/images/viva.jpg",
-    "description": "کیک روز با مغز میوه‌های تازه و خامه‌ی سبک تهیه شده و با بافت نرم و طعمی ملایم هر روز حس تازگی را به شما می‌بخشد."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 113,
     "title": "چیز کیک ها",
     "category": "دسر و کیک ها",
     "price": 107000,
-    "img": "/images/viva.jpg",
-    "description": "چیزکیک خامه‌ای با بیسکوییت اورئو برای طعمی کلاسیک و دلپذیر."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 121,
     "title": "کیک برزیلی",
     "category": "دسر و کیک ها",
     "price": 118000,
-    "img": "/images/viva.jpg",
-    "description": "کیک سبک و مرطوب برزیلی با طعم ملایم نارگیل و شیر."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 122,
     "title": "رول نیویورکی",
     "category": "دسر و کیک ها",
     "price": 97000,
-    "img": "/images/viva.jpg",
-    "description": "رول کیکی نرم به سبک نیویورک با پرکردن شکلاتی یا پنیر."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 123,
     "title": "ترامیسو",
     "category": "دسر و کیک ها",
     "price": 107000,
-    "img": "/images/viva.jpg",
-    "description": "دسر ایتالیایی با لایه‌های بیسکوییت آغشته به قهوه و ماسکارپونه."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 124,
     "title": "کروسان",
     "category": "دسر و کیک ها",
     "price": 97000,
-    "img": "/images/viva.jpg",
-    "description": "شیرینی فرانسوی پفی با لایه‌های کره‌ای نرم و طعمی ملایم."
+    "img": "/images/viva.jpg"
   },
   {
     "id": 124,
     "title": "گیم",
     "category": "گیم",
     "price": 150000,
-    "img": "/images/viva.jpg",
-    "description": "ساعتی 150"
+    "img": "/images/viva.jpg"
   },
   {
     "id": 124,
     "title": "قلیان",
     "category": "قلیان",
     "price": 180000,
-    "img": "/images/viva.jpg",
-    "description": "در چهار طعم"
+    "img": "/images/viva.jpg"
   }
 ]

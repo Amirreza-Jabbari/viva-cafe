@@ -52,7 +52,7 @@ async function loadMenu() {
     });
     const menu = await res.json();
     tbody.innerHTML = menu.map(item => `
-      <tr data-id="${item.id}" data-img="${item.img || ''}" data-description="${item.description || ''}">
+      <tr data-id="${item.id}" data-img="${item.img || ''}" >
         <td>${item.id}</td>
         <td>${item.title}</td>
         <td>${item.category}</td>
@@ -104,7 +104,6 @@ function openModal(mode, id = null) {
     form.category.value    = row.children[2].textContent;
     form.price.value       = row.children[3].textContent;
     form.img.value         = row.dataset.img;
-    form.description.value = row.dataset.description;
   }
   modal.classList.remove('hidden');
 }

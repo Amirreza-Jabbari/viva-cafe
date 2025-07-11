@@ -53,10 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2 class="text-3xl font-bold mb-1 text-slate-800">
                         ${item.title}
                     </h2>
-                    
-                    <p class="text-base text-gray-500 mb-2 line-clamp-2">
-                        ${item.description || ''}
-                    </p>
 
                     <span class="text-xl font-bold text-yellow-600">
                         ${item.price.toLocaleString()} تومان
