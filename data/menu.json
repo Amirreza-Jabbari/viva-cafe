@@ -499,56 +499,42 @@
   {
     "id": 68,
     "title": "سیب سوخاری تک نفره",
-    "category": "لازانیا و سیب سوخاری",
+    "category": "سیب سوخاری",
     "price": 148000,
     "img": "/images/sib_sokhari.jpeg"
   },
   {
     "id": 68,
     "title": "سیب سوخاری دونفره",
-    "category": "لازانیا و سیب سوخاری",
+    "category": "سیب سوخاری",
     "price": 197000,
     "img": "/images/sib_sokhari.jpeg"
   },
   {
     "id": 71,
     "title": "سیب سوخاری دو نفره",
-    "category": "لازانیا و سیب سوخاری",
+    "category": "سیب سوخاری",
     "price": 189000,
     "img": "/images/sib_sokhari_2.jpg"
   },
   {
     "id": 72,
     "title": "سیب ویژه دو نفره",
-    "category": "لازانیا و سیب سوخاری",
+    "category": "سیب سوخاری",
     "price": 251000,
     "img": "/images/sib_vizhe_2.jpg"
   },
   {
-    "id": 73,
-    "title": "لازانیا مرغ و اسفناج",
-    "category": "لازانیا و سیب سوخاری",
-    "price": 233000,
-    "img": "/images/lazanya_morgh_sfenage.jpg"
-  },
-  {
-    "id": 74,
-    "title": "مک اند چیز",
-    "category": "لازانیا و سیب سوخاری",
-    "price": 217000,
-    "img": "/images/mack_and_cheese.jpg"
-  },
-  {
     "id": 75,
     "title": "سیب ساده تک نفره",
-    "category": "لازانیا و سیب سوخاری",
+    "category": "سیب سوخاری",
     "price": 127000,
     "img": "/images/mack_and_cheese.jpg"
   },
   {
     "id": 76,
     "title": "سیب ساده دو نفره",
-    "category": "لازانیا و سیب سوخاری",
+    "category": "سیب سوخاری",
     "price": 217000,
     "img": "/images/mack_and_cheese.jpg"
   },

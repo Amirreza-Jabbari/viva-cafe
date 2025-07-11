@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (entry.isIntersecting) {
                     const el = entry.target;
                     const idx = Number(el.dataset.index);
-                    el.style.transitionDelay = `${idx * 100}ms`;
+                    el.style.transitionDelay = `${idx * 50}ms`;
                     el.classList.remove('opacity-0', 'translate-y-8');
                     el.classList.add('opacity-100', 'translate-y-0');
                     obs.unobserve(el);

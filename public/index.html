@@ -97,6 +97,18 @@
         @supports not selector(::-webkit-scrollbar) {
             body { scrollbar-color: var(--sb-thumb-color) var(--sb-track-color); }
         }
+        
+        /* Custom scrollbar for the sticky navigation */
+        #sticky-nav-container::-webkit-scrollbar {
+            height: 3px;
+        }
+        #sticky-nav-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        #sticky-nav-container::-webkit-scrollbar-thumb {
+            background: #f59e0b; /* yellow-500 */
+            border-radius: 10px;
+        }
     </style>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -167,9 +179,9 @@
             <span>قلیان</span>
         </button>
     </nav>
-
-    <div id="sticky-nav" class="hidden fixed top-0 left-0 right-0 z-40 bg-[#212121] backdrop-blur-sm shadow-lg transition-transform duration-300">
-        <div class="max-w-7xl mx-auto p-2 flex flex-wrap justify-center gap-x-3 gap-y-2">
+    
+    <div id="sticky-nav" class="hidden fixed top-0 left-0 right-0 z-40 bg-[#212121]/90 backdrop-blur-sm shadow-lg transition-transform duration-300 py-2">
+        <div id="sticky-nav-container" class="max-w-7xl mx-auto px-4 flex flex-nowrap overflow-x-auto justify-start gap-x-3">
             </div>
     </div>
 
