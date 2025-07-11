@@ -3,8 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuListContainer = document.getElementById('menu-list');
     const mainNav = document.getElementById('main-nav');
     const stickyNav = document.getElementById('sticky-nav');
-    
-    // This selector is now corrected to properly find the container.
     const stickyNavContainer = stickyNav.querySelector('div');
 
     // --- State Management ---
@@ -14,12 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Main Function to Initialize the Menu ---
     async function initializeMenu() {
         try {
-            // 1. Fetch menu data from the API
             const res = await fetch('/api/get-menu');
             if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
             menu = await res.json();
             
-            // 2. Extract category data from the main navigation buttons
             const categoryButtons = mainNav.querySelectorAll('.category-btn');
             allCategories = Array.from(categoryButtons).map(btn => ({
                 id: btn.dataset.category,
@@ -28,11 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 alt: btn.querySelector('img').alt,
             }));
             
-            // 3. Set up all functionalities
+            // Set up all functionalities
             setupStickyNav();
             setupFiltering();
-            displayItems(menu); // Initial display of all items
+            displayItems(menu); 
             setupScrollAnimations();
+
+            // Set the "All" button as active on initial load
+            updateActiveButton('all');
 
         } catch (error) {
             console.error("Failed to fetch and initialize menu:", error);
@@ -41,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Renders menu items into the container based on the new list layout.
+     * Renders menu items into the container.
      * @param {Array} items - The array of menu items to display.
      */
     function displayItems(items) {
@@ -73,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Sets up IntersectionObserver for staggered scroll-in animations on menu items.
+     * Sets up IntersectionObserver for scroll-in animations.
      */
     function setupScrollAnimations() {
         const articles = menuListContainer.querySelectorAll('article');
@@ -82,15 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (entry.isIntersecting) {
                     const el = entry.target;
                     const idx = Number(el.dataset.index);
-                    // Stagger the animation based on the item's index
                     el.style.transitionDelay = `${idx * 100}ms`;
                     el.classList.remove('opacity-0', 'translate-y-8');
                     el.classList.add('opacity-100', 'translate-y-0');
-                    obs.unobserve(el); // Stop observing after animation
+                    obs.unobserve(el);
                 }
             });
         }, {
-            rootMargin: '0px 0px -15% 0px', // Trigger animation when item is 15% in view
+            rootMargin: '0px 0px -15% 0px',
             threshold: 0
         });
 
@@ -101,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
      * Populates the sticky navbar and sets up its visibility logic.
      */
     function setupStickyNav() {
-        // Create compact buttons for the sticky nav from the category data
         stickyNavContainer.innerHTML = allCategories.map(cat => `
             <button data-category="${cat.id}" aria-label="${cat.label}"
                     class="sticky-category-btn flex flex-row-reverse items-center gap-2 px-3 py-1.5
@@ -112,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </button>
         `).join('');
         
-        // Use an IntersectionObserver to show/hide the sticky nav when the main nav is scrolled past
         const observer = new IntersectionObserver(([entry]) => {
             stickyNav.classList.toggle('hidden', entry.isIntersecting);
             stickyNav.classList.toggle('flex', !entry.isIntersecting);
@@ -122,20 +118,46 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     /**
-     * Attaches click event listeners to ALL category buttons (main and sticky) for filtering.
+     * Updates the visual state of all category buttons to highlight the active one.
+     * @param {string} activeCategory - The data-category value of the button to be activated.
+     */
+    function updateActiveButton(activeCategory) {
+        const allButtons = document.querySelectorAll('.category-btn, .sticky-category-btn');
+        allButtons.forEach(button => {
+            if (button.dataset.category === activeCategory) {
+                // Activate this button
+                button.classList.add('bg-yellow-500', 'text-white');
+                button.classList.remove('bg-slate-700', 'text-gray-200');
+            } else {
+                // Deactivate all other buttons
+                button.classList.remove('bg-yellow-500', 'text-white');
+                button.classList.add('bg-slate-700', 'text-gray-200');
+            }
+        });
+    }
+
+    /**
+     * Attaches click event listeners to all category buttons for filtering.
      */
     function setupFiltering() {
+        // We must select the buttons again here because the sticky nav buttons are created dynamically.
         const allButtons = document.querySelectorAll('.category-btn, .sticky-category-btn');
 
         allButtons.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const category = e.currentTarget.dataset.category;
+
+                // 1. Update the active button visuals
+                updateActiveButton(category);
+                
+                // 2. Filter and display the menu items
                 const filteredItems = category === 'all'
                     ? menu
                     : menu.filter(item => item.category === category);
                 
                 displayItems(filteredItems);
-                // Re-apply animations to the new set of filtered items
+                
+                // 3. Re-apply scroll animations to the new items
                 setupScrollAnimations();
             });
         });
