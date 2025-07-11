@@ -1,21 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- DOM Element Selection ---
     const menuListContainer = document.getElementById('menu-list');
     const mainNav = document.getElementById('main-nav');
     const stickyNav = document.getElementById('sticky-nav');
-    
-    // Check if stickyNav exists before trying to query it
-    const stickyNavContainer = stickyNav ? stickyNav.querySelector('.max-w-7xl > div') : null;
+    const stickyNavContainer = stickyNav.querySelector('.max-w-7xl > div');
 
+    // --- State Management ---
     let menu = [];
     let allCategories = [];
 
-    // 1. Fetch menu data and initialize the page
-    async function fetchMenu() {
+    // --- Main Function to Initialize the Menu ---
+    async function initializeMenu() {
         try {
+            // 1. Fetch menu data from the API
             const res = await fetch('/api/get-menu');
             if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
             menu = await res.json();
             
+            // 2. Extract category data from the main navigation buttons
             const categoryButtons = mainNav.querySelectorAll('.category-btn');
             allCategories = Array.from(categoryButtons).map(btn => ({
                 id: btn.dataset.category,
@@ -24,19 +26,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 alt: btn.querySelector('img').alt,
             }));
             
-            // Setup UI features
+            // 3. Set up all functionalities
             setupStickyNav();
             setupFiltering();
-            displayItems(menu);
+            displayItems(menu); // Initial display of all items
             setupScrollAnimations();
 
         } catch (error) {
-            console.error("Failed to fetch menu:", error);
+            console.error("Failed to fetch and initialize menu:", error);
             menuListContainer.innerHTML = `<p class="text-center text-red-400 col-span-full">Failed to load menu. Please try again later.</p>`;
         }
     }
 
-    // 2. Render menu items with the new single-column list style
+    /**
+     * Renders menu items into the container based on the new list layout.
+     * @param {Array} items - The array of menu items to display.
+     */
     function displayItems(items) {
         menuListContainer.innerHTML = items.map((item, idx) => `
             <article data-index="${idx}"
@@ -65,7 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
-    // 3. Set up smooth scroll-in animations for menu items
+    /**
+     * Sets up IntersectionObserver for staggered scroll-in animations on menu items.
+     */
     function setupScrollAnimations() {
         const articles = menuListContainer.querySelectorAll('article');
         const observer = new IntersectionObserver((entries, obs) => {
@@ -73,25 +80,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (entry.isIntersecting) {
                     const el = entry.target;
                     const idx = Number(el.dataset.index);
+                    // Stagger the animation based on the item's index
                     el.style.transitionDelay = `${idx * 100}ms`;
                     el.classList.remove('opacity-0', 'translate-y-8');
                     el.classList.add('opacity-100', 'translate-y-0');
-                    obs.unobserve(el);
+                    obs.unobserve(el); // Stop observing after animation
                 }
             });
         }, {
-            rootMargin: '0px 0px -15% 0px',
+            rootMargin: '0px 0px -15% 0px', // Trigger animation when item is 15% in view
             threshold: 0
         });
 
         articles.forEach(article => observer.observe(article));
     }
 
-    // 4. Create the sticky navbar and manage its visibility on scroll
+    /**
+     * Populates the sticky navbar and sets up its visibility logic.
+     */
     function setupStickyNav() {
-        // This check prevents the error if the sticky-nav element is missing
-        if (!stickyNavContainer) return;
-
+        // Create compact buttons for the sticky nav from the category data
         stickyNavContainer.innerHTML = allCategories.map(cat => `
             <button data-category="${cat.id}" aria-label="${cat.label}"
                     class="sticky-category-btn flex flex-row-reverse items-center gap-2 px-3 py-1.5
@@ -102,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </button>
         `).join('');
         
+        // Use an IntersectionObserver to show/hide the sticky nav when the main nav is scrolled past
         const observer = new IntersectionObserver(([entry]) => {
             stickyNav.classList.toggle('hidden', entry.isIntersecting);
             stickyNav.classList.toggle('flex', !entry.isIntersecting);
@@ -110,9 +119,10 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(mainNav);
     }
     
-    // 5. Set up click-to-filter logic for all category buttons (main and sticky)
+    /**
+     * Attaches click event listeners to ALL category buttons (main and sticky) for filtering.
+     */
     function setupFiltering() {
-        // Select all buttons from both navbars to attach the event
         const allButtons = document.querySelectorAll('.category-btn, .sticky-category-btn');
 
         allButtons.forEach(btn => {
@@ -123,12 +133,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     : menu.filter(item => item.category === category);
                 
                 displayItems(filteredItems);
-                // Re-apply animations to the newly filtered items
+                // Re-apply animations to the new set of filtered items
                 setupScrollAnimations();
             });
         });
     }
 
-    // Start the application
-    fetchMenu();
+    // --- Initial Call ---
+    initializeMenu();
 });
