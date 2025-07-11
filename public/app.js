@@ -1,84 +1,134 @@
-const container = document.getElementById('menu-list');
-const buttons = document.querySelectorAll('.category-btn');
-let menu = [];
+document.addEventListener('DOMContentLoaded', () => {
+    const menuListContainer = document.getElementById('menu-list');
+    const mainNav = document.getElementById('main-nav');
+    const stickyNav = document.getElementById('sticky-nav');
+    
+    // Check if stickyNav exists before trying to query it
+    const stickyNavContainer = stickyNav ? stickyNav.querySelector('.max-w-7xl > div') : null;
 
-// 1. Fetch & render
-async function fetchMenu() {
-  const res = await fetch('/api/get-menu');
-  menu = await res.json();
-  displayItems(menu);
-  setupScrollAnimations();
-}
+    let menu = [];
+    let allCategories = [];
 
-// 2. Render items with initial hidden state & data-index
-function displayItems(items) {
-  container.innerHTML = items.map((item, idx) => `
-    <article data-index="${idx}"
-             class="group relative bg-[#f9dab7] rounded-2xl overflow-hidden shadow-md
-                    opacity-0 translate-y-8 transition-all duration-700 ease-out flex flex-col"
-    >
-      <!-- Image with overlay -->
-      <div class="relative w-full h-48 overflow-hidden">
-        <img src="${item.img}" alt="${item.title}"
-             class="w-full h-full object-cover transform 
-                    group-hover:scale-105 transition-transform duration-500"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent opacity-40 pointer-events-none"></div>
-        <span class="absolute top-3 left-3 bg-gradient-to-r from-yellow-400 to-yellow-600
-                      text-white text-sm font-semibold uppercase px-3 py-1 rounded-full drop-shadow-lg">
-          ${item.category}
-        </span>
-      </div>
-      <!-- Content -->
-      <div class="p-5 flex flex-col flex-grow">
-        <h2 class="text-2xl font-bold mb-1 text-[#5a5549] group-hover:text-yellow-600 transition-colors duration-300">
-          ${item.title}
-        </h2>
-        <p class="text-xl text-gray-500 flex-grow mb-4 line-clamp-3">
-          ${item.description}
-        </p>
-        <div class="flex items-center justify-between mt-auto">
-          <span class="text-xl font-extrabold text-yellow-500">
-            ${item.price.toLocaleString()} تومان
-          </span>
-        </div>
-      </div>
-    </article>
-  `).join('');
-}
+    // 1. Fetch menu data and initialize the page
+    async function fetchMenu() {
+        try {
+            const res = await fetch('/api/get-menu');
+            if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+            menu = await res.json();
+            
+            const categoryButtons = mainNav.querySelectorAll('.category-btn');
+            allCategories = Array.from(categoryButtons).map(btn => ({
+                id: btn.dataset.category,
+                label: btn.querySelector('span').textContent,
+                icon: btn.querySelector('img').src,
+                alt: btn.querySelector('img').alt,
+            }));
+            
+            // Setup UI features
+            setupStickyNav();
+            setupFiltering();
+            displayItems(menu);
+            setupScrollAnimations();
 
-// 3. Scroll animations using IntersectionObserver
-function setupScrollAnimations() {
-  const articles = container.querySelectorAll('article');
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const idx = Number(el.dataset.index);
-        // Stagger by 100ms per item
-        el.style.transitionDelay = `${idx * 100}ms`;
-        el.classList.remove('opacity-0', 'translate-y-8');
-        el.classList.add('opacity-100', 'translate-y-0');
-        obs.unobserve(el);
-      }
-    });
-  }, {
-    rootMargin: '0px 0px -20% 0px', // trigger a bit before fully in view
-    threshold: 0
-  });
+        } catch (error) {
+            console.error("Failed to fetch menu:", error);
+            menuListContainer.innerHTML = `<p class="text-center text-red-400 col-span-full">Failed to load menu. Please try again later.</p>`;
+        }
+    }
 
-  articles.forEach(article => observer.observe(article));
-}
+    // 2. Render menu items with the new single-column list style
+    function displayItems(items) {
+        menuListContainer.innerHTML = items.map((item, idx) => `
+            <article data-index="${idx}"
+                     class="flex items-center justify-between bg-white rounded-2xl shadow-lg overflow-hidden p-4
+                            opacity-0 translate-y-8 transition-all duration-700 ease-out"
+            >
+                <div class="flex-grow text-right pr-4">
+                    <h2 class="text-3xl font-bold mb-1 text-slate-800">
+                        ${item.title}
+                    </h2>
+                    
+                    <p class="text-base text-gray-500 mb-2 line-clamp-2">
+                        ${item.description || ''}
+                    </p>
 
-// 4. Category filtering
-buttons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const cat = btn.dataset.category;
-    const filtered = cat === 'all'
-      ? menu
-      : menu.filter(i => i.category === cat);
-    displayItems(filtered);
-    setupScrollAnimations();
-  });
+                    <span class="text-xl font-bold text-yellow-600">
+                        ${item.price.toLocaleString()} تومان
+                    </span>
+                </div>
+
+                <div class="w-32 h-32 md:w-36 md:h-36 flex-shrink-0">
+                    <img src="${item.img}" alt="${item.title}"
+                         class="w-full h-full object-contain"/>
+                </div>
+            </article>
+        `).join('');
+    }
+
+    // 3. Set up smooth scroll-in animations for menu items
+    function setupScrollAnimations() {
+        const articles = menuListContainer.querySelectorAll('article');
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const idx = Number(el.dataset.index);
+                    el.style.transitionDelay = `${idx * 100}ms`;
+                    el.classList.remove('opacity-0', 'translate-y-8');
+                    el.classList.add('opacity-100', 'translate-y-0');
+                    obs.unobserve(el);
+                }
+            });
+        }, {
+            rootMargin: '0px 0px -15% 0px',
+            threshold: 0
+        });
+
+        articles.forEach(article => observer.observe(article));
+    }
+
+    // 4. Create the sticky navbar and manage its visibility on scroll
+    function setupStickyNav() {
+        // This check prevents the error if the sticky-nav element is missing
+        if (!stickyNavContainer) return;
+
+        stickyNavContainer.innerHTML = allCategories.map(cat => `
+            <button data-category="${cat.id}" aria-label="${cat.label}"
+                    class="sticky-category-btn flex flex-row-reverse items-center gap-2 px-3 py-1.5
+                           border rounded-lg transition border-yellow-600 bg-slate-700
+                           text-gray-200 text-sm hover:bg-yellow-500 hover:text-white">
+                <img src="${cat.icon}" alt="${cat.alt}" class="h-5 w-5 flex-shrink-0"/>
+                <span>${cat.label}</span>
+            </button>
+        `).join('');
+        
+        const observer = new IntersectionObserver(([entry]) => {
+            stickyNav.classList.toggle('hidden', entry.isIntersecting);
+            stickyNav.classList.toggle('flex', !entry.isIntersecting);
+        }, { threshold: 0 });
+
+        observer.observe(mainNav);
+    }
+    
+    // 5. Set up click-to-filter logic for all category buttons (main and sticky)
+    function setupFiltering() {
+        // Select all buttons from both navbars to attach the event
+        const allButtons = document.querySelectorAll('.category-btn, .sticky-category-btn');
+
+        allButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const category = e.currentTarget.dataset.category;
+                const filteredItems = category === 'all'
+                    ? menu
+                    : menu.filter(item => item.category === category);
+                
+                displayItems(filteredItems);
+                // Re-apply animations to the newly filtered items
+                setupScrollAnimations();
+            });
+        });
+    }
+
+    // Start the application
+    fetchMenu();
 });
-
-document.addEventListener('DOMContentLoaded', fetchMenu);
