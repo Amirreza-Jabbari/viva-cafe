@@ -5,7 +5,8 @@
     "category": "بار گرم",
     "price": 70000,
     "img": "/images/espreso.jpg",
-    "description": ""
+    "description": "",
+    "visibility": "True"
   },
   {
     "id": 2,
