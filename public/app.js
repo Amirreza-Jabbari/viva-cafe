@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuListContainer = document.getElementById('menu-list');
     const mainNav = document.getElementById('main-nav');
     const stickyNav = document.getElementById('sticky-nav');
-    const stickyNavContainer = stickyNav.querySelector('.max-w-7xl > div');
+    
+    // This selector is now corrected to properly find the container.
+    const stickyNavContainer = stickyNav.querySelector('div');
 
     // --- State Management ---
     let menu = [];
