@@ -14,16 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
             menu = await res.json();
             
-            // Extract unique categories from the main nav buttons
             const categoryButtons = mainNav.querySelectorAll('.category-btn');
-            allCategories = Array.from(categoryButtons).map(btn => {
-                return {
-                    id: btn.dataset.category,
-                    label: btn.querySelector('span').textContent,
-                    icon: btn.querySelector('img').src,
-                    alt: btn.querySelector('img').alt,
-                };
-            });
+            allCategories = Array.from(categoryButtons).map(btn => ({
+                id: btn.dataset.category,
+                label: btn.querySelector('span').textContent,
+                icon: btn.querySelector('img').src,
+                alt: btn.querySelector('img').alt,
+            }));
             
             setupStickyNav();
             setupFiltering();
@@ -36,23 +33,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 2. Render items based on a filter - UPDATED FOR NEW LAYOUT
+    // 2. Render items based on the new image-based layout
     function displayItems(items) {
         menuListContainer.innerHTML = items.map((item, idx) => `
             <article data-index="${idx}"
-                     class="group bg-white rounded-2xl shadow-lg flex flex-row items-center p-4
+                     class="flex items-center justify-between bg-white rounded-2xl shadow-lg overflow-hidden p-4
                             opacity-0 translate-y-8 transition-all duration-700 ease-out"
             >
-                <div class="flex flex-col items-center flex-grow text-gray-800">
-                    <h2 class="text-3xl font-bold text-slate-700 mb-2">
+                <div class="text-right pr-4">
+                    <h2 class="text-3xl font-bold mb-1 text-slate-800">
                         ${item.title}
                     </h2>
-                    <span class="text-2xl font-semibold text-slate-500">
+                    <p class="text-xl text-gray-500 flex-grow mb-2 line-clamp-3">
+                        ${item.description || ''}
+                    </p>
+                    <span class="text-xl font-bold text-yellow-600">
                         ${item.price.toLocaleString()} تومان
                     </span>
                 </div>
 
-                <div class="relative w-32 h-32 flex-shrink-0">
+                <div class="w-32 h-32 md:w-36 md:h-36 flex-shrink-0">
                     <img src="${item.img}" alt="${item.title}"
                          class="w-full h-full object-contain"/>
                 </div>
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }, {
-            rootMargin: '0px 0px -20% 0px',
+            rootMargin: '0px 0px -15% 0px',
             threshold: 0
         });
 
@@ -95,13 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
         
         const observer = new IntersectionObserver(([entry]) => {
-            if (!entry.isIntersecting) {
-                stickyNav.classList.remove('hidden');
-                stickyNav.classList.add('flex');
-            } else {
-                stickyNav.classList.add('hidden');
-                stickyNav.classList.remove('flex');
-            }
+            stickyNav.classList.toggle('hidden', entry.isIntersecting);
+            stickyNav.classList.toggle('flex', !entry.isIntersecting);
         }, { threshold: 0 });
 
         observer.observe(mainNav);
