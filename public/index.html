@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta http-equiv="Content-Language" content="fa">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -11,7 +11,7 @@
     <meta name="description" content="منوی جامع و به‌روز کافه ویوا؛ از انواع قهوه و نوشیدنی‌های گرم و سرد گرفته تا دسرها و صبحانه‌های ویژه، با توضیحات کامل و قیمت‌های شفاف برای تجربه‌ای لذت‌بخش در فضای دل‌نشین ما.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#1e293b">
+    <meta name="theme-color" content="#7a5427">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -27,17 +27,18 @@
     <meta property="og:locale" content="fa_IR" />
     <meta property="og:site_name" content="منوی کافه ویوا" />
 
+
     <meta name="distribution" content="global">
     <meta name="rating" content="general">
     <meta name="format-detection" content="telephone=no">
 
     <link rel="canonical" href="https://viva-cafe.vercel.app/" />
     <meta name="application-name" content="کافه ویوا">
-    <meta name="msapplication-TileColor" content="#1e293b">
+    <meta name="msapplication-TileColor" content="#7a5427">
     <meta name="msapplication-TileImage" content="https://viva-cafe.vercel.app/favicon/ms-icon-144x144.png">
     <meta name="msapplication-config" content="https://viva-cafe.vercel.app/favicon/browserconfig.xml">
     <meta name="apple-mobile-web-app-title" content="کافه ویوا">
-    <meta name="msapplication-navbutton-color" content="#1e293b">
+    <meta name="msapplication-navbutton-color" content="#7a5427">
     <link rel="apple-touch-icon" sizes="180x180" href="https://viva-cafe.vercel.app/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://viva-cafe.vercel.app/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://viva-cafe.vercel.app/favicon/favicon-16x16.png">
@@ -48,6 +49,7 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="supported-color-schemes" content="light dark">
     <meta name="turbo-visit-control" content="reload">
+    <meta name="next-head-count" content="X">
 
     <script type="application/ld+json">
         {
@@ -55,7 +57,7 @@
             "@type": "WebPage",
             "name": "کافه ویوا",
             "url": "https://viva-cafe.vercel.app/",
-            "description": "منوی جامع و به‌روز کافه ویوا برای تجربه‌ای لذت‌بخش.",
+            "description": "",
             "publisher": {
                 "@type": "Organization",
                 "name": "کافه ویوا",
@@ -66,139 +68,259 @@
             },
             "inLanguage": "fa"
         }
-    </script>
+        </script>
 
     <title>کافه ویوا</title>
     
-    <link rel="shortcut icon" href="https://viva-cafe.vercel.app/favicon/favicon.ico" type="image/png">
+    <link rel="shortcut icon" href= "https://viva-cafe.vercel.app/favicon/favicon.ico"  type="image/png">
 
-    <style>
-        @font-face {
-            font-family: 'BHamid';
-            src: url('/fonts/BHamid.ttf') format('truetype');
-            font-display: swap;
-        }
-        body {
-            font-family: 'BHamid', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-            --sb-track-color: #1e293b;
-            --sb-thumb-color: #ffab4d;
-            --sb-size: 11px;
-        }
-        body::-webkit-scrollbar { width: var(--sb-size); }
-        body::-webkit-scrollbar-track {
-            background: var(--sb-track-color);
-            border-radius: 19px;
-        }
-        body::-webkit-scrollbar-thumb {
-            background: var(--sb-thumb-color);
-            border-radius: 19px;
-            border: 2px solid #b39549;
-        }
-        @supports not selector(::-webkit-scrollbar) {
-            body { scrollbar-color: var(--sb-thumb-color) var(--sb-track-color); }
-        }
-    </style>
+  <!-- Custom Font + Scrollbar Styles -->
+  <style>
+    @font-face {
+      font-family: 'BHamid';
+      src: url('/fonts/BHamid.ttf') format('truetype');
+      font-display: swap;
+    }
+    body {
+      font-family: 'BHamid', ui-sans-serif, system-ui, -apple-system,
+                   BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+                   Arial, 'Noto Sans', sans-serif;
+      --sb-track-color: #e2d6b8;
+      --sb-thumb-color: #ffab4d;
+      --sb-size: 11px;
+    }
+    body::-webkit-scrollbar { width: var(--sb-size); }
+    body::-webkit-scrollbar-track {
+      background: var(--sb-track-color);
+      border-radius: 19px;
+    }
+    body::-webkit-scrollbar-thumb {
+      background: var(--sb-thumb-color);
+      border-radius: 19px;
+      border: 2px solid #b39549;
+    }
+    @supports not selector(::-webkit-scrollbar) {
+      body { scrollbar-color: var(--sb-thumb-color) var(--sb-track-color); }
+    }
+  </style>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body class="bg-slate-800 text-gray-200">
-
-<main class="max-w-7xl mx-auto p-4">
-    <header id="main-header" class="text-center mb-8">
-        <a href="/admin.html" class="inline-block">
-            <img src="/images/logo.png" alt="کافه ویوا"
-                 class="mx-auto w-32 h-auto mb-4 hover:opacity-80 transition"/>
-        </a>
-        <div class="mt-2 w-20 h-1 bg-yellow-500 mx-auto"></div>
+<body class="bg-[#EAE4D5] text-gray-800">
+  <main class="max-w-5xl mx-auto p-4">
+    <!-- Header with clickable logo -->
+    <header class="text-center mb-8">
+      <a href="/admin.html" class="inline-block">
+        <img src="/images/logo.png" alt="کافه ویوا"
+             class="mx-auto w-32 h-auto mb-4 hover:opacity-80 transition"/>
+      </a>
+      <div class="mt-2 w-20 h-1 bg-yellow-500 mx-auto"></div>
     </header>
 
-    <nav id="main-nav" class="flex flex-wrap justify-center gap-4 mb-8">
-        <button data-category="all" aria-label="همه" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/menu.svg" alt="منو" class="h-7 w-7 flex-shrink-0"/>
-            <span>همه</span>
-        </button>
-        <button data-category="بار گرم" aria-label="بار گرم" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/hot-bar.png" alt="بار گرم" class="h-7 w-7 flex-shrink-0"/>
-            <span>بار گرم</span>
-        </button>
-        <button data-category="نوشیدنی های گرم" aria-label="نوشیدنی‌های گرم" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/hot.png" alt="نوشیدنی‌های گرم" class="h-7 w-7 flex-shrink-0"/>
-            <span>نوشیدنی‌های گرم</span>
-        </button>
-        <button data-category="قهوه های دمی" aria-label="قهوه‌های دمی" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/pot.svg" alt="قهوه‌های دمی" class="h-7 w-7 flex-shrink-0"/>
-            <span>قهوه‌های دمی</span>
-        </button>
-        <button data-category="چای و دمنوش" aria-label="چای و دمنوش" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/tea.svg" alt="چای و دمنوش" class="h-7 w-7 flex-shrink-0"/>
-            <span>چای و دمنوش</span>
-        </button>
-        <button data-category="بار سرد بر پایه قهوه" aria-label="بار سرد بر پایه قهوه" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/icebar.svg" alt="بار سرد بر پایه قهوه" class="h-7 w-7 flex-shrink-0"/>
-            <span>بار سرد بر پایه قهوه</span>
-        </button>
-        <button data-category="بار سرد" aria-label="بار سرد" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/cold-bar.svg" alt="بار سرد" class="h-7 w-7 flex-shrink-0"/>
-            <span>بار سرد</span>
-        </button>
-        <button data-category="شیک ها" aria-label="شیک‌ها" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/shake.svg" alt="شیک‌ها" class="h-7 w-7 flex-shrink-0"/>
-            <span>شیک‌ها</span>
-        </button>
-        <button data-category="لازانیا و سیب سوخاری" aria-label="لازانیا و سیب سوخاری" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/fries.svg" alt="لازانیا و سیب سوخاری" class="h-7 w-7 flex-shrink-0"/>
-            <span>لازانیا و سیب سوخاری</span>
-        </button>
-        <button data-category="صبحانه" aria-label="صبحانه" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/breakfast.svg" alt="صبحانه" class="h-7 w-7 flex-shrink-0"/>
-            <span>صبحانه</span>
-        </button>
-        <button data-category="دسر و کیک ها" aria-label="دسر و کیک‌ها" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/cake.svg" alt="دسر و کیک‌ها" class="h-7 w-7 flex-shrink-0"/>
-            <span>دسر و کیک‌ها</span>
-        </button>
-        <button data-category="گیم" aria-label="گیم" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/game.svg" alt="گیم" class="h-7 w-7 flex-shrink-0"/>
-            <span>گیم</span>
-        </button>
-        <button data-category="قلیان" aria-label="قلیان" class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3 border rounded-lg transition border-yellow-500 bg-slate-700 text-gray-200 text-xl hover:bg-yellow-500 hover:text-white">
-            <img src="/public/icons/hookah.svg" alt="قلیان" class="h-7 w-7 flex-shrink-0"/>
-            <span>قلیان</span>
-        </button>
-    </nav>
+    <nav class="flex flex-wrap justify-center gap-4 mb-8">
+  <!-- همه -->
+  <button
+    data-category="all"
+    aria-label="همه"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white">
+    <img src="/public/icons/menu.svg" alt="منو" class="h-7 w-7 flex-shrink-0"/>
+    <span>همه</span>
+  </button>
 
-    <div id="sticky-nav" class="hidden fixed top-0 left-0 right-0 z-40 bg-slate-800/80 backdrop-blur-sm shadow-lg transition-transform duration-300">
-        <div class="max-w-7xl mx-auto p-2 flex flex-wrap justify-center gap-x-3 gap-y-2">
-            </div>
-    </div>
+  <!-- بار گرم -->
+  <button
+    data-category="بار گرم"
+    aria-label="بار گرم"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white">
+    <img src="/public/icons/hot-bar.png" alt="بار گرم" class="h-7 w-7 flex-shrink-0"/>
+    <span>بار گرم</span>
+  </button>
 
+  <!-- نوشیدنی‌های گرم -->
+  <button
+    data-category="نوشیدنی های گرم"
+    aria-label="نوشیدنی‌های گرم"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white"
+  >
+    <img src="/public/icons/hot.png" alt="نوشیدنی‌های گرم" class="h-7 w-7 flex-shrink-0"/>
+    <span>نوشیدنی‌های گرم</span>
+  </button>
 
-    <section id="menu-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"></section>
-</main>
+  <!-- قهوه‌های دمی -->
+  <button
+    data-category="قهوه های دمی"
+    aria-label="قهوه‌های دمی"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white"
+  >
+    <img src="/public/icons/pot.svg" alt="قهوه‌های دمی" class="h-7 w-7 flex-shrink-0"/>
+    <span>قهوه‌های دمی</span>
+  </button>
 
-<footer class="bg-slate-900 text-gray-300 mt-12">
-    <div class="max-w-7xl mx-auto px-6 py-10">
-        <div class="border-t border-gray-700 mt-1 pt-4 pb-2">
-            <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-lg">
-                <p class="mb-3 md:mb-0">© یک فنجان سرزندگی</p>
-                <div class="flex justify-center md:justify-start items-center space-x-4 space-x-reverse text-sm">
-                    <a href="https://maps.app.goo.gl/PwKCoUaG4jEukBkW7" target="_blank" class="hover:text-yellow-400 transition flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.134 2 5 5.134 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.134 15.866 2 12 2ZM12 11.5C10.619 11.5 9.5 10.381 9.5 9C9.5 7.619 10.619 6.5 12 6.5C13.381 6.5 14.5 7.619 14.5 9C14.5 10.381 13.381 11.5 12 11.5Z" /></svg>
-                        <span>اندیشه، پشت سینما ساحل</span>
-                    </a>
-                    <span class="text-gray-500">|</span>
-                    <a href="https://t.me/yourchannel" target="_blank" class="hover:text-yellow-400 transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 640 640"><path d="M633.468 192.038s-6.248-44.115-25.477-63.485c-24.366-25.477-51.65-25.642-64.123-27.118-89.493-6.52-223.904-6.52-223.904-6.52h-.236s-134.352 0-223.893 6.52c-12.52 1.523-39.768 1.63-64.123 27.118-19.24 19.37-25.358 63.485-25.358 63.485S-.012 243.806-.012 295.681v48.509c0 51.768 6.366 103.643 6.366 103.643s6.248 44.114 25.358 63.52c24.355 25.477 56.363 24.65 70.655 27.367 51.237 4.89 217.644 6.366 217.644 6.366s134.529-.237 224.022-6.638c12.52-1.477 39.756-1.63 64.123-27.119 19.24-19.37 25.476-63.532 25.476-63.532S640 396.03 640 344.154v-48.508c-.13-51.769-6.497-103.643-6.497-103.643l-.035.035zm-379.8 211.007V223.173L426.56 313.41l-172.892 89.635z"/></svg></a>
-                    <span class="text-gray-500">|</span>
-                    <a href="https://instagram.com/viva.cafeee" target="_blank" class="hover:text-yellow-400 transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2C4.67825 2 2 4.67825 2 7.75V16.25C2 19.3218 4.67825 22 7.75 22H16.25C19.3218 22 22 19.3218 22 16.25V7.75C22 4.67825 19.3218 2 16.25 2H7.75ZM12 7.378C14.0711 7.378 15.622 8.92886 15.622 11C15.622 13.0711 14.0711 14.622 12 14.622C9.92886 14.622 8.378 13.0711 8.378 11C8.378 8.92886 9.92886 7.378 12 7.378ZM17.5 6.25C17.5 5.55964 18.0596 5 18.75 5C19.4404 5 20 5.55964 20 6.25C20 6.94036 19.4404 7.5 18.75 7.5C18.0596 7.5 17.5 6.94036 17.5 6.25Z" /></svg></a>
-                    <span class="text-gray-500">|</span>
-                    <a href="tel:+989911600782" class="hover:text-yellow-400 transition flex items-center"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 118.72" class="h-5 w-5 ml-1" fill="currentColor" style="enable-background:new 0 0 122.88 118.72" xml:space="preserve"><g><path d="M29.22,56.54c3.57,6.43,7.67,12.6,13.02,18.24C47.58,80.45,54.24,85.6,62.86,90c0.64,0.31,1.25,0.31,1.78,0.1 c0.82-0.31,1.66-0.99,2.48-1.81c0.64-0.64,1.43-1.66,2.26-2.77c3.31-4.36,7.42-9.77,13.21-7.07c0.13,0.06,0.23,0.13,0.35,0.19 l19.33,11.11c0.06,0.03,0.13,0.1,0.19,0.13c2.55,1.75,3.6,4.46,3.63,7.52c0,3.12-1.15,6.63-2.83,9.58 c-2.22,3.91-5.51,6.5-9.29,8.21c-3.6,1.66-7.61,2.55-11.46,3.12c-6.05,0.89-11.71,0.32-17.5-1.46c-5.67-1.75-11.37-4.65-17.6-8.5 l-0.46-0.29c-2.86-1.78-5.95-3.7-8.98-5.95c-11.1-8.38-22.4-20.47-29.76-33.78C2.03,57.15-1.34,45.09,0.5,33.59 c1.02-6.3,3.72-12.03,8.44-15.82c4.11-3.31,9.64-5.13,16.81-4.49c0.82,0.06,1.56,0.54,1.94,1.24l12.39,20.94 c1.81,2.35,2.04,4.68,1.05,7.01c-0.82,1.91-2.48,3.67-4.74,5.31c-0.67,0.57-1.46,1.15-2.29,1.75c-2.77,2.01-5.92,4.33-4.84,7.07 L29.22,56.54L29.22,56.54L29.22,56.54z M73.35,7.55c-0.51-0.04-0.99-0.18-1.42-0.4c-0.45-0.23-0.84-0.54-1.16-0.91 c-0.32-0.38-0.57-0.81-0.73-1.29C69.9,4.49,69.84,4,69.88,3.49l0.01-0.07c0.04-0.49,0.18-0.95,0.39-1.36l0.04-0.07 c0.22-0.42,0.52-0.79,0.87-1.08c0.37-0.32,0.81-0.57,1.29-0.73c0.45-0.15,0.93-0.21,1.42-0.18l0.1,0.01 c3.43,0.27,6.74,0.79,9.92,1.55c3.21,0.77,6.27,1.8,9.16,3.05c2.91,1.27,5.65,2.78,8.2,4.52c2.54,1.74,4.91,3.71,7.06,5.9 c2.13,2.17,4.06,4.56,5.77,7.15c1.69,2.57,3.16,5.34,4.4,8.28c1.2,2.88,2.18,5.94,2.92,9.18c0.72,3.17,1.21,6.5,1.45,9.98 l0.01,0.17l0,0.18c0,0.46-0.08,0.91-0.23,1.33c-0.16,0.45-0.4,0.85-0.71,1.2c-0.31,0.35-0.68,0.64-1.1,0.86 c-0.39,0.21-0.84,0.34-1.31,0.4l-0.2,0.02l-0.19,0c-0.47,0.01-0.92-0.07-1.34-0.23c-0.44-0.16-0.85-0.4-1.2-0.71 c-0.37-0.32-0.68-0.72-0.9-1.17c-0.21-0.43-0.35-0.92-0.38-1.42c-0.21-3.09-0.63-6.03-1.26-8.8c-0.63-2.83-1.48-5.5-2.52-8.01 c-1.04-2.52-2.29-4.88-3.72-7.06c-1.45-2.21-3.08-4.23-4.88-6.07c-1.82-1.85-3.81-3.51-5.97-4.98c-2.17-1.48-4.51-2.76-7.01-3.84 l-0.04-0.02c-2.48-1.07-5.11-1.95-7.88-2.61C79.29,8.23,76.39,7.78,73.35,7.55L73.35,7.55z M65.03,43.21 c-0.51-0.05-0.99-0.21-1.41-0.43c-0.44-0.24-0.83-0.56-1.13-0.94c-0.29-0.36-0.52-0.78-0.67-1.23c-0.14-0.42-0.2-0.87-0.18-1.33 c0.01-0.13,0.01-0.23,0.03-0.35c0.07-0.48,0.23-0.93,0.45-1.32c0.23-0.41,0.54-0.77,0.9-1.06c0.36-0.29,0.78-0.52,1.23-0.67 c0.42-0.13,0.87-0.2,1.34-0.18l0.35,0.03c1.49,0.16,2.92,0.42,4.3,0.77c1.4,0.36,2.73,0.82,3.98,1.36l0.04,0.02 c1.27,0.56,2.46,1.21,3.57,1.96c1.12,0.76,2.16,1.61,3.12,2.57c0.95,0.95,1.81,1.98,2.57,3.1c0.76,1.11,1.42,2.3,1.99,3.58 c0.55,1.25,1.01,2.58,1.37,3.98c0.35,1.37,0.6,2.83,0.76,4.37c0.05,0.51,0,1.01-0.13,1.47l-0.01,0.04 c-0.14,0.46-0.38,0.89-0.67,1.26l-0.01,0.02c-0.31,0.38-0.69,0.69-1.13,0.93c-0.42,0.23-0.9,0.38-1.41,0.43l-0.05,0 c-0.49,0.04-0.97-0.01-1.42-0.14c-0.48-0.14-0.92-0.38-1.3-0.69l-0.01,0c-0.38-0.31-0.7-0.69-0.94-1.14 c-0.23-0.42-0.38-0.9-0.43-1.4l0-0.04c-0.11-1.09-0.29-2.13-0.54-3.12c-0.25-1.01-0.57-1.95-0.95-2.82 c-0.38-0.87-0.82-1.68-1.32-2.42c-0.51-0.75-1.07-1.43-1.69-2.05c-0.62-0.62-1.31-1.18-2.06-1.68c-0.75-0.5-1.57-0.94-2.46-1.33 l-0.05-0.02c-0.87-0.38-1.81-0.69-2.8-0.94C67.22,43.51,66.15,43.33,65.03,43.21L65.03,43.21z M69.03,25.99l-0.1,0l-0.13-0.02 c-0.47-0.05-0.91-0.19-1.3-0.39c-0.42-0.22-0.79-0.51-1.1-0.85l0,0c-0.32-0.36-0.57-0.77-0.73-1.23c-0.15-0.43-0.23-0.89-0.22-1.38 l0-0.17l0.02-0.16c0.05-0.46,0.19-0.9,0.39-1.29c0.22-0.42,0.51-0.8,0.85-1.1c0.37-0.33,0.8-0.58,1.28-0.75 c0.46-0.16,0.95-0.23,1.46-0.2c2.66,0.16,5.19,0.5,7.58,1.01c2.4,0.51,4.67,1.2,6.78,2.06c2.13,0.87,4.12,1.92,5.96,3.14 c1.82,1.21,3.5,2.6,5.01,4.17c1.5,1.55,2.84,3.27,4,5.15c1.15,1.86,2.14,3.88,2.94,6.05c0.78,2.12,1.4,4.4,1.84,6.84 c0.43,2.4,0.69,4.93,0.77,7.62l0.01,0.14c0,0.48-0.09,0.95-0.27,1.38c-0.18,0.45-0.44,0.85-0.76,1.2c-0.33,0.36-0.74,0.65-1.2,0.85 c-0.43,0.2-0.92,0.31-1.43,0.33l-0.17,0c-0.48-0.01-0.93-0.1-1.35-0.27c-0.45-0.18-0.85-0.44-1.19-0.76 c-0.36-0.34-0.65-0.74-0.86-1.2c-0.2-0.44-0.31-0.92-0.33-1.44c-0.06-2.24-0.28-4.35-0.63-6.34c-0.35-2.01-0.85-3.88-1.47-5.6 c-0.62-1.72-1.38-3.3-2.26-4.75c-0.89-1.46-1.91-2.77-3.05-3.96c-1.16-1.19-2.44-2.26-3.85-3.19c-1.42-0.94-2.99-1.75-4.67-2.43 l-0.04-0.02c-1.7-0.67-3.52-1.22-5.47-1.63c-1.96-0.41-4.05-0.69-6.25-0.82L69.03,25.99L69.03,25.99z"/></g></svg></a>
-                </div>
-            </div>
+  <!-- چای و دمنوش -->
+  <button
+    data-category="چای و دمنوش"
+    aria-label="چای و دمنوش"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white"
+  >
+    <img src="/public/icons/tea.svg" alt="چای و دمنوش" class="h-7 w-7 flex-shrink-0"/>
+    <span>چای و دمنوش</span>
+  </button>
+
+  <!-- بار سرد بر پایه قهوه -->
+  <button
+    data-category="بار سرد بر پایه قهوه"
+    aria-label="بار سرد بر پایه قهوه"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white"
+  >
+    <img src="/public/icons/icebar.svg" alt="بار سرد بر پایه قهوه" class="h-7 w-7 flex-shrink-0"/>
+    <span>بار سرد بر پایه قهوه</span>
+  </button>
+
+  <!-- بار سرد -->
+  <button
+    data-category="بار سرد"
+    aria-label="بار سرد"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white"
+  >
+    <img src="/public/icons/cold-bar.svg" alt="بار سرد" class="h-7 w-7 flex-shrink-0"/>
+    <span>بار سرد</span>
+  </button>
+
+  <!-- شیک‌ها -->
+  <button
+    data-category="شیک ها"
+    aria-label="شیک‌ها"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white"
+  >
+    <img src="/public/icons/shake.svg" alt="شیک‌ها" class="h-7 w-7 flex-shrink-0"/>
+    <span>شیک‌ها</span>
+  </button>
+
+  <!-- لازانیا و سیب سوخاری -->
+  <button
+    data-category="لازانیا و سیب سوخاری"
+    aria-label="لازانیا و سیب سوخاری"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white"
+  >
+    <img src="/public/icons/fries.svg" alt="لازانیا و سیب سوخاری" class="h-7 w-7 flex-shrink-0"/>
+    <span>لازانیا و سیب سوخاری</span>
+  </button>
+
+  <!-- صبحانه -->
+  <button
+    data-category="صبحانه"
+    aria-label="صبحانه"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white"
+  >
+    <img src="/public/icons/breakfast.svg" alt="صبحانه" class="h-7 w-7 flex-shrink-0"/>
+    <span>صبحانه</span>
+  </button>
+
+  <!-- دسر و کیک‌ها -->
+  <button
+    data-category="دسر و کیک ها"
+    aria-label="دسر و کیک‌ها"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white"
+  >
+    <img src="/public/icons/cake.svg" alt="دسر و کیک‌ها" class="h-7 w-7 flex-shrink-0"/>
+    <span>دسر و کیک‌ها</span>
+  </button>
+
+  <!-- گیم -->
+  <button
+    data-category="گیم"
+    aria-label="گیم"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white"
+  >
+    <img src="/public/icons/game.svg" alt="گیم" class="h-7 w-7 flex-shrink-0"/>
+    <span>گیم</span>
+  </button>
+
+  <!-- قلیان -->
+  <button
+    data-category="قلیان"
+    aria-label="فلیان"
+    class="category-btn flex flex-row-reverse items-center gap-3 px-6 py-3
+           border rounded-lg transition border-yellow-500 bg-gray-200
+           text-[#7a5427] text-xl hover:bg-yellow-500 hover:text-white"
+  >
+    <img src="/public/icons/hookah.svg" alt="قلیان" class="h-7 w-7 flex-shrink-0"/>
+    <span>قلیان</span>
+  </button>
+</nav>
+
+    <!-- Menu Items Grid -->
+    <section id="menu-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></section>
+  </main>
+
+  <!-- Footer -->
+<footer class="bg-yellow-700 text-gray-100 mt-12">
+  <div class="max-w-5xl mx-auto px-6 py-10">
+    <div class="border-t border-gray-100 mt-1 pt-4 pb-2">
+      <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-lg">
+        <p class="mb-3 md:mb-0">© یک فنجان سرزندگی</p>
+        <div class="flex justify-center md:justify-start items-center space-x-4 space-x-reverse text-sm">
+          <!-- address -->
+          <a href="https://maps.app.goo.gl/PwKCoUaG4jEukBkW7" target="_blank" class="hover:text-yellow-400 transition flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C8.134 2 5 5.134 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.134 15.866 2 12 2ZM12 11.5C10.619 11.5 9.5 10.381 9.5 9C9.5 7.619 10.619 6.5 12 6.5C13.381 6.5 14.5 7.619 14.5 9C14.5 10.381 13.381 11.5 12 11.5Z" />
+            </svg>
+            <span>اندیشه، پشت سینما ساحل</span>
+          </a>
+          <span class="text-gray-300">|</span>
+          <!-- youtube -->
+          <a href="https://t.me/yourchannel" target="_blank" class="hover:text-yellow-400 transition flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 640 640">
+              <path d="M633.468 192.038s-6.248-44.115-25.477-63.485c-24.366-25.477-51.65-25.642-64.123-27.118-89.493-6.52-223.904-6.52-223.904-6.52h-.236s-134.352 0-223.893 6.52c-12.52 1.523-39.768 1.63-64.123 27.118-19.24 19.37-25.358 63.485-25.358 63.485S-.012 243.806-.012 295.681v48.509c0 51.768 6.366 103.643 6.366 103.643s6.248 44.114 25.358 63.52c24.355 25.477 56.363 24.65 70.655 27.367 51.237 4.89 217.644 6.366 217.644 6.366s134.529-.237 224.022-6.638c12.52-1.477 39.756-1.63 64.123-27.119 19.24-19.37 25.476-63.532 25.476-63.532S640 396.03 640 344.154v-48.508c-.13-51.769-6.497-103.643-6.497-103.643l-.035.035zm-379.8 211.007V223.173L426.56 313.41l-172.892 89.635z"/>
+            </svg>
+            
+          </a>
+          <span class="text-gray-300">|</span>
+          <!-- instagram -->
+          <a href="https://instagram.com/viva.cafeee" target="_blank" class="hover:text-yellow-400 transition flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7.75 2C4.67825 2 2 4.67825 2 7.75V16.25C2 19.3218 4.67825 22 7.75 22H16.25C19.3218 22 22 19.3218 22 16.25V7.75C22 4.67825 19.3218 2 16.25 2H7.75ZM12 7.378C14.0711 7.378 15.622 8.92886 15.622 11C15.622 13.0711 14.0711 14.622 12 14.622C9.92886 14.622 8.378 13.0711 8.378 11C8.378 8.92886 9.92886 7.378 12 7.378ZM17.5 6.25C17.5 5.55964 18.0596 5 18.75 5C19.4404 5 20 5.55964 20 6.25C20 6.94036 19.4404 7.5 18.75 7.5C18.0596 7.5 17.5 6.94036 17.5 6.25Z" />
+            </svg>
+          </a>
+          <span class="text-gray-300">|</span>
+          <!-- phone number -->
+          <a href="tel:+989911600782" class="hover:text-yellow-400 transition flex items-center">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 118.72" class="h-5 w-5 ml-1" fill="currentColor" style="enable-background:new 0 0 122.88 118.72" xml:space="preserve"><g>
+              <path d="M29.22,56.54c3.57,6.43,7.67,12.6,13.02,18.24C47.58,80.45,54.24,85.6,62.86,90c0.64,0.31,1.25,0.31,1.78,0.1 c0.82-0.31,1.66-0.99,2.48-1.81c0.64-0.64,1.43-1.66,2.26-2.77c3.31-4.36,7.42-9.77,13.21-7.07c0.13,0.06,0.23,0.13,0.35,0.19 l19.33,11.11c0.06,0.03,0.13,0.1,0.19,0.13c2.55,1.75,3.6,4.46,3.63,7.52c0,3.12-1.15,6.63-2.83,9.58 c-2.22,3.91-5.51,6.5-9.29,8.21c-3.6,1.66-7.61,2.55-11.46,3.12c-6.05,0.89-11.71,0.32-17.5-1.46c-5.67-1.75-11.37-4.65-17.6-8.5 l-0.46-0.29c-2.86-1.78-5.95-3.7-8.98-5.95c-11.1-8.38-22.4-20.47-29.76-33.78C2.03,57.15-1.34,45.09,0.5,33.59 c1.02-6.3,3.72-12.03,8.44-15.82c4.11-3.31,9.64-5.13,16.81-4.49c0.82,0.06,1.56,0.54,1.94,1.24l12.39,20.94 c1.81,2.35,2.04,4.68,1.05,7.01c-0.82,1.91-2.48,3.67-4.74,5.31c-0.67,0.57-1.46,1.15-2.29,1.75c-2.77,2.01-5.92,4.33-4.84,7.07 L29.22,56.54L29.22,56.54L29.22,56.54z M73.35,7.55c-0.51-0.04-0.99-0.18-1.42-0.4c-0.45-0.23-0.84-0.54-1.16-0.91 c-0.32-0.38-0.57-0.81-0.73-1.29C69.9,4.49,69.84,4,69.88,3.49l0.01-0.07c0.04-0.49,0.18-0.95,0.39-1.36l0.04-0.07 c0.22-0.42,0.52-0.79,0.87-1.08c0.37-0.32,0.81-0.57,1.29-0.73c0.45-0.15,0.93-0.21,1.42-0.18l0.1,0.01 c3.43,0.27,6.74,0.79,9.92,1.55c3.21,0.77,6.27,1.8,9.16,3.05c2.91,1.27,5.65,2.78,8.2,4.52c2.54,1.74,4.91,3.71,7.06,5.9 c2.13,2.17,4.06,4.56,5.77,7.15c1.69,2.57,3.16,5.34,4.4,8.28c1.2,2.88,2.18,5.94,2.92,9.18c0.72,3.17,1.21,6.5,1.45,9.98 l0.01,0.17l0,0.18c0,0.46-0.08,0.91-0.23,1.33c-0.16,0.45-0.4,0.85-0.71,1.2c-0.31,0.35-0.68,0.64-1.1,0.86 c-0.39,0.21-0.84,0.34-1.31,0.4l-0.2,0.02l-0.19,0c-0.47,0.01-0.92-0.07-1.34-0.23c-0.44-0.16-0.85-0.4-1.2-0.71 c-0.37-0.32-0.68-0.72-0.9-1.17c-0.21-0.43-0.35-0.92-0.38-1.42c-0.21-3.09-0.63-6.03-1.26-8.8c-0.63-2.83-1.48-5.5-2.52-8.01 c-1.04-2.52-2.29-4.88-3.72-7.06c-1.45-2.21-3.08-4.23-4.88-6.07c-1.82-1.85-3.81-3.51-5.97-4.98c-2.17-1.48-4.51-2.76-7.01-3.84 l-0.04-0.02c-2.48-1.07-5.11-1.95-7.88-2.61C79.29,8.23,76.39,7.78,73.35,7.55L73.35,7.55z M65.03,43.21 c-0.51-0.05-0.99-0.21-1.41-0.43c-0.44-0.24-0.83-0.56-1.13-0.94c-0.29-0.36-0.52-0.78-0.67-1.23c-0.14-0.42-0.2-0.87-0.18-1.33 c0.01-0.13,0.01-0.23,0.03-0.35c0.07-0.48,0.23-0.93,0.45-1.32c0.23-0.41,0.54-0.77,0.9-1.06c0.36-0.29,0.78-0.52,1.23-0.67 c0.42-0.13,0.87-0.2,1.34-0.18l0.35,0.03c1.49,0.16,2.92,0.42,4.3,0.77c1.4,0.36,2.73,0.82,3.98,1.36l0.04,0.02 c1.27,0.56,2.46,1.21,3.57,1.96c1.12,0.76,2.16,1.61,3.12,2.57c0.95,0.95,1.81,1.98,2.57,3.1c0.76,1.11,1.42,2.3,1.99,3.58 c0.55,1.25,1.01,2.58,1.37,3.98c0.35,1.37,0.6,2.83,0.76,4.37c0.05,0.51,0,1.01-0.13,1.47l-0.01,0.04 c-0.14,0.46-0.38,0.89-0.67,1.26l-0.01,0.02c-0.31,0.38-0.69,0.69-1.13,0.93c-0.42,0.23-0.9,0.38-1.41,0.43l-0.05,0 c-0.49,0.04-0.97-0.01-1.42-0.14c-0.48-0.14-0.92-0.38-1.3-0.69l-0.01,0c-0.38-0.31-0.7-0.69-0.94-1.14 c-0.23-0.42-0.38-0.9-0.43-1.4l0-0.04c-0.11-1.09-0.29-2.13-0.54-3.12c-0.25-1.01-0.57-1.95-0.95-2.82 c-0.38-0.87-0.82-1.68-1.32-2.42c-0.51-0.75-1.07-1.43-1.69-2.05c-0.62-0.62-1.31-1.18-2.06-1.68c-0.75-0.5-1.57-0.94-2.46-1.33 l-0.05-0.02c-0.87-0.38-1.81-0.69-2.8-0.94C67.22,43.51,66.15,43.33,65.03,43.21L65.03,43.21z M69.03,25.99l-0.1,0l-0.13-0.02 c-0.47-0.05-0.91-0.19-1.3-0.39c-0.42-0.22-0.79-0.51-1.1-0.85l0,0c-0.32-0.36-0.57-0.77-0.73-1.23c-0.15-0.43-0.23-0.89-0.22-1.38 l0-0.17l0.02-0.16c0.05-0.46,0.19-0.9,0.39-1.29c0.22-0.42,0.51-0.8,0.85-1.1c0.37-0.33,0.8-0.58,1.28-0.75 c0.46-0.16,0.95-0.23,1.46-0.2c2.66,0.16,5.19,0.5,7.58,1.01c2.4,0.51,4.67,1.2,6.78,2.06c2.13,0.87,4.12,1.92,5.96,3.14 c1.82,1.21,3.5,2.6,5.01,4.17c1.5,1.55,2.84,3.27,4,5.15c1.15,1.86,2.14,3.88,2.94,6.05c0.78,2.12,1.4,4.4,1.84,6.84 c0.43,2.4,0.69,4.93,0.77,7.62l0.01,0.14c0,0.48-0.09,0.95-0.27,1.38c-0.18,0.45-0.44,0.85-0.76,1.2c-0.33,0.36-0.74,0.65-1.2,0.85 c-0.43,0.2-0.92,0.31-1.43,0.33l-0.17,0c-0.48-0.01-0.93-0.1-1.35-0.27c-0.45-0.18-0.85-0.44-1.19-0.76 c-0.36-0.34-0.65-0.74-0.86-1.2c-0.2-0.44-0.31-0.92-0.33-1.44c-0.06-2.24-0.28-4.35-0.63-6.34c-0.35-2.01-0.85-3.88-1.47-5.6 c-0.62-1.72-1.38-3.3-2.26-4.75c-0.89-1.46-1.91-2.77-3.05-3.96c-1.16-1.19-2.44-2.26-3.85-3.19c-1.42-0.94-2.99-1.75-4.67-2.43 l-0.04-0.02c-1.7-0.67-3.52-1.22-5.47-1.63c-1.96-0.41-4.05-0.69-6.25-0.82L69.03,25.99L69.03,25.99z"/></g>
+            </svg>
+          </a>
         </div>
+      </div>
     </div>
+  </div>
 </footer>
 
-<script src="/app.js"></script>
+  <!-- Frontend Logic -->
+  <script src="/app.js"></script>
 </body>
 </html>
