@@ -60,7 +60,7 @@ async function loadMenu() {
         <td>
           <label class="relative inline-flex items-center cursor-pointer">
             <input type="checkbox" class="visibility-toggle sr-only peer" ${String(item.visibility).toLowerCase() === 'true' ? 'checked' : ''}>
-            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-yellow-300 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-yellow-500"></div>
+            <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-yellow-300 peer-checked:bg-yellow-500 after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:-translate-x-full"></div>
           </label>
         </td>
         <td class="space-x-2 rtl:space-x-reverse">
