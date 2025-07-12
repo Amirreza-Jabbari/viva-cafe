@@ -16,8 +16,8 @@ export default async function handler(req, res) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 
-  // 2. Validate input (img & description optional)
-  let { id, title, category, price, img = '', description = '' } = req.body;
+  // 2. Validate input (img and visibility optional)
+  let { id, title, category, price, img = '', visibility = 'True' } = req.body;
   price = Number(price); // coerce
   if (!title || !category || isNaN(price)) {
     return res.status(400).json({ error: 'Missing required fields: title, category, price' });
@@ -40,12 +40,12 @@ export default async function handler(req, res) {
       id = Number(id);
       updated = menu.map(item =>
         item.id === id
-          ? { id, title, category, price, img, description }
+          ? { id, title, category, price, img, visibility }
           : item
       );
     } else {
       const newId = Math.max(0, ...menu.map(i => i.id)) + 1;
-      updated = [...menu, { id: newId, title, category, price, img, description }];
+      updated = [...menu, { id: newId, title, category, price, img, visibility }];
     }
 
     // 5. Get file SHA

@@ -14,7 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const res = await fetch('/api/get-menu');
             if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-            menu = await res.json();
+            const allMenuItems = await res.json();
+            
+            // Filter out items with visibility set to False
+            menu = allMenuItems.filter(item => item.visibility === "True");
             
             const categoryButtons = mainNav.querySelectorAll('.category-btn');
             allCategories = Array.from(categoryButtons).map(btn => ({

@@ -4,643 +4,735 @@
     "title": "اسپرسو",
     "category": "بار گرم",
     "price": 70000,
-    "img": "/images/espreso.jpg"
+    "img": "/images/espreso.jpg",
+    "visibility": "True"
   },
   {
     "id": 2,
     "title": "اسپرسو اسپشیال",
     "category": "بار گرم",
     "price": 95000,
-    "img": "/images/espreso-special.jpg"
+    "img": "/images/espreso-special.jpg",
+    "visibility": "True"
   },
   {
     "id": 3,
     "title": "آمریکانو",
     "category": "بار گرم",
     "price": 78000,
-    "img": "/images/americano.jpg"
+    "img": "/images/americano.jpg",
+    "visibility": "True"
   },
   {
     "id": 4,
     "title": "کارامل ماکیاتو",
     "category": "بار گرم",
     "price": 129000,
-    "img": "/images/makiato.jpg"
+    "img": "/images/makiato.jpg",
+    "visibility": "True"
   },
   {
     "id": 5,
     "title": "موکا",
     "category": "بار گرم",
     "price": 129000,
-    "img": "/images/mocka.jpeg"
+    "img": "/images/mocka.jpeg",
+    "visibility": "True"
   },
   {
     "id": 6,
     "title": "لته",
     "category": "بار گرم",
     "price": 107000,
-    "img": "/images/late.jpg"
+    "img": "/images/late.jpg",
+    "visibility": "True"
   },
   {
     "id": 7,
     "title": "لته ماکیاتو (طعم دهنده)",
     "category": "بار گرم",
     "price": 129000,
-    "img": "/images/late-makiato.jpg"
+    "img": "/images/late-makiato.jpg",
+    "visibility": "True"
   },
   {
     "id": 8,
     "title": "لته شیر فندق",
     "category": "بار گرم",
     "price": 129000,
-    "img": "/images/late-fandogh.jpg"
+    "img": "/images/late-fandogh.jpg",
+    "visibility": "True"
   },
   {
     "id": 9,
     "title": "لته شیر بادام",
     "category": "بار گرم",
     "price": 129000,
-    "img": "/images/late-badam.jpg"
+    "img": "/images/late-badam.jpg",
+    "visibility": "True"
   },
   {
     "id": 10,
     "title": "کاپوچینو",
     "category": "بار گرم",
     "price": 107000,
-    "img": "/images/capuccino.jpg"
+    "img": "/images/capuccino.jpg",
+    "visibility": "True"
   },
   {
     "id": 11,
     "title": "کورتادو",
     "category": "بار گرم",
     "price": 78000,
-    "img": "/images/kortado.jpg"
+    "img": "/images/kortado.jpg",
+    "visibility": "True"
   },
   {
     "id": 12,
     "title": "فلت وایت",
     "category": "بار گرم",
     "price": 93000,
-    "img": "/images/flat-white.jpeg"
+    "img": "/images/flat-white.jpeg",
+    "visibility": "True"
   },
   {
     "id": 13,
     "title": "نسکافه",
     "category": "نوشیدنی های گرم",
     "price": 92000,
-    "img": "/images/nescafe.png"
+    "img": "/images/nescafe.png",
+    "visibility": "True"
   },
   {
     "id": 14,
     "title": "ماسالا",
     "category": "نوشیدنی های گرم",
     "price": 99000,
-    "img": "/images/masala.jpg"
+    "img": "/images/masala.jpg",
+    "visibility": "True"
   },
   {
     "id": 15,
     "title": "هات چاکلت",
     "category": "نوشیدنی های گرم",
     "price": 109000,
-    "img": "/images/hot-chock.jpg"
+    "img": "/images/hot-chock.jpg",
+    "visibility": "True"
   },
   {
     "id": 16,
     "title": "هات چاکلت فندق",
     "category": "نوشیدنی های گرم",
     "price": 147000,
-    "img": "/images/hot-chock-fandogh.jpg"
+    "img": "/images/hot-chock-fandogh.jpg",
+    "visibility": "True"
   },
   {
     "id": 16,
     "title": "هات چاکلت پسته",
     "category": "نوشیدنی های گرم",
     "price": 159000,
-    "img": "/images/hot-chock-fandogh.jpg"
+    "img": "/images/hot-chock-fandogh.jpg",
+    "visibility": "True"
   },
   {
     "id": 17,
     "title": "وایت چاکلت",
     "category": "نوشیدنی های گرم",
     "price": 106000,
-    "img": "/images/white-chock.jpg"
+    "img": "/images/white-chock.jpg",
+    "visibility": "True"
   },
   {
     "id": 18,
     "title": "بلوبری چاکلت",
     "category": "نوشیدنی های گرم",
     "price": 107000,
-    "img": "/images/blueberry-chock.jpg"
+    "img": "/images/blueberry-chock.jpg",
+    "visibility": "True"
   },
   {
     "id": 19,
     "title": "استرابری چاکلت",
     "category": "نوشیدنی های گرم",
     "price": 108000,
-    "img": "/images/strawberry-chock.jpg"
+    "img": "/images/strawberry-chock.jpg",
+    "visibility": "True"
   },
   {
     "id": 20,
     "title": "کرک",
     "category": "نوشیدنی های گرم",
     "price": 117000,
-    "img": "/images/crac.jpg"
+    "img": "/images/crac.jpg",
+    "visibility": "True"
   },
   {
     "id": 21,
     "title": "شیر کاکائو",
     "category": "نوشیدنی های گرم",
     "price": 118000,
-    "img": "/images/shircacao.webp"
+    "img": "/images/shircacao.webp",
+    "visibility": "True"
   },
   {
     "id": 21,
     "title": "شیر گرم",
     "category": "نوشیدنی های گرم",
     "price": 60000,
-    "img": "/images/warm-milk.jpg"
+    "img": "/images/warm-milk.jpg",
+    "visibility": "True"
   },
   {
     "id": 21,
     "title": "شیر عسلی",
     "category": "نوشیدنی های گرم",
     "price": 79000,
-    "img": "/images/milk-honey.jpg"
+    "img": "/images/milk-honey.jpg",
+    "visibility": "True"
   },
   {
     "id": 22,
     "title": "V60",
     "category": "قهوه های دمی",
     "price": 97000,
-    "img": "/images/v60.jpg"
+    "img": "/images/v60.jpg",
+    "visibility": "True"
   },
   {
     "id": 23,
     "title": "ترک",
     "category": "قهوه های دمی",
     "price": 75000,
-    "img": "/images/tork.jpg"
+    "img": "/images/tork.jpg",
+    "visibility": "True"
   },
   {
     "id": 24,
     "title": "کمکس",
     "category": "قهوه های دمی",
     "price": 97000,
-    "img": "/images/kemex.jpg"
+    "img": "/images/kemex.jpg",
+    "visibility": "True"
   },
   {
     "id": 25,
     "title": "کلدبرو",
     "category": "قهوه های دمی",
     "price": 157000,
-    "img": "/images/coldbro.jpeg"
+    "img": "/images/coldbro.jpeg",
+    "visibility": "True"
   },
   {
     "id": 26,
     "title": "چای سیاه تک نفره",
     "category": "چای و دمنوش",
     "price": 45000,
-    "img": "/images/chay1.jpeg"
+    "img": "/images/chay1.jpeg",
+    "visibility": "True"
   },
   {
     "id": 27,
     "title": "چای سیاه دو نفره",
     "category": "چای و دمنوش",
     "price": 84000,
-    "img": "/images/chay2.jpeg"
+    "img": "/images/chay2.jpeg",
+    "visibility": "True"
   },
   {
     "id": 28,
     "title": "چای سیاه چهار نفره",
     "category": "چای و دمنوش",
     "price": 172000,
-    "img": "/images/chay2.jpeg"
+    "img": "/images/chay2.jpeg",
+    "visibility": "True"
   },
   {
     "id": 29,
     "title": "چای زعفران",
     "category": "چای و دمنوش",
     "price": 60000,
-    "img": "/images/chay2.jpeg"
+    "img": "/images/chay2.jpeg",
+    "visibility": "True"
   },
   {
     "id": 30,
     "title": "دمنوش (مراکشی، رازیانه، بهارنارنج,...)",
     "category": "چای و دمنوش",
     "price": 86000,
-    "img": "/images/damnoosh.jpg"
+    "img": "/images/damnoosh.jpg",
+    "visibility": "True"
   },
   {
     "id": 31,
     "title": "دمنوش 1",
     "category": "چای و دمنوش",
-    "price": 85000,
-    "img": "/images/damnoosh.jpg"
+    "price": 87000,
+    "img": "/images/damnoosh.jpg",
+    "visibility": "True"
   },
   {
     "id": 32,
     "title": "دمنوش 2",
     "category": "چای و دمنوش",
-    "price": 88000,
-    "img": "/images/damnoosh.jpg"
+    "price": 87000,
+    "img": "/images/damnoosh.jpg",
+    "visibility": "True"
   },
   {
     "id": 33,
     "title": "دمنوش 3",
     "category": "چای و دمنوش",
     "price": 87000,
-    "img": "/images/damnoosh.jpg"
+    "img": "/images/damnoosh.jpg",
+    "visibility": "True"
   },
   {
     "id": 33,
     "title": "دمنوش مخلوط",
     "category": "چای و دمنوش",
     "price": 87000,
-    "img": "/images/damnoosh.jpg"
+    "img": "/images/damnoosh.jpg",
+    "visibility": "True"
   },
   {
     "id": 34,
     "title": "آیس آمریکانو",
     "category": "بار سرد بر پایه قهوه",
     "price": 87000,
-    "img": "/images/ice-americano.jpg"
+    "img": "/images/ice-americano.jpg",
+    "visibility": "True"
   },
   {
     "id": 35,
     "title": "آیس کارامل ماکیاتو",
     "category": "بار سرد بر پایه قهوه",
     "price": 139000,
-    "img": "/images/ice-caramel.jpg"
+    "img": "/images/ice-caramel.jpg",
+    "visibility": "True"
   },
   {
     "id": 49,
     "title": "آیریش کارامل",
     "category": "بار سرد بر پایه قهوه",
     "price": 168000,
-    "img": "/images/irish-caramel.webp"
+    "img": "/images/irish-caramel.webp",
+    "visibility": "True"
   },
   {
     "id": 36,
     "title": "آیس لته",
     "category": "بار سرد بر پایه قهوه",
     "price": 117000,
-    "img": "/images/ice-late.jpg"
+    "img": "/images/ice-late.jpg",
+    "visibility": "True"
   },
   {
     "id": 37,
     "title": "آیس موکا",
     "category": "بار سرد بر پایه قهوه",
     "price": 139000,
-    "img": "/images/ice-mocka.jpg"
+    "img": "/images/ice-mocka.jpg",
+    "visibility": "True"
   },
   {
     "id": 38,
     "title": "آیس چاکلت",
     "category": "بار سرد بر پایه قهوه",
     "price": 119000,
-    "img": "/images/ice-chock.jpeg"
+    "img": "/images/ice-chock.jpeg",
+    "visibility": "True"
   },
   {
     "id": 39,
     "title": "آیس کاپو",
     "category": "بار سرد بر پایه قهوه",
     "price": 106000,
-    "img": "/images/ice-capo.jpg"
+    "img": "/images/ice-capo.jpg",
+    "visibility": "True"
   },
   {
     "id": 40,
     "title": "آفوگاتو شکلاتی",
     "category": "بار سرد بر پایه قهوه",
     "price": 117000,
-    "img": "/images/afogato-chock.jpg"
+    "img": "/images/afogato-chock.jpg",
+    "visibility": "True"
   },
   {
     "id": 41,
     "title": "آفوگاتو وانیل",
     "category": "بار سرد بر پایه قهوه",
     "price": 106000,
-    "img": "/images/afogato.jpg"
+    "img": "/images/afogato.jpg",
+    "visibility": "True"
   },
   {
     "id": 42,
     "title": "لیموناد",
     "category": "بار سرد",
     "price": 108000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 43,
     "title": "موهیتو",
     "category": "بار سرد",
     "price": 118000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 44,
     "title": "گرین مارش",
     "category": "بار سرد",
     "price": 163000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 45,
     "title": "لیر",
     "category": "بار سرد",
     "price": 169000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 46,
     "title": "چری بری",
     "category": "بار سرد",
     "price": 189000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 47,
     "title": "مکزیکانو",
     "category": "بار سرد",
     "price": 187000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 48,
     "title": "کاپریس",
     "category": "بار سرد",
     "price": 157000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 50,
     "title": "رد موهیتو",
     "category": "بار سرد",
     "price": 134000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 51,
     "title": "فراپاچینو",
     "category": "شیک ها",
     "price": 237000,
-    "img": "/images/frapacino.jpg"
+    "img": "/images/frapacino.jpg",
+    "visibility": "True"
   },
   {
     "id": 52,
     "title": "فراپه",
     "category": "شیک ها",
     "price": 229000,
-    "img": "/images/frappe.webp"
+    "img": "/images/frappe.webp",
+    "visibility": "True"
   },
   {
     "id": 53,
     "title": "نوتلا",
     "category": "شیک ها",
     "price": 261000,
-    "img": "/images/notella.webp"
+    "img": "/images/notella.webp",
+    "visibility": "True"
   },
   {
     "id": 54,
     "title": "کیت کت",
     "category": "شیک ها",
     "price": 222000,
-    "img": "/images/kitkat.jpg"
+    "img": "/images/kitkat.jpg",
+    "visibility": "True"
   },
   {
     "id": 55,
     "title": "کیت کت نوتلا",
     "category": "شیک ها",
     "price": 232000,
-    "img": "/images/kitkatnotella.jpg"
+    "img": "/images/kitkatnotella.jpg",
+    "visibility": "True"
   },
   {
     "id": 56,
     "title": "اورئو",
     "category": "شیک ها",
     "price": 237000,
-    "img": "/images/oreo.jpg"
+    "img": "/images/oreo.jpg",
+    "visibility": "True"
   },
   {
     "id": 57,
     "title": "وانیل",
     "category": "شیک ها",
     "price": 178000,
-    "img": "/images/vanil.jpg"
+    "img": "/images/vanil.jpg",
+    "visibility": "True"
   },
   {
     "id": 58,
     "title": "شکلات",
     "category": "شیک ها",
     "price": 189000,
-    "img": "/images/shokolat.jpg"
+    "img": "/images/shokolat.jpg",
+    "visibility": "True"
   },
   {
     "id": 59,
     "title": "توت فرنگی",
     "category": "شیک ها",
     "price": 217000,
-    "img": "/images/tootfarangi.png"
+    "img": "/images/tootfarangi.png",
+    "visibility": "True"
   },
   {
     "id": 60,
     "title": "بادام زمینی",
     "category": "شیک ها",
     "price": 217000,
-    "img": "/images/badam.jpg"
+    "img": "/images/badam.jpg",
+    "visibility": "True"
   },
   {
     "id": 61,
     "title": "لوتوس",
     "category": "شیک ها",
     "price": 238000,
-    "img": "/images/lotus.jpg"
+    "img": "/images/lotus.jpg",
+    "visibility": "True"
   },
   {
     "id": 62,
     "title": "کارامل",
     "category": "شیک ها",
     "price": 197000,
-    "img": "/images/karamel.jpg"
+    "img": "/images/karamel.jpg",
+    "visibility": "True"
   },
   {
     "id": 63,
     "title": "ترامیسو",
     "category": "شیک ها",
     "price": 251000,
-    "img": "/images/tiramiso.jpg"
+    "img": "/images/tiramiso.jpg",
+    "visibility": "True"
   },
   {
     "id": 64,
     "title": "اسنیکرز",
     "category": "شیک ها",
     "price": 218000,
-    "img": "/images/snickers.jpg"
+    "img": "/images/snickers.jpg",
+    "visibility": "True"
   },
   {
     "id": 65,
     "title": "موز و شکلات",
     "category": "شیک ها",
     "price": 206000,
-    "img": "/images/moz-chock.jpg"
+    "img": "/images/moz-chock.jpg",
+    "visibility": "True"
   },
   {
     "id": 66,
     "title": "موز",
     "category": "شیک ها",
     "price": 209000,
-    "img": "/images/moz.jpg"
+    "img": "/images/moz.jpg",
+    "visibility": "True"
   },
   {
     "id": 67,
     "title": "قهوه",
     "category": "شیک ها",
     "price": 198000,
-    "img": "/images/ghahve.jpg"
+    "img": "/images/ghahve.jpg",
+    "visibility": "True"
   },
   {
     "id": 68,
     "title": "سیب سوخاری تک نفره",
     "category": "سیب سوخاری",
     "price": 148000,
-    "img": "/images/sib_sokhari.jpeg"
+    "img": "/images/sib_sokhari.jpeg",
+    "visibility": "True"
   },
   {
     "id": 68,
     "title": "سیب سوخاری دونفره",
     "category": "سیب سوخاری",
     "price": 197000,
-    "img": "/images/sib_sokhari.jpeg"
+    "img": "/images/sib_sokhari.jpeg",
+    "visibility": "True"
   },
   {
     "id": 71,
     "title": "سیب سوخاری دو نفره",
     "category": "سیب سوخاری",
     "price": 189000,
-    "img": "/images/sib_sokhari_2.jpg"
+    "img": "/images/sib_sokhari_2.jpg",
+    "visibility": "True"
   },
   {
     "id": 72,
     "title": "سیب ویژه دو نفره",
     "category": "سیب سوخاری",
     "price": 251000,
-    "img": "/images/sib_vizhe_2.jpg"
+    "img": "/images/sib_vizhe_2.jpg",
+    "visibility": "True"
   },
   {
     "id": 75,
     "title": "سیب ساده تک نفره",
     "category": "سیب سوخاری",
     "price": 127000,
-    "img": "/images/mack_and_cheese.jpg"
+    "img": "/images/mack_and_cheese.jpg",
+    "visibility": "True"
   },
   {
     "id": 76,
     "title": "سیب ساده دو نفره",
     "category": "سیب سوخاری",
     "price": 217000,
-    "img": "/images/mack_and_cheese.jpg"
+    "img": "/images/mack_and_cheese.jpg",
+    "visibility": "True"
   },
   {
     "id": 77,
     "title": "نیمرو تک نفره",
     "category": "صبحانه",
     "price": 60000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 78,
     "title": "نیمرو دو نفره",
     "category": "صبحانه",
     "price": 87000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 81,
     "title": "سوسیس تخم مرغ تک نفره",
     "category": "صبحانه",
     "price": 117000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 81,
     "title": "سوسیس تخم مرغ دو نفره",
     "category": "صبحانه",
     "price": 157000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 81,
     "title": "املت تک نفره",
     "category": "صبحانه",
     "price": 123000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 81,
     "title": "املت دو نفره",
     "category": "صبحانه",
     "price": 147000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 84,
     "title": "شاپوری تک نفره",
     "category": "صبحانه",
     "price": 169000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 113,
     "title": "کیک روز",
     "category": "دسر و کیک ها",
     "price": 98000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 113,
     "title": "چیز کیک ها",
     "category": "دسر و کیک ها",
     "price": 107000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 121,
     "title": "کیک برزیلی",
     "category": "دسر و کیک ها",
     "price": 118000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 122,
     "title": "رول نیویورکی",
     "category": "دسر و کیک ها",
     "price": 97000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 123,
     "title": "ترامیسو",
     "category": "دسر و کیک ها",
     "price": 107000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 124,
     "title": "کروسان",
     "category": "دسر و کیک ها",
     "price": 97000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 124,
     "title": "گیم",
     "category": "گیم",
     "price": 150000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   },
   {
     "id": 124,
     "title": "قلیان",
     "category": "قلیان",
     "price": 180000,
-    "img": "/images/viva.jpg"
+    "img": "/images/viva.jpg",
+    "visibility": "True"
   }
 ]

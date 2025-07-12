@@ -52,11 +52,17 @@ async function loadMenu() {
     });
     const menu = await res.json();
     tbody.innerHTML = menu.map(item => `
-      <tr data-id="${item.id}" data-img="${item.img || ''}" >
+      <tr data-id="${item.id}" data-img="${item.img || ''}" data-visibility="${item.visibility || 'True'}">
         <td>${item.id}</td>
         <td>${item.title}</td>
         <td>${item.category}</td>
         <td>${item.price}</td>
+        <td>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" class="visibility-toggle sr-only peer" ${String(item.visibility).toLowerCase() === 'true' ? 'checked' : ''}>
+            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-yellow-300 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-yellow-500"></div>
+          </label>
+        </td>
         <td class="space-x-2 rtl:space-x-reverse">
           <button class="edit text-blue-600 hover:underline">ویرایش</button>
           <button class="delete text-red-600 hover:underline">حذف</button>
@@ -91,6 +97,52 @@ function attachRowEvents() {
       }
     }
   );
+  
+  // Add event listener for visibility toggles
+  tbody.querySelectorAll('.visibility-toggle').forEach(toggle => {
+    toggle.onchange = async e => {
+      const row = e.target.closest('tr');
+      const id = +row.dataset.id;
+      const newVisibility = e.target.checked ? "True" : "False";
+      
+      try {
+        // Get current item data
+        const title = row.children[1].textContent;
+        const category = row.children[2].textContent;
+        const price = row.children[3].textContent;
+        const img = row.dataset.img;
+        
+        // Update the item with new visibility
+        const res = await fetch('/api/update-menu', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`
+          },
+          body: JSON.stringify({
+            id,
+            title,
+            category,
+            price: +price,
+            img,
+            visibility: newVisibility
+          })
+        });
+        
+        if (!res.ok) throw new Error();
+        
+        // Update the row's data attribute
+        row.dataset.visibility = newVisibility;
+        
+        showNotification(`وضعیت نمایش آیتم #${id} به ${newVisibility === "True" ? "فعال" : "غیرفعال"} تغییر کرد`);
+      } catch (err) {
+        console.error('Visibility toggle error:', err);
+        alert('خطا در تغییر وضعیت نمایش');
+        // Revert the toggle state if there was an error
+        e.target.checked = !e.target.checked;
+      }
+    };
+  });
 }
 
 // OPEN MODAL
@@ -104,6 +156,7 @@ function openModal(mode, id = null) {
     form.category.value    = row.children[2].textContent;
     form.price.value       = row.children[3].textContent;
     form.img.value         = row.dataset.img;
+    form.visibility.value  = row.dataset.visibility || "True";
   }
   modal.classList.remove('hidden');
 }

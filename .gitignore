@@ -34,3 +34,4 @@ pids
 .vscode/
 .idea/
 *.swp
+.vercel

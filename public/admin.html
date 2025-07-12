@@ -63,6 +63,7 @@
             <th class="p-3">عنوان</th>
             <th class="p-3">دسته‌بندی</th>
             <th class="p-3">قیمت (تومان)</th>
+            <th class="p-3">وضعیت نمایش</th>
             <th class="p-3">عملیات</th>
           </tr>
         </thead>
@@ -77,11 +78,11 @@
     <form id="item-form" class="bg-white rounded-xl shadow-2xl p-6 w-96 space-y-4">
       <h2 id="modal-title" class="text-xl font-semibold text-center"></h2>
       <input name="id" type="hidden"/>
+      <input name="visibility" type="hidden" value="True"/>
       <input name="title" placeholder="عنوان" class="w-full p-3 border rounded-lg"/>
       <input name="category" placeholder="دسته‌بندی" class="w-full p-3 border rounded-lg"/>
       <input name="price" type="number" placeholder="قیمت (تومان)" class="w-full p-3 border rounded-lg"/>
       <input name="img" placeholder="آدرس تصویر (URL)" class="w-full p-3 border rounded-lg"/>
-      <textarea name="description" placeholder="توضیحات" class="w-full p-3 border rounded-lg h-24"></textarea>
       <div class="flex justify-between pt-4">
         <button type="button" id="cancel"
                 class="px-4 py-2 text-gray-700 border rounded-lg hover:bg-gray-100">
