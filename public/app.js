@@ -53,11 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             opacity-0 translate-y-8 transition-all duration-700 ease-out"
             >
                 <div class="flex-grow text-right pr-4">
-                    <h2 class="text-3xl font-bold mb-1 text-slate-800">
+                    <h2 class="text-xl font-bold mb-1 text-slate-800">
                         ${item.title}
                     </h2>
 
-                    <span class="text-xl font-bold text-yellow-600">
+                    <span class="text-l font-bold text-yellow-600">
                         ${item.price.toLocaleString()} تومان
                     </span>
                 </div>
