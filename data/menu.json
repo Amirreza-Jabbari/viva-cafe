@@ -701,7 +701,7 @@
     "category": "دسر و کیک ها",
     "price": 97000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 123,
@@ -717,22 +717,22 @@
     "category": "دسر و کیک ها",
     "price": 97000,
     "img": "/images/viva.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 124,
-    "title": "گیم",
-    "category": "گیم",
-    "price": 150000,
+    "title": "کروسان",
+    "category": "دسر و کیک ها",
+    "price": 97000,
     "img": "/images/viva.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 124,
-    "title": "قلیان",
-    "category": "قلیان",
-    "price": 180000,
+    "title": "کروسان",
+    "category": "دسر و کیک ها",
+    "price": 97000,
     "img": "/images/viva.jpg",
-    "visibility": "True"
+    "visibility": "False"
   }
 ]
