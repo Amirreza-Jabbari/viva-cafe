@@ -269,7 +269,7 @@
     "category": "چای و دمنوش",
     "price": 87000,
     "img": "/images/damnoosh.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 32,
@@ -277,7 +277,7 @@
     "category": "چای و دمنوش",
     "price": 87000,
     "img": "/images/damnoosh.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 33,
