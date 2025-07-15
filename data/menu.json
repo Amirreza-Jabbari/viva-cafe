@@ -677,7 +677,7 @@
     "category": "دسر و کیک ها",
     "price": 98000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 113,
@@ -685,7 +685,7 @@
     "category": "دسر و کیک ها",
     "price": 98000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 121,
