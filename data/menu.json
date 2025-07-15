@@ -669,6 +669,14 @@
     "category": "صبحانه",
     "price": 169000,
     "img": "/images/viva.jpg",
+    "visibility": "True"
+  },
+  {
+    "id": 113,
+    "title": "کیک روز",
+    "category": "دسر و کیک ها",
+    "price": 98000,
+    "img": "/images/viva.jpg",
     "visibility": "False"
   },
   {
@@ -677,15 +685,7 @@
     "category": "دسر و کیک ها",
     "price": 98000,
     "img": "/images/viva.jpg",
-    "visibility": "True"
-  },
-  {
-    "id": 113,
-    "title": "چیز کیک ها",
-    "category": "دسر و کیک ها",
-    "price": 107000,
-    "img": "/images/viva.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 121,
