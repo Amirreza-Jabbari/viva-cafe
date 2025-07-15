@@ -589,7 +589,7 @@
     "category": "سیب سوخاری",
     "price": 189000,
     "img": "/images/sib_sokhari_2.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 72,
@@ -621,7 +621,7 @@
     "category": "صبحانه",
     "price": 60000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 78,
