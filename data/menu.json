@@ -681,9 +681,9 @@
   },
   {
     "id": 113,
-    "title": "کیک روز",
+    "title": "چیز کیک ها",
     "category": "دسر و کیک ها",
-    "price": 98000,
+    "price": 107000,
     "img": "/images/viva.jpg",
     "visibility": "True"
   },
@@ -693,7 +693,7 @@
     "category": "دسر و کیک ها",
     "price": 118000,
     "img": "/images/viva.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 122,
