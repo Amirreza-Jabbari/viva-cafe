@@ -569,17 +569,17 @@
   },
   {
     "id": 68,
-    "title": "سیب سوخاری تک نفره",
+    "title": "سیب سوخاری پنیری تک نفره",
     "category": "سیب سوخاری",
-    "price": 148000,
+    "price": 198000,
     "img": "/images/sib_sokhari.jpeg",
     "visibility": "True"
   },
   {
     "id": 68,
-    "title": "سیب سوخاری دونفره",
+    "title": "سیب سوخاری پنیری تک نفره",
     "category": "سیب سوخاری",
-    "price": 197000,
+    "price": 198000,
     "img": "/images/sib_sokhari.jpeg",
     "visibility": "True"
   },
@@ -589,7 +589,7 @@
     "category": "سیب سوخاری",
     "price": 189000,
     "img": "/images/sib_sokhari_2.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 72,
