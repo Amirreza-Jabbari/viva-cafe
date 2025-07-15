@@ -285,15 +285,15 @@
     "category": "چای و دمنوش",
     "price": 87000,
     "img": "/images/damnoosh.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 33,
-    "title": "دمنوش مخلوط",
+    "title": "دمنوش 3",
     "category": "چای و دمنوش",
     "price": 87000,
     "img": "/images/damnoosh.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 34,
