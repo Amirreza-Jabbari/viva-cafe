@@ -569,7 +569,7 @@
   },
   {
     "id": 68,
-    "title": "سیب سوخاری تک نفره",
+    "title": "سیب سوخاری دو نفره",
     "category": "سیب سوخاری",
     "price": 247000,
     "img": "/images/sib_sokhari.jpeg",
@@ -577,7 +577,7 @@
   },
   {
     "id": 68,
-    "title": "سیب سوخاری تک نفره",
+    "title": "سیب سوخاری دو نفره",
     "category": "سیب سوخاری",
     "price": 247000,
     "img": "/images/sib_sokhari.jpeg",
@@ -633,11 +633,11 @@
   },
   {
     "id": 81,
-    "title": "سوسیس تخم مرغ دو نفره",
+    "title": "سوسیس تخم مرغ تک نفره",
     "category": "صبحانه",
-    "price": 157000,
+    "price": 117000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 81,
@@ -645,23 +645,23 @@
     "category": "صبحانه",
     "price": 157000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 81,
-    "title": "سوسیس تخم مرغ دو نفره",
+    "title": "املت تک نفره",
     "category": "صبحانه",
-    "price": 157000,
+    "price": 123000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 81,
-    "title": "سوسیس تخم مرغ دو نفره",
+    "title": "املت دو نفره",
     "category": "صبحانه",
-    "price": 157000,
+    "price": 147000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 84,
