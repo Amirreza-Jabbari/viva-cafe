@@ -569,17 +569,17 @@
   },
   {
     "id": 68,
-    "title": "سیب سوخاری دو نفره",
+    "title": "سیب سوخاری تک نفره",
     "category": "سیب سوخاری",
-    "price": 268000,
+    "price": 247000,
     "img": "/images/sib_sokhari.jpeg",
     "visibility": "True"
   },
   {
     "id": 68,
-    "title": "سیب سوخاری دو نفره",
+    "title": "سیب سوخاری تک نفره",
     "category": "سیب سوخاری",
-    "price": 268000,
+    "price": 247000,
     "img": "/images/sib_sokhari.jpeg",
     "visibility": "True"
   },
@@ -621,7 +621,7 @@
     "category": "صبحانه",
     "price": 60000,
     "img": "/images/viva.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 78,
