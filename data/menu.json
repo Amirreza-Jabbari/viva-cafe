@@ -539,7 +539,7 @@
     "id": 68,
     "title": "موز و شکلات",
     "category": "شیک ها",
-    "price": 206000,
+    "price": 216000,
     "img": "/images/moz-chock.jpg",
     "visibility": "True"
   },
@@ -677,7 +677,7 @@
     "category": "دسر و کیک ها",
     "price": 97000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 87,
