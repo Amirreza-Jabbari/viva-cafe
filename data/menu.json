@@ -621,7 +621,7 @@
     "category": "صبحانه",
     "price": 87000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 81,
@@ -629,15 +629,15 @@
     "category": "صبحانه",
     "price": 123000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 81,
-    "title": "املت دو نفره",
+    "title": "املت تک نفره",
     "category": "صبحانه",
     "price": 123000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 82,
