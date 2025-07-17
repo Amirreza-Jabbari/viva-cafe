@@ -589,7 +589,7 @@
     "category": "سیب سوخاری",
     "price": 251000,
     "img": "/images/sib_vizhe_2.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 75,
@@ -597,7 +597,7 @@
     "category": "سیب سوخاری",
     "price": 127000,
     "img": "/images/mack_and_cheese.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 76,
