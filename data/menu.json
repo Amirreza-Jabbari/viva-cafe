@@ -491,7 +491,7 @@
     "id": 62,
     "title": "توت فرنگی",
     "category": "شیک ها",
-    "price": 207000,
+    "price": 217000,
     "img": "/images/tootfarangi.png",
     "visibility": "True"
   },
@@ -605,7 +605,7 @@
     "category": "سیب سوخاری",
     "price": 217000,
     "img": "/images/mack_and_cheese.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 77,
