@@ -581,7 +581,7 @@
     "category": "سیب سوخاری",
     "price": 201000,
     "img": "/images/sib_vizhe_2.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 74,
@@ -589,7 +589,7 @@
     "category": "سیب سوخاری",
     "price": 251000,
     "img": "/images/sib_vizhe_2.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 75,
