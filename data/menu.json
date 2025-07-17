@@ -128,7 +128,7 @@
     "visibility": "True"
   },
   {
-    "id": 16,
+    "id": 17,
     "title": "هات چاکلت پسته",
     "category": "نوشیدنی های گرم",
     "price": 159000,
@@ -136,7 +136,7 @@
     "visibility": "True"
   },
   {
-    "id": 17,
+    "id": 18,
     "title": "وایت چاکلت",
     "category": "نوشیدنی های گرم",
     "price": 106000,
@@ -144,7 +144,7 @@
     "visibility": "True"
   },
   {
-    "id": 18,
+    "id": 19,
     "title": "بلوبری چاکلت",
     "category": "نوشیدنی های گرم",
     "price": 107000,
@@ -152,7 +152,7 @@
     "visibility": "True"
   },
   {
-    "id": 19,
+    "id": 20,
     "title": "استرابری چاکلت",
     "category": "نوشیدنی های گرم",
     "price": 108000,
@@ -160,7 +160,7 @@
     "visibility": "True"
   },
   {
-    "id": 20,
+    "id": 21,
     "title": "کرک",
     "category": "نوشیدنی های گرم",
     "price": 117000,
@@ -168,7 +168,7 @@
     "visibility": "True"
   },
   {
-    "id": 21,
+    "id": 22,
     "title": "شیر کاکائو",
     "category": "نوشیدنی های گرم",
     "price": 118000,
@@ -176,7 +176,7 @@
     "visibility": "True"
   },
   {
-    "id": 21,
+    "id": 23,
     "title": "شیر گرم",
     "category": "نوشیدنی های گرم",
     "price": 60000,
@@ -184,7 +184,7 @@
     "visibility": "True"
   },
   {
-    "id": 21,
+    "id": 24,
     "title": "شیر عسلی",
     "category": "نوشیدنی های گرم",
     "price": 79000,
@@ -192,7 +192,7 @@
     "visibility": "True"
   },
   {
-    "id": 22,
+    "id": 25,
     "title": "V60",
     "category": "قهوه های دمی",
     "price": 97000,
@@ -200,7 +200,7 @@
     "visibility": "True"
   },
   {
-    "id": 23,
+    "id": 26,
     "title": "ترک",
     "category": "قهوه های دمی",
     "price": 75000,
@@ -208,7 +208,7 @@
     "visibility": "True"
   },
   {
-    "id": 24,
+    "id": 27,
     "title": "کمکس",
     "category": "قهوه های دمی",
     "price": 97000,
@@ -216,7 +216,7 @@
     "visibility": "True"
   },
   {
-    "id": 25,
+    "id": 28,
     "title": "کلدبرو",
     "category": "قهوه های دمی",
     "price": 157000,
@@ -224,7 +224,7 @@
     "visibility": "True"
   },
   {
-    "id": 26,
+    "id": 29,
     "title": "چای سیاه تک نفره",
     "category": "چای و دمنوش",
     "price": 45000,
@@ -232,7 +232,7 @@
     "visibility": "True"
   },
   {
-    "id": 27,
+    "id": 30,
     "title": "چای سیاه دو نفره",
     "category": "چای و دمنوش",
     "price": 84000,
@@ -240,7 +240,7 @@
     "visibility": "True"
   },
   {
-    "id": 28,
+    "id": 31,
     "title": "چای سیاه چهار نفره",
     "category": "چای و دمنوش",
     "price": 172000,
@@ -248,7 +248,7 @@
     "visibility": "True"
   },
   {
-    "id": 29,
+    "id": 32,
     "title": "چای زعفران",
     "category": "چای و دمنوش",
     "price": 60000,
@@ -256,7 +256,7 @@
     "visibility": "True"
   },
   {
-    "id": 30,
+    "id": 33,
     "title": "دمنوش (مراکشی، رازیانه، بهارنارنج,...)",
     "category": "چای و دمنوش",
     "price": 86000,
@@ -264,7 +264,7 @@
     "visibility": "True"
   },
   {
-    "id": 31,
+    "id": 34,
     "title": "دمنوش 1",
     "category": "چای و دمنوش",
     "price": 87000,
@@ -272,7 +272,7 @@
     "visibility": "False"
   },
   {
-    "id": 32,
+    "id": 35,
     "title": "دمنوش 2",
     "category": "چای و دمنوش",
     "price": 87000,
@@ -280,7 +280,7 @@
     "visibility": "True"
   },
   {
-    "id": 33,
+    "id": 36,
     "title": "دمنوش 3",
     "category": "چای و دمنوش",
     "price": 87000,
@@ -288,15 +288,7 @@
     "visibility": "False"
   },
   {
-    "id": 33,
-    "title": "دمنوش 3",
-    "category": "چای و دمنوش",
-    "price": 87000,
-    "img": "/images/damnoosh.jpg",
-    "visibility": "False"
-  },
-  {
-    "id": 34,
+    "id": 37,
     "title": "آیس آمریکانو",
     "category": "بار سرد بر پایه قهوه",
     "price": 87000,
@@ -304,7 +296,7 @@
     "visibility": "True"
   },
   {
-    "id": 35,
+    "id": 38,
     "title": "آیس کارامل ماکیاتو",
     "category": "بار سرد بر پایه قهوه",
     "price": 139000,
@@ -312,7 +304,7 @@
     "visibility": "True"
   },
   {
-    "id": 49,
+    "id": 39,
     "title": "آیریش کارامل",
     "category": "بار سرد بر پایه قهوه",
     "price": 168000,
@@ -320,7 +312,7 @@
     "visibility": "True"
   },
   {
-    "id": 36,
+    "id": 40,
     "title": "آیس لته",
     "category": "بار سرد بر پایه قهوه",
     "price": 117000,
@@ -328,7 +320,7 @@
     "visibility": "True"
   },
   {
-    "id": 37,
+    "id": 41,
     "title": "آیس موکا",
     "category": "بار سرد بر پایه قهوه",
     "price": 139000,
@@ -336,7 +328,7 @@
     "visibility": "True"
   },
   {
-    "id": 38,
+    "id": 42,
     "title": "آیس چاکلت",
     "category": "بار سرد بر پایه قهوه",
     "price": 119000,
@@ -344,7 +336,7 @@
     "visibility": "True"
   },
   {
-    "id": 39,
+    "id": 43,
     "title": "آیس کاپو",
     "category": "بار سرد بر پایه قهوه",
     "price": 106000,
@@ -352,7 +344,7 @@
     "visibility": "True"
   },
   {
-    "id": 40,
+    "id": 44,
     "title": "آفوگاتو شکلاتی",
     "category": "بار سرد بر پایه قهوه",
     "price": 117000,
@@ -360,7 +352,7 @@
     "visibility": "True"
   },
   {
-    "id": 41,
+    "id": 45,
     "title": "آفوگاتو وانیل",
     "category": "بار سرد بر پایه قهوه",
     "price": 106000,
@@ -368,7 +360,7 @@
     "visibility": "True"
   },
   {
-    "id": 42,
+    "id": 46,
     "title": "لیموناد",
     "category": "بار سرد",
     "price": 108000,
@@ -376,7 +368,7 @@
     "visibility": "True"
   },
   {
-    "id": 43,
+    "id": 47,
     "title": "موهیتو",
     "category": "بار سرد",
     "price": 118000,
@@ -384,7 +376,7 @@
     "visibility": "True"
   },
   {
-    "id": 44,
+    "id": 48,
     "title": "گرین مارش",
     "category": "بار سرد",
     "price": 163000,
@@ -392,7 +384,7 @@
     "visibility": "True"
   },
   {
-    "id": 45,
+    "id": 49,
     "title": "لیر",
     "category": "بار سرد",
     "price": 169000,
@@ -400,7 +392,7 @@
     "visibility": "True"
   },
   {
-    "id": 46,
+    "id": 50,
     "title": "چری بری",
     "category": "بار سرد",
     "price": 189000,
@@ -408,7 +400,7 @@
     "visibility": "True"
   },
   {
-    "id": 47,
+    "id": 51,
     "title": "مکزیکانو",
     "category": "بار سرد",
     "price": 187000,
@@ -416,7 +408,7 @@
     "visibility": "True"
   },
   {
-    "id": 48,
+    "id": 52,
     "title": "کاپریس",
     "category": "بار سرد",
     "price": 157000,
@@ -424,7 +416,7 @@
     "visibility": "True"
   },
   {
-    "id": 50,
+    "id": 53,
     "title": "رد موهیتو",
     "category": "بار سرد",
     "price": 134000,
@@ -432,7 +424,7 @@
     "visibility": "True"
   },
   {
-    "id": 51,
+    "id": 54,
     "title": "فراپاچینو",
     "category": "شیک ها",
     "price": 237000,
@@ -440,7 +432,7 @@
     "visibility": "True"
   },
   {
-    "id": 52,
+    "id": 55,
     "title": "فراپه",
     "category": "شیک ها",
     "price": 229000,
@@ -448,7 +440,7 @@
     "visibility": "True"
   },
   {
-    "id": 53,
+    "id": 56,
     "title": "نوتلا",
     "category": "شیک ها",
     "price": 261000,
@@ -456,7 +448,7 @@
     "visibility": "True"
   },
   {
-    "id": 54,
+    "id": 57,
     "title": "کیت کت",
     "category": "شیک ها",
     "price": 222000,
@@ -464,7 +456,7 @@
     "visibility": "True"
   },
   {
-    "id": 55,
+    "id": 58,
     "title": "کیت کت نوتلا",
     "category": "شیک ها",
     "price": 232000,
@@ -472,7 +464,7 @@
     "visibility": "True"
   },
   {
-    "id": 56,
+    "id": 59,
     "title": "اورئو",
     "category": "شیک ها",
     "price": 237000,
@@ -480,7 +472,7 @@
     "visibility": "True"
   },
   {
-    "id": 57,
+    "id": 60,
     "title": "وانیل",
     "category": "شیک ها",
     "price": 178000,
@@ -488,7 +480,7 @@
     "visibility": "True"
   },
   {
-    "id": 58,
+    "id": 61,
     "title": "شکلات",
     "category": "شیک ها",
     "price": 189000,
@@ -496,7 +488,7 @@
     "visibility": "True"
   },
   {
-    "id": 59,
+    "id": 62,
     "title": "توت فرنگی",
     "category": "شیک ها",
     "price": 217000,
@@ -504,7 +496,7 @@
     "visibility": "True"
   },
   {
-    "id": 60,
+    "id": 63,
     "title": "بادام زمینی",
     "category": "شیک ها",
     "price": 217000,
@@ -512,7 +504,7 @@
     "visibility": "True"
   },
   {
-    "id": 61,
+    "id": 64,
     "title": "لوتوس",
     "category": "شیک ها",
     "price": 238000,
@@ -520,7 +512,7 @@
     "visibility": "True"
   },
   {
-    "id": 62,
+    "id": 65,
     "title": "کارامل",
     "category": "شیک ها",
     "price": 197000,
@@ -528,7 +520,7 @@
     "visibility": "True"
   },
   {
-    "id": 63,
+    "id": 66,
     "title": "ترامیسو",
     "category": "شیک ها",
     "price": 251000,
@@ -536,7 +528,7 @@
     "visibility": "True"
   },
   {
-    "id": 64,
+    "id": 67,
     "title": "اسنیکرز",
     "category": "شیک ها",
     "price": 218000,
@@ -544,7 +536,7 @@
     "visibility": "True"
   },
   {
-    "id": 65,
+    "id": 68,
     "title": "موز و شکلات",
     "category": "شیک ها",
     "price": 206000,
@@ -552,7 +544,7 @@
     "visibility": "True"
   },
   {
-    "id": 66,
+    "id": 69,
     "title": "موز",
     "category": "شیک ها",
     "price": 209000,
@@ -560,7 +552,7 @@
     "visibility": "True"
   },
   {
-    "id": 67,
+    "id": 70,
     "title": "قهوه",
     "category": "شیک ها",
     "price": 198000,
@@ -568,23 +560,23 @@
     "visibility": "True"
   },
   {
-    "id": 68,
-    "title": "سیب سوخاری دو نفره",
-    "category": "سیب سوخاری",
-    "price": 247000,
-    "img": "/images/sib_sokhari.jpeg",
-    "visibility": "True"
-  },
-  {
-    "id": 68,
-    "title": "سیب سوخاری دو نفره",
-    "category": "سیب سوخاری",
-    "price": 247000,
-    "img": "/images/sib_sokhari.jpeg",
-    "visibility": "True"
-  },
-  {
     "id": 71,
+    "title": "سیب سوخاری تک نفره",
+    "category": "سیب سوخاری",
+    "price": 247000,
+    "img": "/images/sib_sokhari.jpeg",
+    "visibility": "True"
+  },
+  {
+    "id": 72,
+    "title": "سیب سوخاری دو نفره",
+    "category": "سیب سوخاری",
+    "price": 247000,
+    "img": "/images/sib_sokhari.jpeg",
+    "visibility": "True"
+  },
+  {
+    "id": 73,
     "title": "سیب ویژه تک نفره",
     "category": "سیب سوخاری",
     "price": 201000,
@@ -592,7 +584,7 @@
     "visibility": "True"
   },
   {
-    "id": 72,
+    "id": 74,
     "title": "سیب ویژه دو نفره",
     "category": "سیب سوخاری",
     "price": 251000,
@@ -641,30 +633,14 @@
   },
   {
     "id": 81,
-    "title": "املت تک نفره",
+    "title": "املت دو نفره",
     "category": "صبحانه",
     "price": 123000,
     "img": "/images/viva.jpg",
     "visibility": "False"
   },
   {
-    "id": 81,
-    "title": "املت تک نفره",
-    "category": "صبحانه",
-    "price": 123000,
-    "img": "/images/viva.jpg",
-    "visibility": "False"
-  },
-  {
-    "id": 81,
-    "title": "املت تک نفره",
-    "category": "صبحانه",
-    "price": 123000,
-    "img": "/images/viva.jpg",
-    "visibility": "False"
-  },
-  {
-    "id": 84,
+    "id": 82,
     "title": "شاپوری تک نفره",
     "category": "صبحانه",
     "price": 169000,
@@ -672,7 +648,7 @@
     "visibility": "False"
   },
   {
-    "id": 113,
+    "id": 83,
     "title": "کیک روز",
     "category": "دسر و کیک ها",
     "price": 98000,
@@ -680,7 +656,7 @@
     "visibility": "True"
   },
   {
-    "id": 113,
+    "id": 84,
     "title": "چیز کیک ها",
     "category": "دسر و کیک ها",
     "price": 107000,
@@ -688,7 +664,7 @@
     "visibility": "True"
   },
   {
-    "id": 121,
+    "id": 85,
     "title": "کیک برزیلی",
     "category": "دسر و کیک ها",
     "price": 118000,
@@ -696,7 +672,7 @@
     "visibility": "True"
   },
   {
-    "id": 122,
+    "id": 86,
     "title": "رول نیویورکی",
     "category": "دسر و کیک ها",
     "price": 97000,
@@ -704,7 +680,7 @@
     "visibility": "True"
   },
   {
-    "id": 123,
+    "id": 87,
     "title": "ترامیسو",
     "category": "دسر و کیک ها",
     "price": 107000,
@@ -712,7 +688,7 @@
     "visibility": "True"
   },
   {
-    "id": 124,
+    "id": 88,
     "title": "کروسان",
     "category": "دسر و کیک ها",
     "price": 97000,
@@ -720,7 +696,7 @@
     "visibility": "True"
   },
   {
-    "id": 124,
+    "id": 89,
     "title": "گیم",
     "category": "گیم",
     "price": 150000,
@@ -728,7 +704,7 @@
     "visibility": "True"
   },
   {
-    "id": 124,
+    "id": 90,
     "title": "قلیان",
     "category": "قلیان",
     "price": 180000,
