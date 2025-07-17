@@ -571,7 +571,7 @@
     "id": 72,
     "title": "سیب سوخاری دو نفره",
     "category": "سیب سوخاری",
-    "price": 268000,
+    "price": 247000,
     "img": "/images/sib_sokhari.jpeg",
     "visibility": "True"
   },
@@ -605,7 +605,7 @@
     "category": "سیب سوخاری",
     "price": 217000,
     "img": "/images/mack_and_cheese.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 77,
