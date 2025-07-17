@@ -277,7 +277,7 @@
     "category": "چای و دمنوش",
     "price": 87000,
     "img": "/images/damnoosh.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 36,
@@ -491,7 +491,7 @@
     "id": 62,
     "title": "توت فرنگی",
     "category": "شیک ها",
-    "price": 217000,
+    "price": 207000,
     "img": "/images/tootfarangi.png",
     "visibility": "True"
   },
