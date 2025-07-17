@@ -597,7 +597,7 @@
     "category": "سیب سوخاری",
     "price": 127000,
     "img": "/images/mack_and_cheese.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 76,
@@ -669,7 +669,7 @@
     "category": "دسر و کیک ها",
     "price": 118000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 86,
