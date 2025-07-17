@@ -613,7 +613,7 @@
     "category": "صبحانه",
     "price": 60000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 78,
@@ -621,7 +621,7 @@
     "category": "صبحانه",
     "price": 87000,
     "img": "/images/viva.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 81,
