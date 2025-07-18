@@ -571,7 +571,7 @@
     "id": 72,
     "title": "سیب سوخاری دو نفره",
     "category": "سیب سوخاری",
-    "price": 247000,
+    "price": 268000,
     "img": "/images/sib_sokhari.jpeg",
     "visibility": "True"
   },
@@ -677,7 +677,7 @@
     "category": "دسر و کیک ها",
     "price": 97000,
     "img": "/images/viva.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 87,
