@@ -221,13 +221,13 @@
     "category": "قهوه های دمی",
     "price": 157000,
     "img": "/images/coldbro.jpeg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 29,
     "title": "چای سیاه تک نفره",
     "category": "چای و دمنوش",
-    "price": 50000,
+    "price": 45000,
     "img": "/images/chay1.jpeg",
     "visibility": "True"
   },
