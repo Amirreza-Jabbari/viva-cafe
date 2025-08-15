@@ -213,7 +213,7 @@
     "category": "قهوه های دمی",
     "price": 97000,
     "img": "/images/kemex.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 28,
@@ -221,7 +221,7 @@
     "category": "قهوه های دمی",
     "price": 157000,
     "img": "/images/coldbro.jpeg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 29,
