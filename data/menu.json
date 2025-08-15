@@ -197,7 +197,7 @@
     "category": "قهوه های دمی",
     "price": 97000,
     "img": "/images/v60.jpg",
-    "visibility": "True"
+    "visibility": "False"
   },
   {
     "id": 26,
@@ -213,7 +213,7 @@
     "category": "قهوه های دمی",
     "price": 97000,
     "img": "/images/kemex.jpg",
-    "visibility": "False"
+    "visibility": "True"
   },
   {
     "id": 28,
